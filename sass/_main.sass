@@ -1,2 +1,254 @@
+body
+	font-size: 12px
+	font-family: Arial,sans-serif
+	line-height: 1.4
+	min-width: 1000px
+
+.btn
+	display: inline-block
+	text-align: center
+	border: 2px solid $blue
+	background: transparent
+	color: $blue
+	text-decoration: none
+	height: 38px
+	line-height: 38px
+	padding: 0 30px
+	text-transform: uppercase
+	+box
+	+transition(all .2s ease-in-out)
+	&:hover
+		background: $blue
+		color: $white
+	&.btn_block
+		display: block
+
+.slide-btn
+	position: relative
+	padding: 18px 0 18px 70px
+	text-transform: uppercase
+	line-height: 1
+	font-size: 11px
+	color: $dblue
+	text-decoration: none
+	+transition(all .3s linear)
+	&:hover
+		color: $blue
+		i
+			background: $blue
+			+box-shadow(0 0 0 8px $blue)
+	i
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -25px
+		margin-right: 10px
+		background: $dblue
+		width: 50px
+		height: 50px
+		+border-radius(50%)
+		+transition(all .3s linear)
+		&:before
+			position: absolute
+			+s(slide-arrow)
+			top: 50%
+			margin-top: -6.5px
+			left: 50%
+			margin-left: -12.5px
+			content: ""
+
 // Normally mainpage styles
- 
+=wrap
+	max-width: 1366px
+	margin-left: auto
+	margin-right: auto
+	padding-left: 20px
+	padding-right: 20px
+	+box
+	+r(wide)
+		padding-left: 40px
+		padding-right: 40px
+
+.header-i,
+.header__bottom-i,
+.numbers-i,
+.wrapper
+	+wrap
+
+.social
+	+clr
+	li
+		float: left
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+	.vk
+		a
+			+s(vk)
+			span
+				+s(vk-h)
+	.facebook
+		a
+			+s(fb)
+			span
+				+s(fb-h)
+	a
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		+hidetext
+		&:hover
+			span
+				opacity: 1
+	span
+		+transition(opacity .3s ease-in-out)
+		opacity: 0
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+
+// header
+.header
+	position: relative
+	background: $white url('../img/header-bg.jpg') no-repeat
+	+cover
+	min-height: 650px
+	.header-i
+		position: relative
+		height: 100%
+		padding-top: 35px
+	.header__main
+		float: left
+		margin-right: 58px
+	.logo
+		+hidetext
+		display: block
+		+s(logo)
+		margin-bottom: 35px
+	.language
+		a
+			display: inline-block
+			color: $dblue
+			text-decoration: none
+			text-transform: uppercase
+			margin-left: 25px
+			height: 19px
+			line-height: 1
+			+box
+			+transition(all .2s ease-in-out)
+			&:first-child
+				margin-left: 0
+			&:hover
+				color: $blue
+				border-bottom: 5px solid $blue
+			&:active, &.is-active
+				color: $blue
+				border-bottom: 2px solid $blue
+	.header__nav
+		position: relative
+		z-index: 101
+		overflow: hidden
+	.nav
+		+clr
+		margin-bottom: 20px
+		ul
+			float: left
+			width: 160px
+			margin-left: 40px
+			&:first-child
+				margin-left: 0
+		li
+			text-transform: uppercase
+			border-bottom: 1px solid $grey
+			height: 31px
+			line-height: 31px
+			+box
+			+transition(border .2s ease-in-out)
+			&:hover, &.is-active
+				border-bottom: 3px solid $dblue
+			&:active
+				border-bottom: 3px solid $blue
+			&:first-child
+				border-top: 1px solid $grey
+			a
+				color: $dblue
+				text-decoration: none
+				display: block
+	.header__action
+	.header__account
+		float: left
+	.header__contacts
+		float: left
+		margin-left: 40px
+		width: 170px
+	.header__content
+		margin-top: 90px
+		+clr
+	.header__slogan
+		float: left
+		width: 500px
+		margin-left: 50px
+		text-align: center
+		+box
+		color: $dblue
+		font-size: 12px
+		h2
+			font-size: 32px
+			font-style: normal
+			font-weight: normal
+			&:before
+				position: relative
+				display: block
+				margin: 0 auto .5em
+				+s(drop)
+				content: ""
+		p
+			margin-bottom: 1.5em
+			strong
+				text-transform: uppercase
+	.header__bottle
+		position: absolute
+		bottom: 0
+		left: 74%
+		margin-left: -182px
+		width: 364px
+		z-index: 100
+		img
+			display: block
+	.header__bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		background: $white
+		width: 100%
+		.wrapper
+			height: 95px
+			line-height: 95px
+
+// numbers
+.numbers
+	position: relative
+	background: $white
+	height: 1800px
+	border-top: 2px solid $dblue
+	.numbers-i
+		margin-top: 70px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
