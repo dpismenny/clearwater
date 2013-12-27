@@ -5,7 +5,8 @@ body
 	color: $dblue
 	min-width: 1000px
 	+vp
-
+	&.is-fixed
+		overflow: hidden
 .clr
 	+clr
 
@@ -625,13 +626,63 @@ body
 
 
 
+.nav-trigger
+	opacity: 0
+	position: absolute
+	z-index: 1002
+	color: $dblue
+	right: 40px
+	top: 0px
+	vertical-align: middle
+	text-transform: uppercase
+	font-size: 11px
+	text-decoration: none
+	+transition(all .2s ease)
+	&:hover
+		text-decoration: none
+	&:after
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px
+		content: ""
+		+s(nav)
+	&.is-active
+		opacity: 1
+		top: 35px
 
 
+.main-navigation
+	width: 300px
+	padding: 95px 40px 30px
+	+box
+	background: $white
+	position: fixed
+	top: 0
+	right: -300px
+	bottom: 0
+	z-index: 1001
+	text-align: right
+	opacity: 0
+	+transition(all 0.3s ease)
+	&.is-active
+		right: 0
+		opacity: 1
+	.nav
+		margin-bottom: 10px
+		ul
+			float: none
+			width: auto
+		li
+			height: 37px
+			line-height: 37px
 
-
-
-
-
+	.account-btn
+		display: inline-block
+		margin-bottom: 25px
+	.btn
+		margin-bottom: 15px
+	.social
+		margin-top: 25px
 
 
 
