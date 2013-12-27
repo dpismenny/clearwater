@@ -161,13 +161,16 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .footer .footer__row { padding-top: 30px; padding-bottom: 20px; *zoom: 1; }
 .footer .footer__row:after { content: " "; display: table; clear: both; }
 .footer .footer__info { background: white; }
+.footer .footer__info .footer-i { position: relative; *zoom: 1; }
+.footer .footer__info .footer-i:after { content: " "; display: table; clear: both; }
 .footer .footer__main { background: #003671; color: white; }
 .footer .footer__call-us { float: left; margin-right: 105px; }
+@media only screen and (min-width: 1170px) { .footer .footer__call-us { width: 435px; } }
 .footer .footer__call-us p { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; text-transform: uppercase; margin-bottom: 0.5em; }
-.footer .footer__call-us .footer__call-us-phone { font-size: 24px; line-height: 1.4; margin-bottom: 0; }
+.footer .footer__call-us .footer__call-us-phone { display: inline-block; vertical-align: middle; margin-right: 40px; font-size: 24px; line-height: 1.4; }
 .footer .footer__call-us .footer__call-us-phone:before { position: relative; display: inline-block; vertical-align: middle; margin-right: 20px; margin-top: -3px; background: url('../img/icons-s35da229655.png') 0 -383px no-repeat; width: 31px; height: 31px; content: ""; }
-.footer .footer__feedback { float: left; padding-top: 15px; }
-.footer .footer__feedback .btn { padding-left: 39px; padding-right: 39px; }
+.footer .footer__feedback { display: inline-block; vertical-align: middle; padding-left: 39px; padding-right: 39px; }
+@media only screen and (min-width: 1170px) { .footer .footer__feedback { position: absolute; top: 50%; margin-top: -19px; left: 560px; } }
 .footer .footer__quality-control { float: right; }
 .footer .footer__quality-control-title { text-transform: uppercase; font-size: 12px; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
 .footer .footer__quality-control-items li { height: 52px; line-height: 54px; display: inline-block; vertical-align: middle; margin-left: 25px; }

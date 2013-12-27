@@ -479,21 +479,28 @@ body
 		+clr
 	.footer__info
 		background: $white
+		.footer-i
+			position: relative
+			+clr
 	.footer__main
 		background: $dblue
 		color: $white
 	.footer__call-us
 		float: left
 		margin-right: 105px
+		+r(step4)
+			width: 435px
 		p
 			+vp_b
 			font-size: 12px
 			text-transform: uppercase
 			margin-bottom: 0.5em
 		.footer__call-us-phone
+			display: inline-block
+			vertical-align: middle
+			margin-right: 40px
 			font-size: 24px
 			line-height: 1.4
-			margin-bottom: 0
 			&:before
 				position: relative
 				display: inline-block
@@ -503,12 +510,15 @@ body
 				+s(phone)
 				content: ""
 	.footer__feedback
-		float: left
-		padding-top: 15px
-		.btn
-			padding-left: 39px
-			padding-right: 39px
-
+		display: inline-block
+		vertical-align: middle
+		padding-left: 39px
+		padding-right: 39px
+		+r(step4)
+			position: absolute
+			top: 50%
+			margin-top: -19px
+			left: 560px
 	.footer__quality-control
 		float: right
 	.footer__quality-control-title

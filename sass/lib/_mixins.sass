@@ -4,6 +4,7 @@ $breaksmall: 1170px
 $breaklarge: 1365px
 
 $step3: 1300px
+$step4: 1170px
 
 =r($media)
 	@if $media == step3
@@ -13,6 +14,10 @@ $step3: 1300px
 	@if $media == pda
 		// narrower than $width
 		@media only screen and (max-width: $breaksmall)
+			@content
+	@else if $media == step4
+		// wider than $width
+		@media only screen and (min-width: $step4)
 			@content
 	@else if $media == wide
 		// wider than $width
