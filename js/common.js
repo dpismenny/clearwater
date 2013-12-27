@@ -36,15 +36,15 @@ $(document).ready(function() {
 
 	function navbar(){
 		var navtrigger = $('.js-nav-trigger'),
-				menu = $('.main-navigation');
+				sidebar = $('.sidebar');
 
 		navtrigger.click(function (){
-			if (menu.hasClass('is-active')) {
-				menu.removeClass('is-active');
+			if (sidebar.hasClass('is-active')) {
+				sidebar.removeClass('is-active');
 				overlay.removeClass('is-open');
 				$('body').removeClass('is-fixed');
 			} else {
-				menu.addClass('is-active');
+				sidebar.addClass('is-active');
 				overlay.addClass('is-open');
 				$('body').addClass('is-fixed');
 			}
@@ -81,7 +81,7 @@ $(document).ready(function() {
 		$('body').removeClass('is-fixed');
 		$('.popup').removeClass('is-open');
 		$('.popup').slideUp();
-		$('.main-navigation').removeClass('is-active');
+		$('.sidebar').removeClass('is-active');
 	});
 
 });

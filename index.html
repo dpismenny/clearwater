@@ -6,7 +6,9 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<!--[if IE]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/common.js"></script>
 </head>
@@ -26,7 +28,6 @@
 					</div>
 					<!-- end .language -->
 				</div>
-				<!-- end .header__main -->
 				<div class="header__nav">
 					<nav class="nav">
 						<ul>
@@ -41,15 +42,13 @@
 						</ul>
 					</nav>
 					<!-- end .nav -->
-					<a href="#" class="header__action btn btn_block btn_large">Корпоративным клиентам</a>
-					<!-- end .header__action -->
+					<a href="#" class="btn btn-block btn-large">Корпоративным клиентам</a>
 				</div>
-				<!-- end .header__nav -->
 			</div>
 			<!-- end .l-col-left -->
 			<div class="header__info l-col-right">
 				<div class="header__account">
-					<a href="#" class="header__account-title account-btn">Мой кабинет</a>
+					<a href="#" class="btn-account">Мой кабинет</a>
 					<div class="online-order js-popup-order">
 						<div class="online-order__banner">
 							<h3>Заказать онлайн</h3>
@@ -64,7 +63,7 @@
 						<li>рабочие дни <span>08:00 - 21:00</span></li>
 						<li>суббота <span>09:00 - 17:00</span></li>
 					</ul>
-					<a href="#" class="btn btn_dark btn_block js-popup-callback">Заказать звонок</a>
+					<a href="#" class="btn btn-dark btn-block js-popup-callback">Заказать звонок</a>
 				</address>
 				<!-- end .header__contacts -->
 
@@ -74,36 +73,37 @@
 					<input type="tel" class="input" placeholder="Телефон*">
 					<input type="text" class="input" placeholder="Количество бутлей">
 					<textarea class="textarea" placeholder="Комментарий"></textarea>
-					<a href="#" class="btn btn_fill btn_block">Отправить</a>
+					<a href="#" class="btn btn-fill btn-block">Отправить</a>
 				</div>
 				<!-- end .popup -->
 
 				<div class="popup popup_callback">
 					<div class="popup__title">Обратный звонок</div>
 					<input type="tel" class="input" placeholder="Ваш номер">
-					<a href="#" class="btn btn_fill btn_block">Отправить</a>
+					<a href="#" class="btn btn-fill btn-block">Отправить</a>
 				</div>
 				<!-- end .popup -->
+
 			</div>
 			<!-- end .l-col-right -->
 		</div>
 		<!-- end .l -->
 		<div class="header__slogan">
-			<div>Европейское качество. Безупречный сервис</div>
+			<span>Европейское качество. Безупречный сервис</span>
 			<h2>ClearWater<br>Лучшая доставка воды в Киеве</h2>
 		</div>
-		<!-- end .header__slogan -->
+
 		<div class="header__bottle">
 			<img src="img/bottle.png" alt="bottle">
 		</div>
 		<!-- end .header__bottle -->
+
 	</div>
 	<!-- end .header-i -->
+
 	<div class="header__bottom">
 		<div class="wrapper">
-			<div class="header__scroll">
-				<span class="slide-btn js-slide"><i></i>Узнать больше</span>
-			</div>
+			<span class="btn-slide js-slide"><i></i>Узнать больше</span>
 			<!-- end .header__slide-btn -->
 			<ul class="social">
 				<li class="facebook"><a href="#"><span></span>Facebook</a></li>
@@ -112,35 +112,38 @@
 			<!-- end .social -->
 		</div>
 	</div>
-	<!-- end .header__bottom -->
+
 </header>
 <!-- end .header -->
 
 <div class="main">
+	<aside class="sidebar">
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Наша вода</a></li>
+				<li><a href="#">Оборудование</a></li>
+				<li><a href="#">Доставка  и цена</a></li>
+				<li><a href="#">Производство</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Акции</a></li>
+			</ul>
+		</nav>
+		<a href="#" class="btn-account">Мой кабинет</a>
+		<a href="#" class="btn btn-large btn-block">Корпоративным клиентам</a>
+		<a href="#" class="btn btn-large btn-block btn-fill">Заказать онлайн</a>
+		<ul class="social">
+			<li class="facebook"><a href="#"><span></span>Facebook</a></li>
+			<li class="vk"><a href="#"><span></span>VK</a></li>
+		</ul>
+		<!-- end .social -->
+	</aside>
+	<!-- end .sidebar -->
+
 	<div id="numbers" class="numbers">
+
 		<a href="#" class="nav-trigger js-nav-trigger">Меню</a>
 		<!-- end .nav-trigger -->
-		<div class="main-navigation">
-			<nav class="nav">
-				<ul>
-					<li><a href="#">Наша вода</a></li>
-					<li><a href="#">Оборудование</a></li>
-					<li><a href="#">Доставка  и цена</a></li>
-					<li><a href="#">Производство</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Акции</a></li>
-				</ul>
-			</nav>
-			<a href="#" class="account-btn">Мой кабинет</a>
-			<a href="#" class="btn btn_large btn_block">Корпоративным клиентам</a>
-			<a href="#" class="btn btn_large btn_block btn_fill">Заказать онлайн</a>
-			<ul class="social">
-				<li class="facebook"><a href="#"><span></span>Facebook</a></li>
-				<li class="vk"><a href="#"><span></span>VK</a></li>
-			</ul>
-			<!-- end .social -->
-		</div>
-		<!-- end .main-navigation -->
+
 		<div class="numbers-i">
 			<ul class="circles">
 				<li>
@@ -177,24 +180,25 @@
 				</li>
 			</ul>
 			<!-- end .circles -->
+
 			<div class="numbers__note">
 				<p>«Чистая вода» - одна из первых компаний по доставке бутылированной воды в Киеве.</p>
 				<p>«Чистая Вода» -  это часть группы компаний ClearWater, имеющей представительства в 5 странах Европы.</p>
 				<p>Мы работаем для того, чтобы устанавливать в Украине  новые стандарты качества и сервиса.</p>
 			</div>
-			<!-- end .numbers__about -->
+
 		</div>
-		<!-- end .numbers-i -->
 	</div>
 	<!-- end .numbers -->
+
 	<div class="leader">
 		<div class="leader-i">
 			<h2 class="leader__title">Нам потребовалось 15 лет, чтобы создать лучшую<br> компанию по доставке воды.</h2>
 			<p>Мы добились лидерства в 5 направлениях</p>
 		</div>
-		<!-- end .leader-i -->
 	</div>
 	<!-- end .leader -->
+
 </div>
 <!-- end .main -->
 
@@ -205,10 +209,13 @@
 				<p>У вас возникли вопросы по качеству продукта или сервиса?</p>
 				<p>Позвоните нам:</p>
 				<span class="footer__call-us-phone">044 391 30 30</span>
-				<a href="#" class="footer__feedback btn btn_large">Написать запрос отделу контроля качества</a>
+
+				<a href="#" class="footer__feedback btn btn-large">Написать запрос отделу контроля качества</a>
 				<!-- end .footer__feedback -->
+
 			</div>
 			<!-- end .footer__call-us -->
+
 			<div class="footer__quality-control">
 				<h2 class="footer__quality-control-title">Контроль качества</h2>
 				<ul class="footer__quality-control-items">
@@ -221,6 +228,7 @@
 		</div>
 	</div>
 	<!-- end .footer__info -->
+
 	<div class="footer__main footer__row">
 		<div class="footer-i">
 			<div class="footer__copyright">
@@ -229,6 +237,7 @@
 				<p><a href="mailto:director@cw.com.ua">director@cw.com.ua</a></p>
 			</div>
 			<!-- end .footer__copyright -->
+
 			<div class="footer__other">
 				<nav class="footer__page-links">
 					<ul>
@@ -241,21 +250,25 @@
 					</ul>
 				</nav>
 				<!-- end .footer__page-links -->
+
 				<ul class="footer__social social">
 					<li class="facebook"><a href="#">Facebook</a></li>
 					<li class="vk"><a href="#">VK</a></li>
 				</ul>
 				<!-- end .footer__social -->
+
 				<div class="clr"></div>
 				<ul class="footer__like">
 					<li><img src="img/like.png" alt=""></li>
 				</ul>
 				<!-- end .footer__like -->
+
 				<div class="vintage">
 					Сайт разработан студией
 					<a href="#" class="vintage__ico">Vintage</a>
 				</div>
 				<!-- end .vintage -->
+
 			</div>
 			<!-- end .footer__other -->
 		</div>
