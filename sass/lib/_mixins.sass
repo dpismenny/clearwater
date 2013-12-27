@@ -1,9 +1,15 @@
 // responsive example, edit or remove
-$breaksmall: 500px
+$breaksmall: 1170px
 
 $breaklarge: 1365px
 
+$step3: 1300px
+
 =r($media)
+	@if $media == step3
+		// narrower than $width
+		@media only screen and (max-width: $step3)
+			@content
 	@if $media == pda
 		// narrower than $width
 		@media only screen and (max-width: $breaksmall)
@@ -51,8 +57,8 @@ $breaklarge: 1365px
 =font($alias, $name)
 	@font-face
 		font-family: $alias
-		src: url("fonts/" + $name + ".eot")
-		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
+		src: url("../fonts/" + $name + ".eot")
+		src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype")
 		font-weight: normal
 		font-style: normal
 

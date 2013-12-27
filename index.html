@@ -12,93 +12,252 @@
 </head>
 <body>
 
-<div class="out">
-	<header class="header">
-		<div class="header-i">
-			<div class="l">
-				<div class="l-left">
-					<div class="header__main">
-						<a href="#" class="logo">ClearWater</a>
-						<!-- end .logo -->
-						<div class="language">
-							<a href="#" class="is-active">Рус</a>
-							<a href="#">Укр</a>
-							<a href="#">Eng</a>
+<header class="header">
+	<div class="header-i">
+		<div class="header__row layout">
+			<div class="l-col-left">
+				<div class="header__main">
+					<a href="#" class="logo">ClearWater</a>
+					<!-- end .logo -->
+					<div class="language">
+						<a href="#" class="is-active">Рус</a>
+						<a href="#">Укр</a>
+						<a href="#">Eng</a>
+					</div>
+					<!-- end .language -->
+				</div>
+				<!-- end .header__main -->
+				<div class="header__nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Наша вода</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Доставка  и цена</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Производство</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+					</nav>
+					<!-- end .nav -->
+					<a href="#" class="header__action btn btn_block btn_large">Корпоративным клиентам</a>
+					<!-- end .header__action -->
+				</div>
+				<!-- end .header__nav -->
+			</div>
+			<!-- end .l-col-left -->
+			<div class="header__info l-col-right">
+				<div class="header__account">
+					<a href="#" class="header__account-title account-btn">Мой кабинет</a>
+					<div class="online-order js-popup-order">
+						<div class="online-order__banner">
+							<h3>Заказать онлайн</h3>
+							<p>круглосуточно</p>
 						</div>
-						<!-- end .language -->
 					</div>
-					<!-- end .header__main -->
-					<div class="header__nav">
-						<nav class="nav">
-							<ul>
-								<li><a href="#">Наша вода</a></li>
-								<li><a href="#">Оборудование</a></li>
-								<li><a href="#">Доставка  и цена</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">Производство</a></li>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Акции</a></li>
-							</ul>
-						</nav>
-						<!-- end .nav -->
-						<a href="#" class="header__action btn btn_block">Корпоративным клиентам</a>
-						<!-- end .header__action -->
-					</div>
-					<!-- end .header__nav -->
 				</div>
-				<!-- end .l-left -->
-				<div class="l-right">
-					<div class="header__account">Мой кабинет</div>
-					<!-- end .header__account -->
-					<div class="header__contacts">Контакты</div>
-				</div>
-				<!-- end .l-right -->
-			</div>
-			<!-- end .l -->
-			<div class="header__content">
-				<div class="header__slogan">
-					<p><strong>Европейское качество. Безупречный сервис</strong></p>
-					<h2>ClearWater<br>Лучшая доставка воды в Киеве</h2>
-				</div>
-				<!-- end .header__slogan -->
-				<div class="header__bottle">
-					<img src="img/bottle.png" alt="bottle">
-				</div>
-				<!-- end .header__bottle -->
-			</div>
-			<!-- end .header__content -->
-		</div>
-		<!-- end .header-i -->
-		<div class="header__bottom">
-			<div class="wrapper l">
-				<div class="l-left">
-					<a href="#" class="slide-btn js-slide"><i></i>Узнать больше</a>
-					<!-- end .slide-btn -->
-				</div>
-				<!-- end .l-left -->
-				<div class="l-right">
-					<ul class="social">
-						<li class="facebook"><a href="#"><span></span>Facebook</a></li>
-						<li class="vk"><a href="#"><span></span>VK</a></li>
+				<!-- end .header__account -->
+				<address class="header__contacts">
+					<span>044 391 3030</span>
+					<ul class="header__active-days">
+						<li>рабочие дни <span>08:00 - 21:00</span></li>
+						<li>суббота <span>09:00 - 17:00</span></li>
 					</ul>
-					<!-- end .social -->
+					<a href="#" class="btn btn_dark btn_block js-popup-callback">Заказать звонок</a>
+				</address>
+				<!-- end .header__contacts -->
+
+				<div class="popup popup_order">
+					<div class="popup__title">Заказать онлайн</div>
+					<input type="text" class="input" placeholder="Имя">
+					<input type="tel" class="input" placeholder="Телефон*">
+					<input type="text" class="input" placeholder="Количество бутлей">
+					<textarea class="textarea" placeholder="Комментарий"></textarea>
+					<a href="#" class="btn btn_fill btn_block">Отправить</a>
 				</div>
-			<!-- end .l-right -->
+				<!-- end .popup -->
+
+				<div class="popup popup_callback">
+					<div class="popup__title">Обратный звонок</div>
+					<input type="tel" class="input" placeholder="Ваш номер">
+					<a href="#" class="btn btn_fill btn_block">Отправить</a>
+				</div>
+				<!-- end .popup -->
 			</div>
+			<!-- end .l-col-right -->
 		</div>
-		<!-- end .header__bottom -->
-	</header>
-	<!-- end .header -->
+		<!-- end .l -->
+		<div class="header__slogan">
+			<div>Европейское качество. Безупречный сервис</div>
+			<h2>ClearWater<br>Лучшая доставка воды в Киеве</h2>
+		</div>
+		<!-- end .header__slogan -->
+		<div class="header__bottle">
+			<img src="img/bottle.png" alt="bottle">
+		</div>
+		<!-- end .header__bottle -->
+	</div>
+	<!-- end .header-i -->
+	<div class="header__bottom">
+		<div class="wrapper">
+			<div class="header__scroll">
+				<span class="slide-btn js-slide"><i></i>Узнать больше</span>
+			</div>
+			<!-- end .header__slide-btn -->
+			<ul class="social">
+				<li class="facebook"><a href="#"><span></span>Facebook</a></li>
+				<li class="vk"><a href="#"><span></span>VK</a></li>
+			</ul>
+			<!-- end .social -->
+		</div>
+	</div>
+	<!-- end .header__bottom -->
+</header>
+<!-- end .header -->
+
+<div class="main">
 	<div id="numbers" class="numbers">
 		<div class="numbers-i">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, animi, sequi neque id quas ducimus ipsa officia dolor soluta. Quibusdam, vel provident ratione esse at rerum inventore impedit beatae laboriosam.
+			<ul class="circles">
+				<li>
+					<div class="circles__figure">
+						<div class="circles__figure-i">
+							<h2>15 <span>лет</span></h2>
+							<p>доставляем качественную<br> и вкусную воду</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="circles__figure">
+						<div class="circles__figure-i">
+							<h2>100 000 <span>киевлян</span></h2>
+							<p>пьют ClearWater<br> каждый день</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="circles__figure">
+						<div class="circles__figure-i">
+							<h2>14 000 <span>компаний</span></h2>
+							<p>оценили наш<br> безупречный сервис</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="circles__figure">
+						<div class="circles__figure-i">
+							<h2>2 200 <span>бутылей в час</span></h2>
+							<p>мощность нашей<br> производственной линии</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- end .circles -->
+			<div class="numbers__note">
+				<p>«Чистая вода» - одна из первых компаний по доставке бутылированной воды в Киеве.</p>
+				<p>«Чистая Вода» -  это часть группы компаний ClearWater, имеющей представительства в 5 странах Европы.</p>
+				<p>Мы работаем для того, чтобы устанавливать в Украине  новые стандарты качества и сервиса.</p>
+			</div>
+			<!-- end .numbers__about -->
 		</div>
 		<!-- end .numbers-i -->
 	</div>
 	<!-- end .numbers -->
+	<div class="leader">
+		<div class="leader-i">
+			<h2 class="leader__title">Нам потребовалось 15 лет, чтобы создать лучшую<br> компанию по доставке воды.</h2>
+			<p>Мы добились лидерства в 5 направлениях</p>
+		</div>
+		<!-- end .leader-i -->
+	</div>
+	<!-- end .leader -->
 </div>
-<!-- end .out -->
+<!-- end .main -->
+
+<footer class="footer">
+	<div class="footer__info footer__row">
+		<div class="footer-i">
+			<div class="footer__call-us">
+				<p>У вас возникли вопросы по качеству продукта или сервиса?</p>
+				<p>Позвоните нам:</p>
+				<p class="footer__call-us-phone">044 391 30 30</p>
+			</div>
+			<!-- end .footer__call-us -->
+			<div class="footer__feedback">
+				<a href="#" class="btn btn_large">Написать запрос отделу контроля качества</a>
+			</div>
+			<!-- end .footer__feedback -->
+			<div class="footer__quality-control">
+				<h2 class="footer__quality-control-title">Контроль качества</h2>
+				<ul class="footer__quality-control-items">
+					<li class="iso"><a href="#">International Organization for Standardization</a></li>
+					<li class="we"><a href="#">Watercoolers Europe</a></li>
+					<li class="uabw"><a href="#">Ассоциация Бутылированые Воды Украины</a></li>
+				</ul>
+			</div>
+			<!-- end .footer__quality-control -->
+		</div>
+	</div>
+	<!-- end .footer__info -->
+	<div class="footer__main footer__row">
+		<div class="footer-i">
+			<div class="footer__copyright">
+				<p class="footer__copy">© ClearWater Ltb. Все права защищены.</p>
+				<p>Если вы по какой-либо причине не полностью удовлетворены работой компании "Чистая Вода", наш директор хотел бы знать об этом!</p>
+				<p><a href="mailto:director@cw.com.ua">director@cw.com.ua</a></p>
+			</div>
+			<!-- end .footer__copyright -->
+			<div class="footer__other">
+				<nav class="footer__page-links">
+					<ul>
+						<li><a href="#">Наша вода</a></li>
+						<li><a href="#">Оборудование</a></li>
+						<li><a href="#">Доставка и цена</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Акции</a></li>
+					</ul>
+				</nav>
+				<!-- end .footer__page-links -->
+				<ul class="footer__social social">
+					<li class="facebook"><a href="#">Facebook</a></li>
+					<li class="vk"><a href="#">VK</a></li>
+				</ul>
+				<!-- end .footer__social -->
+				<div class="clr"></div>
+				<ul class="footer__like">
+					<li><img src="img/like.png" alt=""></li>
+				</ul>
+				<!-- end .footer__like -->
+				<div class="vintage">
+					Сайт разработан студией
+					<a href="#" class="vintage__ico">Vintage</a>
+				</div>
+				<!-- end .vintage -->
+			</div>
+			<!-- end .footer__other -->
+		</div>
+	</div>
+	<!-- end .footer__main -->
+</footer>
+<!-- end .footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="overlay"></div>
+<!-- end .overlay -->
 
 </body>
 </html>
