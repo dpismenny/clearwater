@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+	// $('#nav').localScroll(800);
+
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('section.about').parallax("50%", 0.1);
+	$('section.production').parallax("50%", 0.1);
+	$('section.service').parallax("50%", 0.1);
+	$('section.delivery').parallax("50%", 0.1);
+	// $('.bg').parallax("50%", 0.4);
+	$('section.quality').parallax("50%", 0.1);
+
+
 	var overlay = $('.overlay');
 
 	// .header height
@@ -35,10 +49,10 @@ $(document).ready(function() {
 
 
 	function navbar(){
-		var navtrigger = $('.js-nav-trigger'),
+		var btntrigger = $('.js-btn-trigger'),
 				sidebar = $('.sidebar');
 
-		navtrigger.click(function (){
+		btntrigger.click(function (){
 			if (sidebar.hasClass('is-active')) {
 				sidebar.removeClass('is-active');
 				overlay.removeClass('is-open');
@@ -55,23 +69,44 @@ $(document).ready(function() {
 
 
 	function scroll_top() {
-		var top = ($('.main').offset().top);
+		var top = ($('.container').offset().top);
 
-		function navtrigger_show () {
+		function btntrigger_show () {
 			if($(window).scrollTop() >= top){
-				$(".nav-trigger").addClass('is-active');
+				$(".btn-trigger").addClass('is-active');
 			}
 			else {
-				$(".nav-trigger").removeClass('is-active');
+				$(".btn-trigger").removeClass('is-active');
 			}
 		}
-		navtrigger_show();
+		btntrigger_show();
 	}
 	scroll_top();
 
+	function scrollSection() {
+		var el = $('.section');
+		el.each(function(){
+			var top = $(this).offset().top - 300;
+			var wnd_top = $(window).scrollTop();
+
+			if (wnd_top >= top) {
+				$(this).addClass('is-visible');
+			}
+			else{
+				$(this).removeClass('is-visible');
+			}
+		})
+	}
+	scrollSection();
+
+
+
+
 	$(window).scroll(function(){
 		scroll_top();
+		scrollSection();
 	});
+
 
 
 

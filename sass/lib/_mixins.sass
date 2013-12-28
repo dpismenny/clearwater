@@ -1,3 +1,14 @@
+// keyframes mixin
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
 // responsive example, edit or remove
 $breaksmall: 1170px
 

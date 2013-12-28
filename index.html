@@ -7,9 +7,12 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]>
-		<script src="js/html5shiv.js"></script>
+		<script src="js/vendor/html5shiv.js"></script>
 	<![endif]-->
-	<script src="js/jquery.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery.parallax-1.1.3.js"></script>
+	<script src="js/vendor/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -116,7 +119,7 @@
 </header>
 <!-- end .header -->
 
-<div class="main">
+<div class="container">
 	<aside class="sidebar">
 		<nav class="nav">
 			<ul>
@@ -141,10 +144,11 @@
 
 	<div id="numbers" class="numbers">
 
-		<a href="#" class="nav-trigger js-nav-trigger">Меню</a>
+		<span class="btn-trigger js-btn-trigger">Меню</span>
 		<!-- end .nav-trigger -->
 
 		<div class="numbers-i">
+
 			<ul class="circles">
 				<li>
 					<div class="circles__figure">
@@ -199,8 +203,64 @@
 	</div>
 	<!-- end .leader -->
 
+	<section class="section about">
+		<div class="section__holder">
+			<div class="section__content">
+				<h2 class="section__title">Вода ClearWater</h2>
+				<h3 class="section__sub">Скважина в экологически чистом районе. Уникальная технология очистки.<br> Три вида воды. Международные стандарты качества.</h3>
+				<p class="section__text">Завод расположен в местности, выше которой на сотни километров по направлению движения подземных вод нет никаких загрязняющих почву предприятий.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end .about -->
+
+	<section class="section production">
+		<div class="section__holder">
+			<div class="section__content">
+				<h2 class="section__title">Производство</h2>
+				<h3 class="section__sub">Самый большой и современный завод в Европе. Полностью автоматизированная линия. Компания полного цикла – работаем без посредников.</h3>
+				<p class="section__text">«Чистая Вода» - единственная компания, которая приглашает всех желающих на экскурсии по заводу. Мы гордимся своим производством и с радостью проведем экскурсию для вас!</p>
+				<a href="#" class="btn btn-large btn-brick btn-white">Узнать больше про экскурсию</a>
+			</div>
+		</div>
+	</section>
+	<!-- end .production -->
+
+	<section class="section service">
+		<div class="section__holder">
+			<div class="section__content">
+				<h2 class="section__title">Безупречный сервис</h2>
+				<h3 class="section__sub">Быстрое решение проблем. Ремонтная бригада оперативного  реагирования. Продажа, аренда, чистка, ремонт оборудования. Доставка дополнительных товаров. Знаем предпочтения каждого клиента. Улыбка – в подарок!</h3>
+				<p class="section__text">Все для того, чтобы вы были довольны. Мы доставляем не только воду, но и хорошее настроение.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end .service -->
+
+	<section class="section delivery">
+		<div class="section__holder">
+			<div class="section__content">
+				<h2 class="section__title">Удобная доставка</h2>
+				<h3 class="section__sub">Разнообразные интервалы доставки.<br> 97% доставок выполняются вовремя (статистика за 2013 год). Возможность срочной доставки в тот же день. Собственный автопарк из 60 автомобилей. GPS датчик в каждой машине.</h3>
+				<p class="section__text">Мы - эксперты в вопросе доставки. Знаем каждую улицу, переулок и дом в<br> Киеве. Поднимем ваш заказ на любой этаж, даже если в доме не работает лифт.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end .delivery -->
+
+	<section class="section quality">
+		<div class="section__holder">
+			<div class="section__content">
+				<h2 class="section__title">Контроль качества</h2>
+				<h3 class="section__sub">Замеры показателей продукта каждые 2 часа. Система контроля<br> качества ISO 9001:2009 . Защитная пленка на бутыли.</h3>
+				<p class="section__text">Компания «Чистая Вода» имеет собственную аккредитованную лабораторию, оснащенную по самым последним стандартам.  Можем делать анализы любой воды по просьбе клиента.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end .quality -->
+
 </div>
-<!-- end .main -->
+<!-- end .container -->
 
 <footer class="footer">
 	<div class="footer__info footer__row">

@@ -44,6 +44,14 @@ body
 		&:hover
 			background: $dblue
 			color: $white
+	&.btn-white
+		border-color: $white
+		color: $white
+		&:hover
+			background: $white
+			color: $dblue
+	&.btn-brick
+		width: 360px
 .btn-slide
 	padding: 19px 0 20px 70px
 	text-transform: uppercase
@@ -426,7 +434,12 @@ body
 		+box
 		+box-shadow(0 0 0 15px $white, 0 0 0 16px $grey)
 		border: 1px solid $grey
-		+r(pda)
+		// border-left: 1px solid transparent
+		// border-right: 1px solid transparent
+		// border-bottom: 1px solid transparent
+		// animation: circle-rot 2s linear infinite
+		// -webkit-animation: circle-rot 2s linear infinite
+		+r(step3)
 			width: 170px
 			height: 170px
 			line-height: 170px
@@ -441,18 +454,18 @@ body
 			font-weight: normal
 			font-style: normal
 			margin-bottom: .5em
-			+r(pda)
+			+r(step3)
 				font-size: 23px
 			span
 				font-size: 26px
 				display: block
-				+r(pda)
+				+r(step3)
 					font-size: 20px
 		p
 			font-size: 14px
 			line-height: 1.5
 			+vp31
-			+r(pda)
+			+r(step3)
 				font-size: 11px
 
 // leader
@@ -624,9 +637,9 @@ body
 		+hidetext
 
 // sidebar
-.nav-trigger
+.btn-trigger
 	opacity: 0
-	position: absolute
+	position: fixed
 	z-index: 1002
 	color: $dblue
 	right: 40px
@@ -635,9 +648,10 @@ body
 	text-transform: uppercase
 	font-size: 11px
 	text-decoration: none
-	+transition(all .2s ease)
+	+transition(all .2s ease-in)
 	&:hover
 		text-decoration: none
+		cursor: pointer
 	&:after
 		display: inline-block
 		vertical-align: middle
@@ -680,12 +694,84 @@ body
 	.social
 		margin-top: 25px
 
-
-
-
-
-
-
+// section
+.section
+	height: 560px
+	line-height: 560px
+	text-align: center
+	color: $dblue
+	.section__holder
+	&.is-visible
+		.section__holder
+			opacity: 1
+			top: 0
+	.section__holder
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin: 0 auto
+		min-width: 585px
+		width: 585px
+		position: relative
+		opacity: 0
+		+transition(all .4s ease)
+		top: -200px
+	.section__content
+		line-height: 1.4
+		.btn
+			margin-top: 3em
+	.section__title
+		+vp_b
+		font-size: 36px
+		text-transform: uppercase
+		margin-bottom: 0.5em
+	.section__sub
+		+vp_b
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 1.5
+		&:after
+			display: block
+			width: 145px
+			height: 2px
+			content: ""
+			margin: 2em auto
+			background: $dblue
+	.section__text
+		+vp31
+		font-size: 14px
+	// about
+	&.about
+		background: url(../img/slide-1.jpg) no-repeat fixed
+		+cover
+	// production
+	&.production
+		background: url(../img/slide-2.jpg) no-repeat fixed
+		+cover
+		color: $white
+		.section__sub
+			&:after
+				background: $white
+	// service
+	&.service
+		background: url(../img/slide-3.jpg) no-repeat fixed
+		+cover
+	// delivery
+	&.delivery
+		background: url(../img/slide-4.jpg) no-repeat fixed
+		+cover
+		color: $white
+		.section__sub
+			&:after
+				background: $white
+		.section__holder
+			min-width: 715px
+			width: 715px
+	// quality
+	&.quality
+		background: url(../img/slide-5.jpg) no-repeat fixed
+		+cover
 
 
 
