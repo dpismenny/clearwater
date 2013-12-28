@@ -6,7 +6,7 @@ $(document).ready(function() {
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('.header').parallax("50%", 0.4);
+	// $('.header').parallax("50%", 0.4);
 	$('section.about').parallax("50%", 0.1);
 	$('section.production').parallax("50%", 0.1);
 	$('section.service').parallax("50%", 0.1);
@@ -15,17 +15,12 @@ $(document).ready(function() {
 	$('section.quality').parallax("50%", 0.1);
 
 
-	// $(".header").bind('mousemove', function(e){
-	// 	$.easing.smoothmove = function (x, t, b, c, d) {
-	// 	return -c *(t/=d)*(t-2) + b;
-	// 	    };
+	$('.header').mousemove(function(e){
+		var moveX = (e.pageX * -1 / 25),
+				moveY = (e.pageY * -1 / 25);
 
-	// 	$(this).animate({
-	// 	  // 'background-position-x': e.pageX,
-	// 	  'background-position-y': e.pageY
-	// 	}, {queue:false,duration:400,easing:'smoothmove'});
-
-	// });
+		$(this).css('background-position', moveX + 'px ' + moveY + 'px');
+	});
 
 
 	var overlay = $('.overlay');
@@ -109,7 +104,7 @@ $(document).ready(function() {
 			else{
 				$(this).removeClass('is-visible');
 			}
-		})
+		});
 	}
 	scrollSection();
 
