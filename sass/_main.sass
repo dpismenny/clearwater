@@ -416,14 +416,35 @@ body
 			font-size: 12px
 			text-transform: uppercase
 			margin-bottom: 0.5em
+
+
+.transitionable
+	+transition(all .8s ease-in-out)
+
 // circles
 .circles
 	font-size: 0
 	margin-bottom: 25px
+	&.is-visible
+		li
+			opacity: 1
+			// top: 0
+		.circles__text
+			// left: 0
+	.trans-0
+	.trans-1
+		+delay(0.1s)
+	.trans-2
+		+delay(0.15s)
+	.trans-3
+		+delay(0.2s)
 	li
+		position: relative
 		display: inline-block
 		width: 25%
 		text-align: center
+		opacity: 0
+		// top: -100px
 	.circles__figure
 		display: inline-block
 		width: 225px
@@ -445,10 +466,12 @@ body
 			line-height: 170px
 			+box-shadow(0 0 0 12px $white, 0 0 0 13px $grey)
 			margin: 12px
-	.circles__figure-i
+	.circles__text
+		// position: relative
 		display: inline-block
 		vertical-align: middle
 		line-height: 1
+		// +transition(all .4s ease-in)
 		h2
 			font-size: 30px
 			font-weight: normal
@@ -742,11 +765,11 @@ body
 		font-size: 14px
 	// about
 	&.about
-		background: url(../img/slide-1.jpg) no-repeat fixed
+		background: $white url(../img/slide-1.jpg) no-repeat fixed
 		+cover
 	// production
 	&.production
-		background: url(../img/slide-2.jpg) no-repeat fixed
+		background: $dblue url(../img/slide-2.jpg) no-repeat fixed
 		+cover
 		color: $white
 		.section__sub
@@ -754,11 +777,11 @@ body
 				background: $white
 	// service
 	&.service
-		background: url(../img/slide-3.jpg) no-repeat fixed
+		background: $white url(../img/slide-3.jpg) no-repeat fixed
 		+cover
 	// delivery
 	&.delivery
-		background: url(../img/slide-4.jpg) no-repeat fixed
+		background: $dblue url(../img/slide-4.jpg) no-repeat fixed
 		+cover
 		color: $white
 		.section__sub
@@ -769,7 +792,7 @@ body
 			width: 715px
 	// quality
 	&.quality
-		background: url(../img/slide-5.jpg) no-repeat fixed
+		background: $white url(../img/slide-5.jpg) no-repeat fixed
 		+cover
 
 

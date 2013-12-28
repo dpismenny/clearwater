@@ -145,17 +145,23 @@ body.is-fixed { overflow: hidden; }
 .numbers .numbers__note:before { position: relative; display: block; margin-left: auto; margin-right: auto; margin-bottom: 25px; content: ""; background: url('../img/icons-sca995d0640.png') 0 -312px no-repeat; width: 58px; height: 30px; }
 .numbers .numbers__note p { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; text-transform: uppercase; margin-bottom: 0.5em; }
 
+.transitionable { -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out; -o-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; }
+
 .circles { font-size: 0; margin-bottom: 25px; }
-.circles li { display: inline-block; width: 25%; text-align: center; }
+.circles.is-visible li { opacity: 1; }
+.circles .trans-1 { -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; -webkit-transition-delay: 0.1s; -ms-transition-delay: 0.1s; transition-delay: 0.1s; }
+.circles .trans-2 { -moz-transition-delay: 0.15s; -o-transition-delay: 0.15s; -webkit-transition-delay: 0.15s; -ms-transition-delay: 0.15s; transition-delay: 0.15s; }
+.circles .trans-3 { -moz-transition-delay: 0.2s; -o-transition-delay: 0.2s; -webkit-transition-delay: 0.2s; -ms-transition-delay: 0.2s; transition-delay: 0.2s; }
+.circles li { position: relative; display: inline-block; width: 25%; text-align: center; opacity: 0; }
 .circles .circles__figure { display: inline-block; width: 225px; height: 225px; line-height: 225px; margin: 15px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; -moz-box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; border: 1px solid #bed2df; }
 @media only screen and (max-width: 1300px) { .circles .circles__figure { width: 170px; height: 170px; line-height: 170px; -webkit-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; -moz-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; margin: 12px; } }
-.circles .circles__figure-i { display: inline-block; vertical-align: middle; line-height: 1; }
-.circles .circles__figure-i h2 { font-size: 30px; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
-@media only screen and (max-width: 1300px) { .circles .circles__figure-i h2 { font-size: 23px; } }
-.circles .circles__figure-i h2 span { font-size: 26px; display: block; }
-@media only screen and (max-width: 1300px) { .circles .circles__figure-i h2 span { font-size: 20px; } }
-.circles .circles__figure-i p { font-size: 14px; line-height: 1.5; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
-@media only screen and (max-width: 1300px) { .circles .circles__figure-i p { font-size: 11px; } }
+.circles .circles__text { display: inline-block; vertical-align: middle; line-height: 1; }
+.circles .circles__text h2 { font-size: 30px; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
+@media only screen and (max-width: 1300px) { .circles .circles__text h2 { font-size: 23px; } }
+.circles .circles__text h2 span { font-size: 26px; display: block; }
+@media only screen and (max-width: 1300px) { .circles .circles__text h2 span { font-size: 20px; } }
+.circles .circles__text p { font-size: 14px; line-height: 1.5; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
+@media only screen and (max-width: 1300px) { .circles .circles__text p { font-size: 11px; } }
 
 .leader { color: white; text-align: center; background: #003671; }
 .leader p { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
@@ -229,11 +235,11 @@ body.is-fixed { overflow: hidden; }
 .section .section__sub { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; text-transform: uppercase; line-height: 1.5; }
 .section .section__sub:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em auto; background: #003671; }
 .section .section__text { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 14px; }
-.section.about { background: url(../img/slide-1.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.section.production { background: url(../img/slide-2.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
+.section.about { background: white url(../img/slide-1.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.production { background: #003671 url(../img/slide-2.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
 .section.production .section__sub:after { background: white; }
-.section.service { background: url(../img/slide-3.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.section.delivery { background: url(../img/slide-4.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
+.section.service { background: white url(../img/slide-3.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.delivery { background: #003671 url(../img/slide-4.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
 .section.delivery .section__sub:after { background: white; }
 .section.delivery .section__holder { min-width: 715px; width: 715px; }
-.section.quality { background: url(../img/slide-5.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.quality { background: white url(../img/slide-5.jpg) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }

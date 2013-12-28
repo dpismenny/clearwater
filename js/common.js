@@ -92,6 +92,18 @@ $(document).ready(function() {
 	}
 	scroll_top();
 
+	function circles() {
+		var top = ($('.circles').offset().top - 300);
+
+		if($(window).scrollTop() >= top){
+			$('.circles').addClass('is-visible');
+		}
+		else {
+			$('.circles').removeClass('is-visible');
+		}
+	}
+	circles();
+
 	function scrollSection() {
 		var el = $('.section');
 		el.each(function(){
@@ -114,6 +126,7 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		scroll_top();
 		scrollSection();
+		circles();
 	});
 
 
