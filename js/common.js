@@ -6,12 +6,26 @@ $(document).ready(function() {
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	// $('.header').parallax("50%", 0.4);
 	$('section.about').parallax("50%", 0.1);
 	$('section.production').parallax("50%", 0.1);
 	$('section.service').parallax("50%", 0.1);
 	$('section.delivery').parallax("50%", 0.1);
 	// $('.bg').parallax("50%", 0.4);
 	$('section.quality').parallax("50%", 0.1);
+
+
+	// $(".header").bind('mousemove', function(e){
+	// 	$.easing.smoothmove = function (x, t, b, c, d) {
+	// 	return -c *(t/=d)*(t-2) + b;
+	// 	    };
+
+	// 	$(this).animate({
+	// 	  // 'background-position-x': e.pageX,
+	// 	  'background-position-y': e.pageY
+	// 	}, {queue:false,duration:400,easing:'smoothmove'});
+
+	// });
 
 
 	var overlay = $('.overlay');

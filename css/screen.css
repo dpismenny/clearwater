@@ -115,7 +115,7 @@ body.is-fixed { overflow: hidden; }
 .popup .popup__title { font-size: 14px; text-align: center; text-transform: uppercase; color: #00abe4; margin-bottom: 1em; line-height: 1; }
 .popup .input, .popup .textarea { display: block; width: 100%; margin-bottom: 14px; }
 
-.header { position: relative; background: white url("../img/header-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; min-height: 655px; }
+.header { position: relative; background: white url("../img/header-bg.jpg") no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; min-height: 655px; }
 .header .header-i { position: relative; height: 100%; padding-top: 35px; *zoom: 1; }
 .header .header-i:after { content: " "; display: table; clear: both; }
 .header .header__row { margin-bottom: 90px; }
