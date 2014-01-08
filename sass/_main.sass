@@ -7,6 +7,12 @@ body
 	+vp
 	&.is-fixed
 		overflow: hidden
+	&.is-loaded
+		.loader
+			opacity: 0
+			z-index: -1
+		.out
+			opacity: 1
 .clr
 	+clr
 
@@ -116,6 +122,7 @@ body
 .header__bottom-i,
 .numbers-i,
 .leader-i,
+.logos-i,
 .footer-i,
 .wrapper
 	+wrap
@@ -254,6 +261,10 @@ body
 	height: 70px
 	padding-top: 15px
 
+// out
+.out
+	opacity: 0
+	+transition(opacity .5s ease-in-out)
 // popup
 .overlay
 	position: fixed
@@ -418,32 +429,19 @@ body
 			margin-bottom: 0.5em
 
 
-.transitionable
-	+transition(all .8s ease-in-out)
+// .transitionable
+// 	+transition(all .8s ease-in-out)
 
 // circles
 .circles
 	font-size: 0
 	margin-bottom: 25px
-	&.is-visible
-		li
-			opacity: 1
-			// top: 0
-		.circles__text
-			// left: 0
-	.trans-0
-	.trans-1
-		+delay(0.1s)
-	.trans-2
-		+delay(0.15s)
-	.trans-3
-		+delay(0.2s)
 	li
 		position: relative
 		display: inline-block
 		width: 25%
 		text-align: center
-		opacity: 0
+		opacity: 1
 		// top: -100px
 	.circles__figure
 		display: inline-block
@@ -624,20 +622,33 @@ body
 			margin-left: 35px
 			&:first-child
 				margin-left: 0
+			&:hover
+				border-bottom: 3px solid #fff
 		a
+			line-height: 1.5
 			color: $white
 			text-decoration: none
 			&:hover
-				text-decoration: underline
+				text-decoration: none
 	.footer__social
 		margin-left: 35px
 		margin-bottom: 25px
+		a
+			span
+				opacity: 0
+			&:hover
+				span
+					opacity: 1
 		.vk
 			a
 				+s(vk-w)
+				span
+					+s(vk-w-h)
 		.facebook
 			a
 				+s(fb-w)
+				span
+					+s(fb-w-h)
 	.footer__like
 		float: left
 		+r(step3)
@@ -652,13 +663,26 @@ body
 	font-size: 12px
 	margin-left: 10px
 	+vp31
+	&:hover
+		.vintage__ico
+			span
+				opacity: 1
 	.vintage__ico
+		position: relative
 		+s(vintage)
 		display: inline-block
 		vertical-align: top
 		margin-left: 15px
 		+hidetext
-
+		span
+			+transition(opacity .3s ease-in-out)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			+s(vintage-h)
 // sidebar
 .btn-trigger
 	opacity: 0
@@ -672,6 +696,7 @@ body
 	font-size: 11px
 	text-decoration: none
 	+transition(all .2s ease-in)
+	+hidetext
 	&:hover
 		text-decoration: none
 		cursor: pointer
@@ -680,7 +705,7 @@ body
 		vertical-align: middle
 		margin-left: 15px
 		content: ""
-		+s(nav)
+		+s(nav-m)
 	&.is-active
 		opacity: 1
 		top: 35px
@@ -719,14 +744,39 @@ body
 
 // section
 .section
+	position: relative
 	height: 560px
-	line-height: 560px
 	text-align: center
 	color: $dblue
+	&:before
+		position: absolute
+		top: -8px
+		left: 0
+		width: 100%
+		height: 16px
+		content: ""
+		background: url(../img/bg-zig.png) repeat-x 0 50%
+	.section-i
+		line-height: 560px
 	&.is-visible
-		.section__holder
-			opacity: 1
-			top: 0
+		// .section__holder
+		// 	opacity: 1
+		// 	top: 0
+	.section__number
+		position: absolute
+		top: -27px
+		left: 50%
+		margin-left: -27px
+		content: ""
+		display: block
+		width: 54px
+		height: 54px
+		line-height: 54px
+		color: $dblue
+		background: $white
+		+border-radius(50%)
+		font-size: 13px
+		+vp_b
 	.section__holder
 		position: relative
 		display: inline-block
@@ -736,9 +786,10 @@ body
 		min-width: 585px
 		width: 585px
 		position: relative
-		opacity: 0
 		+transition(all .4s ease)
-		top: -200px
+		// top: -200px
+		opacity: 1
+		top: 0
 	.section__content
 		line-height: 1.4
 		.btn
@@ -763,24 +814,27 @@ body
 	.section__text
 		+vp31
 		font-size: 14px
-	// about
-	&.about
+	// #1
+	&#first
+		border-top: 2px solid #fff
 		background: $white url(../img/slide-1.jpg) no-repeat fixed
 		+cover
-	// production
-	&.production
+		&:before
+			content: none
+	// #2
+	&#second
 		background: $dblue url(../img/slide-2.jpg) no-repeat fixed
 		+cover
 		color: $white
 		.section__sub
 			&:after
 				background: $white
-	// service
-	&.service
+	// #3
+	&#third
 		background: $white url(../img/slide-3.jpg) no-repeat fixed
 		+cover
-	// delivery
-	&.delivery
+	// #4
+	&#fourth
 		background: $dblue url(../img/slide-4.jpg) no-repeat fixed
 		+cover
 		color: $white
@@ -790,10 +844,123 @@ body
 		.section__holder
 			min-width: 715px
 			width: 715px
-	// quality
-	&.quality
+	// #5
+	&#fifth
 		background: $white url(../img/slide-5.jpg) no-repeat fixed
 		+cover
+
+// logos
+.clients
+	padding-top: 55px
+	.clients__title
+		text-transform: uppercase
+		text-align: center
+		font-size: 12px
+		+vp_b
+		margin-bottom: 25px
+		&:before
+			position: relative
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
+			+s(cw-sm)
+			content: ""
+	.clients__items
+		border-top: 1px solid #e2e2e2
+		+clr
+		& > li
+			float: left
+			border-left: 1px solid #e2e2e2
+			// background: red
+			text-align: center
+			width: 16.6%
+			height: 110px
+			line-height: 110px
+			&:first-child
+				border-left: none
+			img
+				display: inline-block
+				vertical-align: middle
+				max-width: 100%
+				line-height: 1
+
+
+
+// video
+.video
+	height: 640px
+	background: $dblue url(../img/video.jpg) no-repeat
+	+cover
+	color: $white
+	.video__content
+		padding-top: 165px
+		text-align: center
+		width: 585px
+		margin-left: auto
+		margin-right: auto
+	.video__title
+		+vp_b
+		font-size: 36px
+		text-transform: uppercase
+		margin-bottom: 0.5em
+	.video__sub
+		+vp_b
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 1.5
+		margin-bottom: 30px
+	.video__play-btn
+		position: relative
+		cursor: pointer
+		width: 112px
+		height: 112px
+		line-height: 112px
+		+border-radius(50%)
+		+box
+		margin-left: auto
+		margin-right: auto
+		border: 2px solid #fff
+		+transition(all .2s ease)
+		&:hover
+			background: #fff
+			span
+				border-width: 17px 0 17px 22px
+				border-color: transparent transparent transparent $dblue
+		span
+			// +transition(all .2s ease)
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			margin-top: -11px
+			margin-left: 7px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 21px 0 21px 28px
+			border-color: transparent transparent transparent $white
+
+
+
+
+
+.loader
+	background: #fff url('../img/loader.gif') no-repeat center center
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	opacity: 1
+	z-index: 2000
+	// +transition(all .5s ease)
+
+
+
+
+
+
+
 
 
 

@@ -1,26 +1,26 @@
 $(document).ready(function() {
 
-	// $('#nav').localScroll(800);
+	// $('#local').localScroll(800);
 
 	//.parallax(xPosition, speedFactor, outerHeight) options:
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	// $('.header').parallax("50%", 0.4);
-	$('section.about').parallax("50%", 0.1);
-	$('section.production').parallax("50%", 0.1);
-	$('section.service').parallax("50%", 0.1);
-	$('section.delivery').parallax("50%", 0.1);
-	// $('.bg').parallax("50%", 0.4);
-	$('section.quality').parallax("50%", 0.1);
+
+	// $('section.about').parallax("50%", 0.3);
+	// $('section.production').parallax("50%", 0.3);
+	// $('section.service').parallax("50%", 0.3);
+	// $('section.delivery').parallax("50%", 0.3);
+	// $('section.quality').parallax("50%", 0.3);
 
 
-	$('.header').mousemove(function(e){
-		var moveX = (e.pageX * -1 / 25),
-				moveY = (e.pageY * -1 / 25);
+	// $('.header').mousemove(function(e){
+	// 	var moveX = (e.pageX * -1 / 25),
+	// 			moveY = (e.pageY * -1 / 25);
 
-		$(this).css('background-position', moveX + 'px ' + moveY + 'px');
-	});
+	// 	$(this).css('background-position', moveX + 'px ' + moveY + 'px');
+	// });
 
 
 	var overlay = $('.overlay');
@@ -71,7 +71,6 @@ $(document).ready(function() {
 				overlay.addClass('is-open');
 				$('body').addClass('is-fixed');
 			}
-			return false;
 		});
 	}
 	navbar();
@@ -92,41 +91,41 @@ $(document).ready(function() {
 	}
 	scroll_top();
 
-	function circles() {
-		var top = ($('.circles').offset().top - 300);
+	// function circles() {
+	// 	var top = ($('.circles').offset().top - 300);
 
-		if($(window).scrollTop() >= top){
-			$('.circles').addClass('is-visible');
-		}
-		else {
-			$('.circles').removeClass('is-visible');
-		}
-	}
-	circles();
+	// 	if($(window).scrollTop() >= top){
+	// 		$('.circles').addClass('is-visible');
+	// 	}
+	// 	else {
+	// 		$('.circles').removeClass('is-visible');
+	// 	}
+	// }
+	// circles();
 
-	function scrollSection() {
-		var el = $('.section');
-		el.each(function(){
-			var top = $(this).offset().top - 300;
-			var wnd_top = $(window).scrollTop();
+	// function scrollSection() {
+	// 	var el = $('.section');
+	// 	el.each(function(){
+	// 		var top = $(this).offset().top - 300;
+	// 		var wnd_top = $(window).scrollTop();
 
-			if (wnd_top >= top) {
-				$(this).addClass('is-visible');
-			}
-			else{
-				$(this).removeClass('is-visible');
-			}
-		});
-	}
-	scrollSection();
+	// 		if (wnd_top >= top) {
+	// 			$(this).addClass('is-visible');
+	// 		}
+	// 		else{
+	// 			$(this).removeClass('is-visible');
+	// 		}
+	// 	});
+	// }
+	// scrollSection();
 
 
 
 
 	$(window).scroll(function(){
 		scroll_top();
-		scrollSection();
-		circles();
+		// scrollSection();
+		// circles();
 	});
 
 
@@ -168,7 +167,9 @@ $(window).resize(function() {
 
 
 
-
+$(window).load(function() {
+	$('body').addClass('is-loaded');
+});
 
 
 
