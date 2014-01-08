@@ -7,12 +7,7 @@ body
 	+vp
 	&.is-fixed
 		overflow: hidden
-	&.is-loaded
-		.loader
-			opacity: 0
-			z-index: -1
-		.out
-			opacity: 1
+
 .clr
 	+clr
 
@@ -263,8 +258,9 @@ body
 
 // out
 .out
-	opacity: 0
 	+transition(opacity .5s ease-in-out)
+	&.is-loading
+		opacity: 0
 // popup
 .overlay
 	position: fixed
@@ -951,8 +947,6 @@ body
 	position: fixed
 	top: 0
 	left: 0
-	opacity: 1
-	z-index: 2000
 	// +transition(all .5s ease)
 
 

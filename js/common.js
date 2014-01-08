@@ -168,7 +168,9 @@ $(window).resize(function() {
 
 
 $(window).load(function() {
-	$('body').addClass('is-loaded');
+	$('.out').removeClass('is-loading');
+	$('.loader').hide().remove();
+	$('.trash').hide().remove();
 });
 
 
