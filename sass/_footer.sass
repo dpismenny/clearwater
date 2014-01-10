@@ -1,0 +1,159 @@
+// footer
+.footer
+	.footer__row
+		padding-top: 30px
+		padding-bottom: 20px
+		+clr
+	.footer__info
+		background: $white
+		.container
+			position: relative
+			+clr
+		p
+			+sub
+			margin-bottom: 0.5em
+	.footer__main
+		background: $dblue
+		color: $white
+	.footer__contacts
+		float: left
+		margin-right: 105px
+		+r(step4)
+			width: 435px
+		.footer__contacts-tel
+			display: inline-block
+			vertical-align: middle
+			margin-right: 40px
+			font-size: 24px
+			line-height: 1.4
+			margin-bottom: 0
+			a
+				text-decoration: none
+				color: $dblue
+				&:before
+					position: relative
+					display: inline-block
+					vertical-align: middle
+					padding-right: 20px
+					margin-top: -3px
+					+s(phone)
+					content: ""
+	.footer__feedback
+		display: inline-block
+		vertical-align: middle
+		padding-left: 39px
+		padding-right: 39px
+		+r(step4)
+			position: absolute
+			top: 50%
+			margin-top: -19px
+			left: 560px
+	.footer__quality-control
+		float: right
+		ul
+			li
+				height: 52px
+				line-height: 54px
+				display: inline-block
+				vertical-align: middle
+				margin-left: 25px
+				&:first-child
+					margin-left: 0
+				a
+					display: inline-block
+					vertical-align: middle
+					+hidetext
+				&.iso
+					a
+						+s(iso)
+				&.we
+					a
+						+s(we)
+				&.uabw
+					a
+						+s(uabw)
+	.footer__copyright
+		position: relative
+		float: left
+		+vp31
+		width: 415px
+		padding-left: 70px
+		margin-right: 50px
+		line-height: 1.2
+		word-spacing: 0.2em
+		letter-spacing: 0.02em
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+s(cw-color)
+			content: ""
+		a
+			text-decoration: none
+			color: $blue
+			&:hover
+				text-decoration: underline
+		p:first-child
+			margin-bottom: 2em
+	.footer__other
+		position: relative
+		float: right
+	.footer__menu
+		float: left
+		margin-bottom: 25px
+		+r(step3)
+			display: none
+		li
+			display: inline-block
+			text-transform: uppercase
+			font-size: 11px
+			margin-left: 35px
+			&:first-child
+				margin-left: 0
+			&:hover
+				border-bottom: 3px solid #fff
+		a
+			line-height: 1.5
+			color: $white
+			text-decoration: none
+			&:hover
+				text-decoration: none
+	.footer__social
+		float: right
+		margin-left: 35px
+		margin-bottom: 25px
+	.footer__like
+		float: left
+		+r(step3)
+			position: absolute
+			top: 0
+		li
+			display: inline-block
+			img
+				display: block
+
+.vintage
+	float: right
+	font-size: 12px
+	margin-left: 10px
+	+vp31
+	&:hover
+		.vintage__ico
+			span
+				opacity: 1
+	.vintage__ico
+		position: relative
+		+s(vintage)
+		display: inline-block
+		vertical-align: top
+		margin-left: 15px
+		+hidetext
+		span
+			+transition(opacity .3s ease-in-out)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			+s(vintage-h)

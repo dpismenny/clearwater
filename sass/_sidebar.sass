@@ -1,0 +1,60 @@
+// sidebar
+.sidebar
+	position: fixed
+	top: 0
+	right: -500px
+	bottom: 0
+	+opacity(0)
+	width: 300px
+	padding: 95px 40px 30px
+	background: $white
+	text-align: right
+	+transition(all .4s ceaser($easeInOutBack))
+	+box
+	z-index: 1001
+	&.is-open
+		right: 0
+		+opacity(1)
+	.sidebar__menu
+		margin-bottom: 20px
+		ul
+			float: none
+			width: auto
+		li
+			font-size: 13px
+			height: 35px
+			line-height: 35px
+			&:last-child
+				border: none
+	.sidebar__buttons
+		margin-bottom: 25px
+		.btn
+			margin-bottom: 15px
+	.sidebar__social
+		float: right
+
+.sidebar-trigger
+	position: fixed
+	top: 0px
+	right: 40px
+	+opacity(0)
+	+transition(all .2s ease)
+	color: $dblue
+	vertical-align: middle
+	text-transform: uppercase
+	font-size: 11px
+	text-decoration: none
+	+hidetext
+	z-index: 1002
+	&:hover
+		text-decoration: none
+		cursor: pointer
+	&:after
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px
+		content: ""
+		+s(nav-m)
+	&.is-visible
+		+opacity(1)
+		top: 35px

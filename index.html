@@ -3,369 +3,346 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>CleanWater</title>
-	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<title>CW</title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<!--[if IE]>
 		<script src="js/vendor/html5shiv.js"></script>
 	<![endif]-->
 	<script src="js/vendor/jquery.js"></script>
-	<script src="js/vendor/jquery.parallax-1.1.3.js"></script>
-	<script src="js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+	<script src="js/vendor/plax.js"></script>
 	<script src="js/common.js"></script>
 </head>
-<body>
-<div class="loader"></div>
-<div class="out is-loading">
-	<header class="header">
-		<div class="header-i">
-			<div class="header__row layout">
-				<div class="l-col-left">
-					<div class="header__main">
-						<a href="#" class="logo">ClearWater</a>
-						<!-- end .logo -->
-						<div class="language">
-							<a href="#" class="is-active">Рус</a>
-							<a href="#">Укр</a>
-							<a href="#">Eng</a>
+<body class="landing">
+
+	<div class="out">
+		<header class="header" role="banner">
+			<div class="container">
+				<div class="header__grid layout">
+					<div class="l-left">
+						<div class="header__main">
+							<h1 class="logo"><a href="#" title="Чистая вода - ClearWater">ClearWater</a></h1>
+							<div class="language">
+								<a href="#" class="is-active">Рус</a>
+								<a href="#">Укр</a>
+								<a href="#">Eng</a>
+							</div>
 						</div>
-						<!-- end .language -->
+						<div class="header__menu">
+							<nav class="nav" role="navigation">
+								<ul>
+									<li><a href="#">Наша вода</a></li>
+									<li><a href="#">Оборудование</a></li>
+									<li><a href="#">Доставка  и цена</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Производство</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</nav>
+							<button type="button" class="btn btn-block">Корпоративным клиентам</button>
+						</div>
 					</div>
-					<div class="header__nav">
-						<nav class="nav">
-							<ul>
-								<li><a href="#">Наша вода</a></li>
-								<li><a href="#">Оборудование</a></li>
-								<li><a href="#">Доставка  и цена</a></li>
+					<div class="header__info l-right">
+						<address class="header__contacts">
+							<span class="header__tel"><a href="tel:+380443913030">044 391 3030</a></span>
+							<ul class="header__active-days">
+								<li>рабочие дни <span>08:00 - 21:00</span></li>
+								<li>суббота <span>09:00 - 17:00</span></li>
 							</ul>
-							<ul>
-								<li><a href="#">Производство</a></li>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Акции</a></li>
-							</ul>
-						</nav>
-						<!-- end .nav -->
-						<a href="#" class="btn btn-block btn-large">Корпоративным клиентам</a>
-					</div>
-				</div>
-				<!-- end .l-col-left -->
-				<div class="header__info l-col-right">
-					<div class="header__account">
-						<a href="#" class="btn-account">Мой кабинет</a>
-						<div class="online-order js-popup-order">
-							<div class="online-order__banner">
+							<button type="button" class="btn btn-block btn-sm btn-dark">Заказать звонок</button>
+						</address>
+						<div class="header__account">
+							<a href="#" class="account-btn">Мой кабинет</a>
+							<div class="online-order">
 								<h3>Заказать онлайн</h3>
 								<p>круглосуточно</p>
 							</div>
 						</div>
 					</div>
-					<!-- end .header__account -->
-					<address class="header__contacts">
-						<span>044 391 3030</span>
-						<ul class="header__active-days">
-							<li>рабочие дни <span>08:00 - 21:00</span></li>
-							<li>суббота <span>09:00 - 17:00</span></li>
-						</ul>
-						<a href="#" class="btn btn-dark btn-block js-popup-callback">Заказать звонок</a>
-					</address>
-					<!-- end .header__contacts -->
-
-					<div class="popup popup_order">
-						<div class="popup__title">Заказать онлайн</div>
-						<input type="text" class="input" placeholder="Имя">
-						<input type="tel" class="input" placeholder="Телефон*">
-						<input type="text" class="input" placeholder="Количество бутлей">
-						<textarea class="textarea" placeholder="Комментарий"></textarea>
-						<a href="#" class="btn btn-fill btn-block">Отправить</a>
-					</div>
-					<!-- end .popup -->
-
-					<div class="popup popup_callback">
-						<div class="popup__title">Обратный звонок</div>
-						<input type="tel" class="input" placeholder="Ваш номер">
-						<a href="#" class="btn btn-fill btn-block">Отправить</a>
-					</div>
-					<!-- end .popup -->
-
 				</div>
-				<!-- end .l-col-right -->
+				<div class="header__slogan">
+					Европейское качество. Безупречный сервис
+					<h2>ClearWater<br>Лучшая доставка воды в Киеве</h2>
+				</div>
 			</div>
-			<!-- end .l -->
-			<div class="header__slogan">
-				<span>Европейское качество. Безупречный сервис</span>
-				<h2>ClearWater<br>Лучшая доставка воды в Киеве</h2>
+			<div class="header__strip">
+				<div class="container">
+					<span class="scroll-btn js-scroll"><i></i>Узнать больше</span>
+					<ul class="header__social social">
+						<li class="facebook"><a href="#"><span></span>Facebook</a></li>
+						<li class="vk"><a href="#"><span></span>VK</a></li>
+					</ul>
+					<div class="header__bottle">
+						<img src="img/bottle.png" alt="bottle">
+					</div>
+				</div>
 			</div>
+		</header>
+		<!-- /.header -->
 
-			<div class="header__bottle">
-				<img src="img/bottle.png" alt="bottle">
-			</div>
-			<!-- end .header__bottle -->
-
-		</div>
-		<!-- end .header-i -->
-
-		<div class="header__bottom">
-			<div class="wrapper">
-				<span class="btn-slide js-slide"><i></i>Узнать больше</span>
-				<!-- end .header__slide-btn -->
-				<ul class="social">
+		<div class="main">
+			<span class="sidebar-trigger">Меню</span>
+			<!-- /.sidebar-trigger -->
+			<aside class="sidebar">
+				<div class="sidebar__menu nav">
+					<ul>
+						<li><a href="#">Наша вода</a></li>
+						<li><a href="#">Оборудование</a></li>
+						<li><a href="#">Доставка  и цена</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#" class="account-btn">Мой кабинет</a></li>
+					</ul>
+				</div>
+				<div class="sidebar__buttons">
+					<button type="button" class="btn btn-block">Корпоративным клиентам</button>
+					<button type="button" class="btn btn-block btn-fill">Заказать онлайн</button>
+				</div>
+				<ul class="sidebar__social social">
 					<li class="facebook"><a href="#"><span></span>Facebook</a></li>
 					<li class="vk"><a href="#"><span></span>VK</a></li>
 				</ul>
-				<!-- end .social -->
-			</div>
-		</div>
-	</header>
-	<!-- end .header -->
+			</aside>
+			<!-- /.sidebar -->
 
-	<div class="container">
-
-		<aside class="sidebar">
-			<nav class="nav">
-				<ul>
-					<li><a href="#">Наша вода</a></li>
-					<li><a href="#">Оборудование</a></li>
-					<li><a href="#">Доставка  и цена</a></li>
-					<li><a href="#">Производство</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Акции</a></li>
-				</ul>
-			</nav>
-			<a href="#" class="btn-account">Мой кабинет</a>
-			<a href="#" class="btn btn-large btn-block">Корпоративным клиентам</a>
-			<a href="#" class="btn btn-large btn-block btn-fill">Заказать онлайн</a>
-			<ul class="social">
-				<li class="facebook"><a href="#"><span></span>Facebook</a></li>
-				<li class="vk"><a href="#"><span></span>VK</a></li>
-			</ul>
-			<!-- end .social -->
-		</aside>
-		<!-- end .sidebar -->
-
-		<div id="numbers" class="numbers">
-
-			<span class="btn-trigger js-btn-trigger">Меню</span>
-			<!-- end .nav-trigger -->
-
-			<div class="numbers-i">
-
-				<ul class="circles">
-					<li class="trans-0">
-						<div class="circles__figure">
-							<div class="circles__text">
-								<h2>15 <span>лет</span></h2>
-								<p>доставляем качественную<br> и вкусную воду</p>
+			<div class="story">
+				<div class="container">
+					<ul class="circles">
+						<li class="circles__item">
+							<div class="circles__figure">
+								<div class="circles__info">
+									<h3>15 <span>лет</span></h3>
+									<p>доставляем качественную<br> и вкусную воду</p>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="trans-1">
-						<div class="circles__figure">
-							<div class="circles__text">
-								<h2>100 000 <span>киевлян</span></h2>
-								<p>пьют ClearWater<br> каждый день</p>
+						</li>
+						<li class="circles__item">
+							<div class="circles__figure">
+								<div class="circles__info">
+									<h3>100 000 <span>киевлян</span></h3>
+									<p>пьют ClearWater<br> каждый день</p>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="trans-2">
-						<div class="circles__figure">
-							<div class="circles__text">
-								<h2>14 000 <span>компаний</span></h2>
-								<p>оценили наш<br> безупречный сервис</p>
+						</li>
+						<li class="circles__item">
+							<div class="circles__figure">
+								<div class="circles__info">
+									<h3>14 000 <span>компаний</span></h3>
+									<p>оценили наш<br> безупречный сервис</p>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="trans-3">
-						<div class="circles__figure">
-							<div class="circles__text">
-								<h2>2 200 <span>бутылей в час</span></h2>
-								<p>мощность нашей<br> производственной линии</p>
+						</li>
+						<li class="circles__item">
+							<div class="circles__figure">
+								<div class="circles__info">
+									<h3>2 200 <span>бутылей в час</span></h3>
+									<p>мощность нашей<br> производственной линии</p>
+								</div>
 							</div>
+						</li>
+					</ul>
+					<!-- /.circles -->
+					<div class="story__note">
+						<p>«Чистая вода» - одна из первых компаний по доставке бутылированной воды в Киеве.</p>
+						<p>«Чистая Вода» -  это часть группы компаний ClearWater, имеющей представительства в 5 странах Европы.</p>
+						<p>Мы работаем для того, чтобы устанавливать в Украине  новые стандарты качества и сервиса.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /.story -->
+			<section class="leading">
+				<div class="container">
+					<h2 class="leading__title">Нам потребовалось 15 лет, чтобы создать лучшую<br> компанию по доставке воды.</h2>
+					<h3 class="leading__sketch">Мы добились лидерства в 5 направлениях</h3>
+				</div>
+			</section>
+			<!-- /.leading -->
+
+			<!-- #First / ABOUT -->
+			<section class="unit about">
+				<div class="container">
+					<span class="unit__number">1</span>
+					<div class="unit__content">
+						<h2 class="unit__title">Вода ClearWater</h2>
+						<div class="unit__sketch">
+							Скважина в экологически чистом районе. Уникальная технология очистки.
+							<br>
+							Три вида воды. Международные стандарты качества.
 						</div>
-					</li>
-				</ul>
-				<!-- end .circles -->
-
-				<div class="numbers__note">
-					<p>«Чистая вода» - одна из первых компаний по доставке бутылированной воды в Киеве.</p>
-					<p>«Чистая Вода» -  это часть группы компаний ClearWater, имеющей представительства в 5 странах Европы.</p>
-					<p>Мы работаем для того, чтобы устанавливать в Украине  новые стандарты качества и сервиса.</p>
+						<p>Завод расположен в местности, выше которой на сотни километров по направлению движения подземных вод нет никаких загрязняющих почву предприятий.</p>
+					</div>
 				</div>
+			</section>
+			<!-- #Second / PRODUCT -->
+			<section class="unit product">
+				<div class="container">
+					<span class="unit__number">2</span>
+					<div class="unit__content">
+						<h2 class="unit__title">Производство</h2>
+						<div class="unit__sketch">
+							Самый большой и современный завод в Европе. Полностью автоматизированная линия. Компания полного цикла – работаем без посредников.
+						</div>
+						<p>«Чистая Вода» - единственная компания, которая приглашает всех желающих на экскурсии по заводу. Мы гордимся своим производством и с радостью проведем экскурсию для вас!</p>
+					</div>
+				</div>
+			</section>
+			<!-- #Third / SERVICE -->
+			<section class="unit service">
+				<div class="container">
+					<span class="unit__number">3</span>
+					<div class="unit__content">
+						<h2 class="unit__title">Безупречный сервис</h2>
+						<div class="unit__sketch">
+							Быстрое решение проблем. Ремонтная бригада оперативного  реагирования. Продажа, аренда, чистка, ремонт оборудования. Доставка дополнительных товаров. Знаем предпочтения каждого клиента. Улыбка – в подарок!
+						</div>
+						<p>Все для того, чтобы вы были довольны. Мы доставляем не только воду, но и хорошее настроение.</p>
+					</div>
+				</div>
+			</section>
+			<!-- #Fourth / DELIVERY -->
+			<section class="unit delivery">
+				<div class="container">
+					<span class="unit__number">4</span>
+					<div class="unit__content">
+						<h2 class="unit__title">Удобная доставка</h2>
+						<div class="unit__sketch">
+							Разнообразные интервалы доставки.
+							<br>
+							97% доставок выполняются вовремя (статистика за 2013 год). Возможность срочной доставки в тот же день. Собственный автопарк из 60 автомобилей. GPS датчик в каждой машине.
+						</div>
+						<p>Мы - эксперты в вопросе доставки. Знаем каждую улицу, переулок и дом в<br> Киеве. Поднимем ваш заказ на любой этаж, даже если в доме не работает лифт.</p>
+					</div>
+				</div>
+			</section>
+			<!-- #Fifth / QUALITY -->
+			<section class="unit quality">
+				<div class="container">
+					<span class="unit__number">5</span>
+					<div class="unit__content">
+						<h2 class="unit__title">Контроль качества</h2>
+						<div class="unit__sketch">
+							Замеры показателей продукта каждые 2 часа. Система контроля
+							<br>
+							качества ISO 9001:2009 . Защитная пленка на бутыли.
+						</div>
+						<p>Компания «Чистая Вода» имеет собственную аккредитованную лабораторию, оснащенную по самым последним стандартам.  Можем делать анализы любой воды по просьбе клиента.</p>
+					</div>
+				</div>
+			</section>
 
-			</div>
-		</div>
-		<!-- end .numbers -->
-
-		<div class="leader">
-			<div class="leader-i">
-				<h2 class="leader__title">Нам потребовалось 15 лет, чтобы создать лучшую<br> компанию по доставке воды.</h2>
-				<p>Мы добились лидерства в 5 направлениях</p>
-			</div>
-		</div>
-		<!-- end .leader -->
-
-		<section id="first" class="section">
-			<span class="section__number">1</span>
-			<div class="section-i">
-				<div class="section__holder">
-					<div class="section__content">
-						<h2 class="section__title">Вода ClearWater</h2>
-						<h3 class="section__sub">Скважина в экологически чистом районе. Уникальная технология очистки.<br> Три вида воды. Международные стандарты качества.</h3>
-						<p class="section__text">Завод расположен в местности, выше которой на сотни километров по направлению движения подземных вод нет никаких загрязняющих почву предприятий.</p>
+			<div class="testing">
+				<div class="container">
+					<i class="chevron"></i>
+					<div class="testing__main">
+						<h2 class="testing__title">Попробуйте ClearWater!
+Проверить нас в деле очень просто</h2>
+						<div class="testing__lead">
+							<h3>закажите пробную доставку ClearWater </h3>
+							<p>бесплатно.  Без обязательств и контрактов.</p>
+						</div>
+						<p>Я хочу попробовать европейское качество и безупречный сервис на себе!</p>
+						<button type="button" class="btn btn-fill btn-lg">Заказать 2 бутыли воды</button>
+					</div>
+					<div class="testing__corporate">
+						<div class="testing__corporate-content">
+							<h2 class="testing__corporate-title">Корпоративным клиентам</h2>
+							<p>Предлагаем особые условия на доставку воды в офис</p>
+							<button type="button" class="btn btn-white">Узнать больше</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- end #first / About -->
+			<!-- /.testing -->
 
-		<section id="second" class="section">
-			<span class="section__number">2</span>
-			<div class="section-i">
-				<div class="section__holder">
-					<div class="section__content">
-						<h2 class="section__title">Производство</h2>
-						<h3 class="section__sub">Самый большой и современный завод в Европе. Полностью автоматизированная линия. Компания полного цикла – работаем без посредников.</h3>
-						<p class="section__text">«Чистая Вода» - единственная компания, которая приглашает всех желающих на экскурсии по заводу. Мы гордимся своим производством и с радостью проведем экскурсию для вас!</p>
-						<a href="#" class="btn btn-large btn-brick btn-white">Узнать больше про экскурсию</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end #second / Production -->
-
-		<section id="third" class="section">
-			<span class="section__number">3</span>
-			<div class="section-i">
-				<div class="section__holder">
-					<div class="section__content">
-						<h2 class="section__title">Безупречный сервис</h2>
-						<h3 class="section__sub">Быстрое решение проблем. Ремонтная бригада оперативного  реагирования. Продажа, аренда, чистка, ремонт оборудования. Доставка дополнительных товаров. Знаем предпочтения каждого клиента. Улыбка – в подарок!</h3>
-						<p class="section__text">Все для того, чтобы вы были довольны. Мы доставляем не только воду, но и хорошее настроение.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end #third / Services -->
-
-		<section id="fourth" class="section">
-			<span class="section__number">4</span>
-			<div class="section-i">
-				<div class="section__holder">
-					<div class="section__content">
-						<h2 class="section__title">Удобная доставка</h2>
-						<h3 class="section__sub">Разнообразные интервалы доставки.<br> 97% доставок выполняются вовремя (статистика за 2013 год). Возможность срочной доставки в тот же день. Собственный автопарк из 60 автомобилей. GPS датчик в каждой машине.</h3>
-						<p class="section__text">Мы - эксперты в вопросе доставки. Знаем каждую улицу, переулок и дом в<br> Киеве. Поднимем ваш заказ на любой этаж, даже если в доме не работает лифт.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end #fourth / Delivery -->
-
-		<section id="fifth" class="section">
-			<span class="section__number">5</span>
-			<div class="section-i">
-				<div class="section__holder">
-					<div class="section__content">
-						<h2 class="section__title">Контроль качества</h2>
-						<h3 class="section__sub">Замеры показателей продукта каждые 2 часа. Система контроля<br> качества ISO 9001:2009 . Защитная пленка на бутыли.</h3>
-						<p class="section__text">Компания «Чистая Вода» имеет собственную аккредитованную лабораторию, оснащенную по самым последним стандартам.  Можем делать анализы любой воды по просьбе клиента.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end #fifth / Quality -->
-
-		<div class="clients">
-			<div class="clients-i">
-				<h2 class="clients__title">Наш сервис уже оценили более 14 000 компаний, среди которых</h2>
-				<div class="clients__list">
-					<ul class="clients__items">
-						<li><img src="img/logo-01.jpg" alt="img"></li>
-						<li><img src="img/logo-02.jpg" alt="img"></li>
-						<li><img src="img/logo-03.jpg" alt="img"></li>
-						<li><img src="img/logo-04.jpg" alt="img"></li>
-						<li><img src="img/logo-05.jpg" alt="img"></li>
-						<li><img src="img/logo-06.jpg" alt="img"></li>
-					</ul>
-					<ul class="clients__items">
-						<li><img src="img/logo-11.jpg" alt="img"></li>
-						<li><img src="img/logo-12.jpg" alt="img"></li>
-						<li><img src="img/logo-13.jpg" alt="img"></li>
-						<li><img src="img/logo-14.jpg" alt="img"></li>
-						<li><img src="img/logo-15.jpg" alt="img"></li>
-						<li><img src="img/logo-16.jpg" alt="img"></li>
-					</ul>
-					<ul class="clients__items">
-						<li><img src="img/logo-21.jpg" alt="img"></li>
-						<li><img src="img/logo-22.jpg" alt="img"></li>
-						<li><img src="img/logo-23.jpg" alt="img"></li>
-						<li><img src="img/logo-24.jpg" alt="img"></li>
-						<li><img src="img/logo-25.jpg" alt="img"></li>
-						<li><img src="img/logo-26.jpg" alt="img"></li>
-					</ul>
-					<ul class="clients__items">
-						<li><img src="img/logo-31.jpg" alt="img"></li>
-						<li><img src="img/logo-32.jpg" alt="img"></li>
-						<li><img src="img/logo-33.jpg" alt="img"></li>
-						<li><img src="img/logo-34.jpg" alt="img"></li>
-						<li><img src="img/logo-35.jpg" alt="img"></li>
-						<li><img src="img/logo-36.jpg" alt="img"></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- end .clients -->
-
-		<section class="video">
-			<div class="video__content">
-				<div class="video__title">Наше производство</div>
-				<div class="video__sub">Самый большой и самый современный завод в Европе. Полностью автоматизированная линия. У нас нет посредников. Работают лучшие специалисты</div>
-				<div class="video__play-btn"><span></span></div>
-			</div>
-		</section>
-		<!-- end .video -->
-
-	</div>
-	<!-- end .container -->
-
-	<footer class="footer">
-		<div class="footer__info footer__row">
-			<div class="footer-i">
-				<div class="footer__call-us">
-					<p>У вас возникли вопросы по качеству продукта или сервиса?</p>
-					<p>Позвоните нам:</p>
-					<span class="footer__call-us-phone">044 391 30 30</span>
-
-					<a href="#" class="footer__feedback btn btn-large">Написать запрос отделу контроля качества</a>
-					<!-- end .footer__feedback -->
-
-				</div>
-				<!-- end .footer__call-us -->
-
-				<div class="footer__quality-control">
-					<h2 class="footer__quality-control-title">Контроль качества</h2>
-					<ul class="footer__quality-control-items">
-						<li class="iso"><a href="#">International Organization for Standardization</a></li>
-						<li class="we"><a href="#">Watercoolers Europe</a></li>
-						<li class="uabw"><a href="#">Ассоциация Бутылированые Воды Украины</a></li>
-					</ul>
-				</div>
-				<!-- end .footer__quality-control -->
-			</div>
-		</div>
-		<!-- end .footer__info -->
-
-		<div class="footer__main footer__row">
-			<div class="footer-i">
-				<div class="footer__copyright">
-					<p class="footer__copy">© ClearWater Ltb. Все права защищены.</p>
-					<p>Если вы по какой-либо причине не полностью удовлетворены работой компании "Чистая Вода", наш директор хотел бы знать об этом!</p>
-					<p><a href="mailto:director@cw.com.ua">director@cw.com.ua</a></p>
-				</div>
-				<!-- end .footer__copyright -->
-
-				<div class="footer__other">
-					<nav class="footer__page-links">
+			<section class="clients">
+				<div class="container">
+					<h3 class="clients__heading">Наш сервис уже оценили более 14 000 компаний, среди которых</h3>
+					<div class="clients__items">
 						<ul>
+							<li><img src="img/logo-01.jpg" alt="img"></li>
+							<li><img src="img/logo-02.jpg" alt="img"></li>
+							<li><img src="img/logo-03.jpg" alt="img"></li>
+							<li><img src="img/logo-04.jpg" alt="img"></li>
+							<li><img src="img/logo-05.jpg" alt="img"></li>
+							<li><img src="img/logo-06.jpg" alt="img"></li>
+						</ul>
+						<ul>
+							<li><img src="img/logo-11.jpg" alt="img"></li>
+							<li><img src="img/logo-12.jpg" alt="img"></li>
+							<li><img src="img/logo-13.jpg" alt="img"></li>
+							<li><img src="img/logo-14.jpg" alt="img"></li>
+							<li><img src="img/logo-15.jpg" alt="img"></li>
+							<li><img src="img/logo-16.jpg" alt="img"></li>
+						</ul>
+						<ul>
+							<li><img src="img/logo-21.jpg" alt="img"></li>
+							<li><img src="img/logo-22.jpg" alt="img"></li>
+							<li><img src="img/logo-23.jpg" alt="img"></li>
+							<li><img src="img/logo-24.jpg" alt="img"></li>
+							<li><img src="img/logo-25.jpg" alt="img"></li>
+							<li><img src="img/logo-26.jpg" alt="img"></li>
+						</ul>
+						<ul>
+							<li><img src="img/logo-31.jpg" alt="img"></li>
+							<li><img src="img/logo-32.jpg" alt="img"></li>
+							<li><img src="img/logo-33.jpg" alt="img"></li>
+							<li><img src="img/logo-34.jpg" alt="img"></li>
+							<li><img src="img/logo-35.jpg" alt="img"></li>
+							<li><img src="img/logo-36.jpg" alt="img"></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- /.clients -->
+
+			<section class="production">
+				<div class="production__content">
+					<h2 class="production__title">Наше производство</h2>
+					<p class="production__sketch">Самый большой и самый современный завод в Европе. Полностью автоматизированная линия. У нас нет посредников. Работают лучшие специалисты</p>
+					<div class="play-btn"><span></span></div>
+				</div>
+			</section>
+			<!-- /.production -->
+
+		</div>
+		<!-- /.main -->
+
+		<footer class="footer">
+			<div class="footer__info footer__row">
+				<div class="container">
+					<div class="footer__contacts">
+						<p>У вас возникли вопросы по качеству продукта или сервиса?</p>
+						<p>Позвоните нам:</p>
+						<p class="footer__contacts-tel"><a href="tel:+380443913030">044 391 30 30</a></p>
+						<a href="#" class="footer__feedback btn">Написать запрос отделу контроля качества</a>
+					</div>
+					<!-- /.footer__contacts -->
+					<div class="footer__quality-control">
+						<p>Контроль качества</p>
+						<ul>
+							<li class="iso"><a href="#">International Organization for Standardization</a></li>
+							<li class="we"><a href="#">Watercoolers Europe</a></li>
+							<li class="uabw"><a href="#">Ассоциация Бутылированые Воды Украины</a></li>
+						</ul>
+					</div>
+					<!-- /.footer__quality-control -->
+				</div>
+			</div>
+			<!-- end .footer__info -->
+			<div class="footer__main footer__row">
+				<div class="container">
+					<div class="footer__copyright">
+						<p>© ClearWater Ltb. Все права защищены.</p>
+						<p>Если вы по какой-либо причине не полностью удовлетворены работой компании "Чистая Вода", наш директор хотел бы знать об этом!</p>
+						<p><a href="mailto:director@cw.com.ua">director@cw.com.ua</a></p>
+					</div>
+					<!-- /.footer__copyright -->
+					<div class="footer__other">
+						<ul class="footer__menu">
 							<li><a href="#">Наша вода</a></li>
 							<li><a href="#">Оборудование</a></li>
 							<li><a href="#">Доставка и цена</a></li>
@@ -373,66 +350,90 @@
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Акции</a></li>
 						</ul>
-					</nav>
-					<!-- end .footer__page-links -->
-
-					<ul class="footer__social social">
-						<li class="facebook"><a href="#"><span></span>Facebook</a></li>
-						<li class="vk"><a href="#"><span></span>VK</a></li>
-					</ul>
-					<!-- end .footer__social -->
-
-					<div class="clr"></div>
-					<ul class="footer__like">
-						<li><img src="img/like.png" alt=""></li>
-					</ul>
-					<!-- end .footer__like -->
-
-					<div class="vintage">
-						Сайт разработан студией
-						<a href="#" class="vintage__ico"><span></span>Vintage</a>
+						<!-- /.footer__menu -->
+						<ul class="footer__social social social_mod">
+							<li class="facebook"><a href="#"><span></span>Facebook</a></li>
+							<li class="vk"><a href="#"><span></span>VK</a></li>
+						</ul>
+						<!-- /.footer__social -->
+						<div class="clr"></div>
+						<ul class="footer__like">
+							<li><img src="img/like.png" alt=""></li>
+						</ul>
+						<!-- /.footer__like -->
+						<div class="vintage">
+							Сайт разработан студией
+							<a href="#" class="vintage__ico"><span></span>Vintage</a>
+						</div>
+						<!-- /.vintage -->
 					</div>
-					<!-- end .vintage -->
-
+					<!-- /.footer__other -->
 				</div>
-				<!-- end .footer__other -->
 			</div>
+		</footer>
+		<!-- /.footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="trash">
+			<img src="http://placekitten.com/100/3000" alt="img">
+			<img src="http://placekitten.com/200/3000" alt="img">
+	<!-- 		<img src="http://placekitten.com/300/3000" alt="img">
+			<img src="http://placekitten.com/400/3000" alt="img">
+			<img src="http://placekitten.com/500/3000" alt="img">
+			<img src="http://placekitten.com/230/3000" alt="img">
+			<img src="http://placekitten.com/120/3000" alt="img"> -->
 		</div>
-		<!-- end .footer__main -->
-	</footer>
-	<!-- end .footer -->
 
 
 
 
-
-
-
-
-
-
-
-
-
-<div class="trash">
-	<img src="http://placekitten.com/100/3000" alt="img">
-	<img src="http://placekitten.com/200/3000" alt="img">
-	<img src="http://placekitten.com/300/3000" alt="img">
-	<img src="http://placekitten.com/400/3000" alt="img">
-	<img src="http://placekitten.com/500/3000" alt="img">
-	<img src="http://placekitten.com/230/3000" alt="img">
-	<img src="http://placekitten.com/120/3000" alt="img">
-</div>
-
-
-
+	</div>
+	<!-- /.out -->
 
 	<div class="overlay"></div>
-	<!-- end .overlay -->
+	<!-- /.overlay -->
 
-</div>
-<!-- end .out -->
-
+	<div class="loader"></div>
 
 </body>
 </html>

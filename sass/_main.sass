@@ -3,106 +3,10 @@ body
 	font-family: Arial,sans-serif
 	line-height: 1.4
 	color: $dblue
+	background: $white
 	min-width: 1000px
 	+vp
-	&.is-fixed
-		overflow: hidden
 
-.clr
-	+clr
-
-.btn
-	display: inline-block
-	text-align: center
-	border: 2px solid $blue
-	background: transparent
-	color: $blue
-	text-decoration: none
-	height: 30px
-	font-size: 11px
-	line-height: 30px
-	padding: 0 5px
-	text-transform: uppercase
-	+box
-	+transition(all .2s ease-in-out)
-	&:hover
-		background: $blue
-		color: $white
-	&.btn-block
-		display: block
-	&.btn-large
-		height: 38px
-		line-height: 38px
-	&.btn-fill
-		background: $blue
-		color: $white
-		&:hover
-			background: $dblue
-			border-color: $dblue
-	&.btn-dark
-		border-color: $dblue
-		color: $dblue
-		&:hover
-			background: $dblue
-			color: $white
-	&.btn-white
-		border-color: $white
-		color: $white
-		&:hover
-			background: $white
-			color: $dblue
-	&.btn-brick
-		width: 360px
-.btn-slide
-	padding: 19px 0 20px 70px
-	text-transform: uppercase
-	line-height: 1
-	font-size: 11px
-	color: $dblue
-	text-decoration: none
-	+transition(all .3s linear)
-	&:hover
-		color: $blue
-		cursor: pointer
-		i
-			background: $blue
-			+box-shadow(0 0 0 8px $blue)
-	i
-		position: absolute
-		left: 0
-		top: 50%
-		margin-top: -25px
-		margin-right: 10px
-		background: $dblue
-		width: 50px
-		height: 50px
-		+border-radius(50%)
-		+transition(all .3s linear)
-		&:before
-			position: absolute
-			+s(slide-arrow)
-			top: 50%
-			margin-top: -6.5px
-			left: 50%
-			margin-left: -12.5px
-			content: ""
-.btn-account
-	color: $dblue
-	text-decoration: none
-	text-transform: uppercase
-	&:hover
-		color: $blue
-		&:before
-			+s(account-h)
-	&:before
-		display: inline-block
-		vertical-align: middle
-		margin-top: -3px
-		margin-right: 10px
-		+s(account)
-		content: ""
-
-// Normally mainpage styles
 =wrap
 	max-width: 1366px
 	margin-left: auto
@@ -113,20 +17,64 @@ body
 	+r(wide)
 		padding-left: 40px
 		padding-right: 40px
-.header-i,
-.header__bottom-i,
-.numbers-i,
-.leader-i,
-.logos-i,
-.footer-i,
-.wrapper
+.container
 	+wrap
 
-.logo
-	+hidetext
-	display: block
-	+s(logo)
-	margin-bottom: 35px
+=h
+	font-size: 36px
+	text-transform: uppercase
+	+vp_b
+
+=sub
+	font-size: 12px
+	text-transform: uppercase
+	+vp_b
+
+// preloader
+.loader
+	background: #fff url('../img/loader.gif') no-repeat center center
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+
+// overlay
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: #1b1b1b
+	+opacity(0)
+	z-index: -1
+	&.is-open
+		+opacity(0.4)
+		z-index: 1000
+
+// language
+.language
+	a
+		display: inline-block
+		color: $dblue
+		text-decoration: none
+		text-transform: uppercase
+		margin-left: 20px
+		height: 20px
+		line-height: 1
+		+box
+		+transition(all .2s ease-in-out)
+		&:first-child
+			margin-left: 0
+		&:hover
+			color: $blue
+			border-bottom: 5px solid $blue
+		&:active, &.is-active
+			color: $blue
+			border-bottom: 2px solid $blue
+
+// nav
 .nav
 	+clr
 	margin-bottom: 20px
@@ -153,27 +101,12 @@ body
 			color: $dblue
 			text-decoration: none
 			display: block
-.language
-	a
-		display: inline-block
-		color: $dblue
-		text-decoration: none
-		text-transform: uppercase
-		margin-left: 20px
-		height: 20px
-		line-height: 1
-		+box
-		+transition(all .2s ease-in-out)
-		&:first-child
-			margin-left: 0
-		&:hover
-			color: $blue
-			border-bottom: 5px solid $blue
-		&:active, &.is-active
-			color: $blue
-			border-bottom: 2px solid $blue
+
+.clr
+	+clr
+
+// social
 .social
-	float: right
 	+clr
 	li
 		float: left
@@ -209,426 +142,7 @@ body
 			span
 				+s(fb-h)
 
-.online-order
-	margin-top: 7px
-	.online-order__banner
-		background: $blue
-		color: $white
-		text-align: center
-		width: 165px
-		font-size: 11px
-		padding: 10px 0
-		+transition(background .3s ease-in-out)
-		& > h3
-			+vp
-			text-transform: uppercase
-			&:after
-				display: block
-				margin: 5px auto
-				+s(dotted)
-				content: ""
-		&:hover
-			cursor: pointer
-			background: $dblue
-
-// input, textarea
-.input,
-.textarea
-	border: 1px solid $dgrey
-	color: $dgrey
-	background: $white
-	font-size: 11px
-	padding: 0 15px
-	text-align: center
-	text-transform: uppercase
-	+placeholder-color($dgrey)
-	+box
-	+vp
-	&:focus
-		// text-align: left
-		// text-transform: none
-		+placeholder-color($white)
-
-.input
-	height: 38px
-.textarea
-	resize: none
-	height: 70px
-	padding-top: 15px
-
-// out
-.out
-	+transition(opacity .5s ease-in-out)
-	&.is-loading
-		opacity: 0
-// popup
-.overlay
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	background: #1b1b1b
-	opacity: 0
-	z-index: -1
-	+transition(all .4s linear)
-	&.is-open
-		+opacity(.40)
-		z-index: 1000
-.popup
-	display: none
-	position: absolute
-	width: 100%
-	top: 0
-	left: 0
-	background: $white
-	padding: 25px 25px 20px
-	+box
-	z-index: 1001
-	&.is-open
-		display: block
-	&.popup_order,
-	&.popup_callback
-		top: 55px
-	.popup__title
-		font-size: 14px
-		text-align: center
-		text-transform: uppercase
-		color: $blue
-		margin-bottom: 1em
-		line-height: 1
-	.input, .textarea
-		display: block
-		width: 100%
-		margin-bottom: 14px
-
-// header
-.header
-	position: relative
-	background: $white url('../img/header-bg.jpg')  no-repeat
-	+cover
-	min-height: 655px
-	.header-i
-		position: relative
-		height: 100%
-		padding-top: 35px
-		+clr
-	.header__row
-		margin-bottom: 90px
-	.header__main
-		position: relative
-		float: left
-		margin-right: 58px
-		z-index: 101
-	.header__nav
-		overflow: hidden
-		position: relative
-		z-index: 101
-	.header__info
-		position: relative
-	.header__account
-		float: left
-		position: relative
-		z-index: 101
-		.btn-account
-			display: block
-	.header__contacts
-		position: relative
-		z-index: 101
-		float: left
-		margin-left: 35px
-		width: 175px
-		font-style: normal
-		font-weight: normal
-		font-size: 11px
-		& > span
-			display: block
-			text-align: center
-			font-size: 26px
-			line-height: 1
-	.header__active-days
-		margin-bottom: 3px
-		li
-			span
-				float: right
-				display: block
-	.header__slogan
-		float: left
-		width: 500px
-		margin-left: 50px
-		text-align: center
-		+box
-		font-size: 12px
-		h2
-			font-size: 32px
-			font-style: normal
-			font-weight: normal
-			+vp31
-			&:before
-				position: relative
-				display: block
-				margin: 0 auto .5em
-				+s(drop)
-				content: ""
-		& > span
-			display: block
-			text-transform: uppercase
-			margin-bottom: 1.5em
-			+vp_b
-	.header__bottle
-		position: absolute
-		bottom: 0
-		left: 74%
-		margin-left: -182px
-		width: 364px
-		z-index: 100
-		img
-			display: block
-	.header__bottom
-		position: absolute
-		bottom: 0
-		left: 0
-		background: $white
-		width: 100%
-		height: 95px
-		line-height: 95px
-		.wrapper
-			position: relative
-			+clr
-		.btn-slide
-			position: absolute
-			top: 50%
-			margin-top: -25px
-
-// numbers
-.numbers
-	position: relative
-	background: $white
-	border-top: 2px solid $dblue
-	padding-top: 70px
-	.numbers-i
-		padding-bottom: 50px
-	.numbers__note
-		text-align: center
-		&:before
-			position: relative
-			display: block
-			margin-left: auto
-			margin-right: auto
-			margin-bottom: 25px
-			content: ""
-			+s(cw)
-		p
-			+vp_b
-			font-size: 12px
-			text-transform: uppercase
-			margin-bottom: 0.5em
-
-
-// .transitionable
-// 	+transition(all .8s ease-in-out)
-
-// circles
-.circles
-	font-size: 0
-	margin-bottom: 25px
-	li
-		position: relative
-		display: inline-block
-		width: 25%
-		text-align: center
-		opacity: 1
-		// top: -100px
-	.circles__figure
-		display: inline-block
-		width: 225px
-		height: 225px
-		line-height: 225px
-		margin: 15px
-		+border-radius(50%)
-		+box
-		+box-shadow(0 0 0 15px $white, 0 0 0 16px $grey)
-		border: 1px solid $grey
-		// border-left: 1px solid transparent
-		// border-right: 1px solid transparent
-		// border-bottom: 1px solid transparent
-		// animation: circle-rot 2s linear infinite
-		// -webkit-animation: circle-rot 2s linear infinite
-		+r(step3)
-			width: 170px
-			height: 170px
-			line-height: 170px
-			+box-shadow(0 0 0 12px $white, 0 0 0 13px $grey)
-			margin: 12px
-	.circles__text
-		// position: relative
-		display: inline-block
-		vertical-align: middle
-		line-height: 1
-		// +transition(all .4s ease-in)
-		h2
-			font-size: 30px
-			font-weight: normal
-			font-style: normal
-			margin-bottom: .5em
-			+r(step3)
-				font-size: 23px
-			span
-				font-size: 26px
-				display: block
-				+r(step3)
-					font-size: 20px
-		p
-			font-size: 14px
-			line-height: 1.5
-			+vp31
-			+r(step3)
-				font-size: 11px
-
-// leader
-.leader
-	color: $white
-	text-align: center
-	background: $dblue
-	p
-		font-size: 12px
-		text-transform: uppercase
-		+vp_b
-	.leader-i
-		padding-top: 50px
-		padding-bottom: 50px
-	.leader__title
-		font-size: 36px
-		margin-bottom: .6em
-		+vp31
-
-
-// footer
-.footer
-	.footer__row
-		padding-top: 30px
-		padding-bottom: 20px
-		+clr
-	.footer__info
-		background: $white
-		.footer-i
-			position: relative
-			+clr
-	.footer__main
-		background: $dblue
-		color: $white
-	.footer__call-us
-		float: left
-		margin-right: 105px
-		+r(step4)
-			width: 435px
-		p
-			+vp_b
-			font-size: 12px
-			text-transform: uppercase
-			margin-bottom: 0.5em
-		.footer__call-us-phone
-			display: inline-block
-			vertical-align: middle
-			margin-right: 40px
-			font-size: 24px
-			line-height: 1.4
-			&:before
-				position: relative
-				display: inline-block
-				vertical-align: middle
-				margin-right: 20px
-				margin-top: -3px
-				+s(phone)
-				content: ""
-	.footer__feedback
-		display: inline-block
-		vertical-align: middle
-		padding-left: 39px
-		padding-right: 39px
-		+r(step4)
-			position: absolute
-			top: 50%
-			margin-top: -19px
-			left: 560px
-	.footer__quality-control
-		float: right
-	.footer__quality-control-title
-		text-transform: uppercase
-		font-size: 12px
-		+vp_b
-		margin-bottom: 0.5em
-	.footer__quality-control-items
-		li
-			height: 52px
-			line-height: 54px
-			display: inline-block
-			vertical-align: middle
-			margin-left: 25px
-			&:first-child
-				margin-left: 0
-			a
-				display: inline-block
-				vertical-align: middle
-				+hidetext
-			&.iso
-				a
-					+s(iso)
-			&.we
-				a
-					+s(we)
-			&.uabw
-				a
-					+s(uabw)
-	.footer__copyright
-		position: relative
-		float: left
-		+vp31
-		width: 415px
-		padding-left: 70px
-		margin-right: 50px
-		line-height: 1.2
-		word-spacing: 0.2em
-		letter-spacing: 0.02em
-		&:before
-			position: absolute
-			top: 0
-			left: 0
-			+s(cw-color)
-			content: ""
-		a
-			text-decoration: none
-			color: $blue
-			&:hover
-				text-decoration: underline
-		.footer__copy
-			margin-bottom: 2em
-	.footer__other
-		position: relative
-		float: right
-	.footer__page-links
-		float: left
-		margin-bottom: 25px
-		+r(step3)
-			display: none
-		li
-			display: inline-block
-			text-transform: uppercase
-			font-size: 11px
-			margin-left: 35px
-			&:first-child
-				margin-left: 0
-			&:hover
-				border-bottom: 3px solid #fff
-		a
-			line-height: 1.5
-			color: $white
-			text-decoration: none
-			&:hover
-				text-decoration: none
-	.footer__social
-		margin-left: 35px
-		margin-bottom: 25px
+	&.social_mod
 		a
 			span
 				opacity: 0
@@ -645,215 +159,52 @@ body
 				+s(fb-w)
 				span
 					+s(fb-w-h)
-	.footer__like
-		float: left
-		+r(step3)
-			position: absolute
-			top: 0
-		li
-			display: inline-block
-			img
-				display: block
-.vintage
-	float: right
-	font-size: 12px
-	margin-left: 10px
-	+vp31
-	&:hover
-		.vintage__ico
-			span
-				opacity: 1
-	.vintage__ico
-		position: relative
-		+s(vintage)
-		display: inline-block
-		vertical-align: top
-		margin-left: 15px
-		+hidetext
-		span
-			+transition(opacity .3s ease-in-out)
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
-			opacity: 0
-			+s(vintage-h)
-// sidebar
-.btn-trigger
-	opacity: 0
-	position: fixed
-	z-index: 1002
-	color: $dblue
-	right: 40px
-	top: 0px
-	vertical-align: middle
-	text-transform: uppercase
-	font-size: 11px
-	text-decoration: none
-	+transition(all .2s ease-in)
-	+hidetext
-	&:hover
-		text-decoration: none
-		cursor: pointer
-	&:after
-		display: inline-block
-		vertical-align: middle
-		margin-left: 15px
-		content: ""
-		+s(nav-m)
-	&.is-active
-		opacity: 1
-		top: 35px
-.sidebar
-	width: 300px
-	padding: 95px 40px 30px
-	+box
-	background: $white
-	position: fixed
-	top: 0
-	right: -300px
-	bottom: 0
-	z-index: 1001
-	text-align: right
-	opacity: 0
-	+transition(all 0.3s ease)
-	&.is-active
-		right: 0
-		opacity: 1
-	.nav
-		margin-bottom: 10px
-		ul
-			float: none
-			width: auto
-		li
-			height: 37px
-			line-height: 37px
 
-	.btn-account
-		display: inline-block
-		margin-bottom: 25px
-	.btn
-		margin-bottom: 15px
-	.social
-		margin-top: 25px
+// wholepage wrapper
+.out
+	+opacity(1)
+	+transition(opacity 1s ease)
+	&.is-loading
+		+opacity(0)
 
-// section
-.section
-	position: relative
-	height: 560px
+// story
+.story
+	padding: 30px 0 45px
+	border-top: 2px solid $dblue
 	text-align: center
-	color: $dblue
-	&:before
-		position: absolute
-		top: -8px
-		left: 0
-		width: 100%
-		height: 16px
-		content: ""
-		background: url(../img/bg-zig.png) repeat-x 0 50%
-	.section-i
-		line-height: 560px
-	&.is-visible
-		// .section__holder
-		// 	opacity: 1
-		// 	top: 0
-	.section__number
-		position: absolute
-		top: -27px
-		left: 50%
-		margin-left: -27px
-		content: ""
-		display: block
-		width: 54px
-		height: 54px
-		line-height: 54px
-		color: $dblue
-		background: $white
-		+border-radius(50%)
-		font-size: 13px
-		+vp_b
-	.section__holder
-		position: relative
-		display: inline-block
-		vertical-align: middle
-		line-height: 1
-		margin: 0 auto
-		min-width: 585px
-		width: 585px
-		position: relative
-		+transition(all .4s ease)
-		// top: -200px
-		opacity: 1
-		top: 0
-	.section__content
-		line-height: 1.4
-		.btn
-			margin-top: 3em
-	.section__title
-		+vp_b
-		font-size: 36px
-		text-transform: uppercase
-		margin-bottom: 0.5em
-	.section__sub
-		+vp_b
-		font-size: 12px
-		text-transform: uppercase
-		line-height: 1.5
-		&:after
-			display: block
-			width: 145px
-			height: 2px
-			content: ""
-			margin: 2em auto
-			background: $dblue
-	.section__text
-		+vp31
-		font-size: 14px
-	// #1
-	&#first
-		border-top: 2px solid #fff
-		background: $white url(../img/slide-1.jpg) no-repeat fixed
-		+cover
+	.story__note
+		+sub
 		&:before
-			content: none
-	// #2
-	&#second
-		background: $dblue url(../img/slide-2.jpg) no-repeat fixed
-		+cover
-		color: $white
-		.section__sub
-			&:after
-				background: $white
-	// #3
-	&#third
-		background: $white url(../img/slide-3.jpg) no-repeat fixed
-		+cover
-	// #4
-	&#fourth
-		background: $dblue url(../img/slide-4.jpg) no-repeat fixed
-		+cover
-		color: $white
-		.section__sub
-			&:after
-				background: $white
-		.section__holder
-			min-width: 715px
-			width: 715px
-	// #5
-	&#fifth
-		background: $white url(../img/slide-5.jpg) no-repeat fixed
-		+cover
+			position: relative
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 30px
+			+s(cw)
+			content: ""
+		p
+			margin-bottom: 0.5em
 
-// logos
+// leading
+.leading
+	padding: 50px 0 70px
+	background: $dblue
+	color: $white
+	text-align: center
+	.leading__title
+		font-size: 36px
+		margin-bottom: .5em
+		+vp31
+	.leading__sketch
+		+sub
+
+// clients
 .clients
 	padding-top: 55px
-	.clients__title
-		text-transform: uppercase
+	.clients__heading
+		+sub
 		text-align: center
-		font-size: 12px
-		+vp_b
-		margin-bottom: 25px
+		margin-bottom: 35px
 		&:before
 			position: relative
 			display: block
@@ -863,91 +214,141 @@ body
 			+s(cw-sm)
 			content: ""
 	.clients__items
-		border-top: 1px solid #e2e2e2
-		+clr
-		& > li
+		ul
+			+clr
+			border-top: 1px solid #e2e2e2
+		li
 			float: left
-			border-left: 1px solid #e2e2e2
-			// background: red
-			text-align: center
 			width: 16.6%
 			height: 110px
 			line-height: 110px
+			+box
+			border-left: 1px solid #e2e2e2
+			text-align: center
 			&:first-child
 				border-left: none
-			img
-				display: inline-block
-				vertical-align: middle
-				max-width: 100%
-				line-height: 1
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
 
-
-
-// video
-.video
+// production
+.production
 	height: 640px
 	background: $dblue url(../img/video.jpg) no-repeat
+	background-position: top center
+	background-attachment: fixed
 	+cover
 	color: $white
-	.video__content
+	.production__content
 		padding-top: 165px
 		text-align: center
 		width: 585px
 		margin-left: auto
 		margin-right: auto
-	.video__title
-		+vp_b
-		font-size: 36px
-		text-transform: uppercase
+	.production__title
+		+h
 		margin-bottom: 0.5em
-	.video__sub
-		+vp_b
-		font-size: 12px
-		text-transform: uppercase
-		line-height: 1.5
+	.production__sketch
+		+sub
 		margin-bottom: 30px
-	.video__play-btn
-		position: relative
-		cursor: pointer
-		width: 112px
-		height: 112px
-		line-height: 112px
-		+border-radius(50%)
+
+
+
+
+
+
+.testing
+	position: relative
+	height: 495px
+	border-top: 2px solid $dblue
+	background: url(../img/testing-bg.jpg) no-repeat
+	+cover
+	.testing__main
+		text-transform: uppercase
+		font-size: 11px
+		width: 370px
+		padding-top: 65px
+		p
+			margin-bottom: 1em
+	.testing__title
+		+h
+		font-size: 24px
+	.testing__lead
+		margin: 25px 0
+		&:before, &:after
+			position: relative
+			display: block
+			width: 100%
+			height: 6px
+			background: url(../img/zigzag.png) repeat-x
+			content: ""
+		&:before
+			margin-bottom: 15px
+		&:after
+			margin-top: 15px
+		h3
+			+h
+			font-size: 28px
+			margin-bottom: 0.3em
+		p
+			+vp_b
+			font-size: 12px
+			text-transform: uppercase
+	.testing__corporate
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 370px
+		background-color: $dblue
+		padding: 0 45px
+		color: $white
 		+box
-		margin-left: auto
-		margin-right: auto
-		border: 2px solid #fff
-		+transition(all .2s ease)
-		&:hover
-			background: #fff
-			span
-				border-width: 17px 0 17px 22px
-				border-color: transparent transparent transparent $dblue
-		span
-			// +transition(all .2s ease)
-			display: inline-block
-			vertical-align: middle
-			line-height: 1
-			margin-top: -11px
-			margin-left: 7px
-			width: 0px
-			height: 0px
-			border-style: solid
-			border-width: 21px 0 21px 28px
-			border-color: transparent transparent transparent $white
+	.testing__corporate-content
+		position: absolute
+		bottom: 0
+		left: 45px
+		width: 280px
+		margin-bottom: 40px
+		p
+			+vp31
+			font-size: 14px
+			margin-bottom: 1em
+	.testing__corporate-title
+		+vp_b
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 1em
+
+.chevron
+	position: absolute
+	top: -27px
+	left: 50%
+	margin-left: -27px
+	width: 54px
+	height: 54px
+	background-color: $dblue
+	+border-radius(50%)
+	content: ""
+	&:before
+		position: absolute
+		+s(chevron)
+		top: 50%
+		margin-top: -6.5px
+		left: 50%
+		margin-left: -12.5px
+		content: ""
 
 
 
 
 
-.loader
-	background: #fff url('../img/loader.gif') no-repeat center center
-	width: 100%
-	height: 100%
-	position: fixed
-	top: 0
-	left: 0
-	// +transition(all .5s ease)
+
+
+
+
+
 
 
 
