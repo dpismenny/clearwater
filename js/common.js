@@ -71,6 +71,19 @@ $(document).ready(function() {
 
 
 
+// window resize
+$(window).resize(function() {
+
+	// .header height
+	(function() {
+		var height = $(window).height();
+				header = $('.landing .header');
+
+		header.height(height);
+	})();
+
+});
+
 
 
 $(window).load(function() {

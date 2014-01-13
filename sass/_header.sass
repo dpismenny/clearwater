@@ -1,6 +1,7 @@
 // header
 .landing
 	.header
+		margin-bottom: 0
 		min-height: 655px
 		background: $white url("../img/header-bg.jpg") no-repeat
 		+cover
@@ -30,9 +31,32 @@
 
 .header
 	position: relative
+	height: 482px
+	margin-bottom: 55px
 	& > .container
 		position: relative
 		padding-top: 35px
+	.chevron
+		bottom: -27px
+		top: auto
+	&.header_water
+		background: url("../img/water.png") no-repeat
+		+cover
+		.header__grid
+			margin-bottom: 55px
+		.header__slogan
+			margin-left: 0
+			width: 430px
+			&:before
+				position: relative
+				display: block
+				margin: 0 auto 20px
+				+s(drop)
+				content: ""
+			h2
+				margin-top: 0.5em
+				&:before
+					content: none
 	.header__main
 		float: left
 		margin-right: 60px
@@ -63,7 +87,7 @@
 			&:before
 				position: relative
 				display: block
-				margin: .5em auto
+				margin: 20px auto
 				+s(drop)
 				content: ""
 	.header__menu
@@ -139,5 +163,11 @@
 
 
 
-	
-	
+
+
+
+
+
+
+
+

@@ -30,6 +30,23 @@ body
 	text-transform: uppercase
 	+vp_b
 
+
+.title_cw
+	+vp_b
+	font-size: 36px
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 1em
+
+.cw-logo
+	position: relative
+	display: block
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 30px
+	+s(cw)
+	content: ""
+
 // preloader
 .loader
 	background: #fff url('../img/loader.gif') no-repeat center center
@@ -174,14 +191,6 @@ body
 	text-align: center
 	.story__note
 		+sub
-		&:before
-			position: relative
-			display: block
-			margin-left: auto
-			margin-right: auto
-			margin-bottom: 30px
-			+s(cw)
-			content: ""
 		p
 			margin-bottom: 0.5em
 
@@ -342,8 +351,169 @@ body
 
 
 
+.show
+	padding-bottom: 140px
+	background: url("../img/zig-grey.png") repeat-x 0 100%
 
 
+.justify
+	text-align: justify !important
+	line-height: 0 !important
+	font-size: 1px !important
+	text-justify: newspaper !important
+	zoom: 1 !important
+	text-align-last: justify !important
+	&:after
+		content: "" !important
+		display: inline-block !important
+		width: 100% !important
+		height: 0px !important
+		visibility: hidden !important
+		overflow: hidden !important
+	.justify__child
+		text-align: center !important
+		display: inline-block !important
+		line-height: normal !important
+		vertical-align: top !important
+		font-size: 14px !important
+
+.slider
+	.slider__menu
+		overflow: hidden
+		height: 195px
+		line-height: 195px
+		margin-bottom: 45px
+		text-align: center
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			text-align: center
+			line-height: 1
+			width: 20%
+			padding: 1px
+			+box
+			// padding: 0 20px
+			+vp_b
+			font-size: 10px
+			text-transform: uppercase
+			cursor: pointer
+			&:first-child
+				// text-align: left
+			&:last-child
+				// text-align: right
+				.slider__menu-holder
+					&:after
+						right: 100%
+						left: auto
+			&.is-active
+				.slider__thumb
+					margin-top: -1px
+					width: 169px
+					height: 169px
+					border: 10px solid #fff
+					img
+						width: 146px
+						height: 146px
+						border: 2px solid #c5d7e3
+				.slider__text
+					position: absolute
+					left: 0
+					right: 0
+					text-align: center
+					bottom: -200px
+					opacity: 0
+		.slider__thumb
+			margin-top: 1px
+			+transition(all .2s linear)
+			position: relative
+			width: 84px
+			height: 84px
+			border: 4px solid #fff
+			margin-left: auto
+			margin-right: auto
+			+border-radius(50%)
+			+box-shadow(0px 0px 1px 1px #c5d7e3)
+			+box
+			z-index: 101
+			background: #FFF
+			&:before
+				position: absolute
+				display: block
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: #023F84
+				+opacity(.6)
+				content: ""
+				+border-radius(50%)
+				z-index: 100
+			img
+				+transition(all .2s linear)
+				position: relative
+				width: 75px
+				height: 75px
+				display: block
+				margin-left: auto
+				margin-right: auto
+				+border-radius(50%)
+				+box
+		.slider__menu-holder
+			position: relative
+			display: inline-block
+			&:after
+				position: absolute
+				top: 50%
+				width: 200px
+				margin-top: -1px
+				height: 2px
+				left: 100%
+				background: #d5e6f2
+				content: ""
+				z-index: -1
+		.slider__text
+			+transition(all .2s linear)
+			position: absolute
+			top: 100%
+			padding-top: 10px
+			left: 0
+			right: 0
+			text-align: center
+	.slider__nav
+		li
+			position: absolute
+			top: 50%
+			z-index: 101
+		.slider__prev
+			left: 0
+		.slider__next
+			right: 0
+	.slider__content
+		position: relative
+	.slider__item
+		display: block
+		width: 100%
+		text-align: center
+		padding: 0 215px
+		+box
+		h2
+			+vp_b
+			font-size: 18px
+			text-transform: uppercase
+			line-height: 1
+			&:after
+				position: relative
+				display: block
+				width: 145px
+				height: 2px
+				margin: 25px auto
+				content: ""
+				background: $dblue
+		p
+			+vp31
+			font-size: 14px
+			line-height: 1.6
 
 
 
