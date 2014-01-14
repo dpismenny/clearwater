@@ -1,0 +1,89 @@
+// vadim styles
+
+.header_production
+	background: $white url("../img/production-bg.jpg") no-repeat
+	+cover
+.header_dark
+	.logo
+		+s(logo-white)
+	.language
+		a
+			color: $white
+			&:hover
+				color: $blue
+			&:active, &.is-active
+				color: $blue
+	.header__tel
+		margin-bottom: 10px
+		a
+			color: $white
+.preview
+	position: relative
+	max-width: 858px
+	margin: 0 auto
+	text-align: center
+	h2
+		+h
+		color: $white
+.preview__text
+	position: relative
+	padding: 76px 0 28px
+	+vp_b 
+	color: $white
+	text-transform: uppercase
+	line-height: 1.6  
+	&:before
+		content: ""
+		position: absolute
+		top: 17px
+		left: 50%
+		margin-left: -28px
+		+s(drop)
+.header-trigger
+	float: right
+	font-size: 0
+	padding-top: 4px 
+	span
+		font-size: 11px
+		line-height: 27px
+		vertical-align: middle
+		color: $white
+		text-transform: uppercase
+	i
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px 
+		+s(nav-white)
+		cursor: pointer
+.article-list
+	+clr
+	margin-left: -8.333%
+	padding-top: 40px 
+.article-list__item
+	float: left
+	width: 25%
+	margin-left: 8.333%
+.h-line
+	+sub
+	font-size: 18px
+	&:after
+		display: block
+		width: 145px
+		height: 2px
+		content: ""
+		margin: 2em auto
+		background: $dblue
+.h-line_left
+	&:after
+		display: block
+		width: 145px
+		height: 2px
+		content: ""
+		margin: 2em 0
+		background: $dblue
+.article-list__content
+	font-size: 14px
+	color: #023671
+	+vp31
+	line-height: 1.6 					
+	 	  				
