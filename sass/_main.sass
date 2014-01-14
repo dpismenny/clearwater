@@ -25,11 +25,28 @@ body
 	text-transform: uppercase
 	+vp_b
 
+=h2
+	font-size: 18px
+	text-transform: uppercase
+	+vp_b
+	text-align: center
+.title
+	+h2
+
+=h-border
+	+sub
+	&:after
+		display: block
+		width: 145px
+		height: 2px
+		content: ""
+		margin: 2em auto
+		background: $dblue
+
 =sub
 	font-size: 12px
 	text-transform: uppercase
 	+vp_b
-
 
 .title_cw
 	+vp_b
@@ -47,6 +64,7 @@ body
 	+s(cw)
 	content: ""
 
+
 // preloader
 .loader
 	background: #fff url('../img/loader.gif') no-repeat center center
@@ -55,6 +73,34 @@ body
 	position: fixed
 	top: 0
 	left: 0
+
+// prev next
+.prev, .next
+	width: 50px
+	height: 50px
+	+border-radius(50%)
+	background: $dblue
+	+hidetext
+	cursor: pointer
+	+transition(all .2s linear)
+	&:before
+		position: absolute
+		top: 50%
+		margin-top: -12px
+		left: 50%
+		content: ""
+		+s(arrow)
+	&:hover
+		width: 65px
+		height: 65px
+		background: $blue
+.prev
+	&:before
+		margin-left: -9px
+		+rotate(180)
+.next
+	&:before
+		margin-left: -5px
 
 // overlay
 .overlay
@@ -262,11 +308,7 @@ body
 		+sub
 		margin-bottom: 30px
 
-
-
-
-
-
+// testing
 .testing
 	position: relative
 	height: 495px
@@ -330,6 +372,34 @@ body
 		text-transform: uppercase
 		margin-bottom: 1em
 
+// show
+.show
+	padding-bottom: 140px
+	background: url("../img/zig-grey.png") repeat-x 0 100%
+
+// justify
+.justify
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+	.justify__child
+		text-align: center
+		display: inline-block
+		line-height: normal
+		vertical-align: top
+		font-size: 14px
+
+// chevron
 .chevron
 	position: absolute
 	top: -27px
@@ -349,34 +419,7 @@ body
 		margin-left: -12.5px
 		content: ""
 
-
-
-.show
-	padding-bottom: 140px
-	background: url("../img/zig-grey.png") repeat-x 0 100%
-
-
-.justify
-	text-align: justify !important
-	line-height: 0 !important
-	font-size: 1px !important
-	text-justify: newspaper !important
-	zoom: 1 !important
-	text-align-last: justify !important
-	&:after
-		content: "" !important
-		display: inline-block !important
-		width: 100% !important
-		height: 0px !important
-		visibility: hidden !important
-		overflow: hidden !important
-	.justify__child
-		text-align: center !important
-		display: inline-block !important
-		line-height: normal !important
-		vertical-align: top !important
-		font-size: 14px !important
-
+// slider
 .slider
 	.slider__menu
 		overflow: hidden
@@ -393,15 +436,11 @@ body
 			width: 20%
 			padding: 1px
 			+box
-			// padding: 0 20px
 			+vp_b
 			font-size: 10px
 			text-transform: uppercase
 			cursor: pointer
-			&:first-child
-				// text-align: left
 			&:last-child
-				// text-align: right
 				.slider__menu-holder
 					&:after
 						right: 100%
@@ -423,72 +462,80 @@ body
 					text-align: center
 					bottom: -200px
 					opacity: 0
-		.slider__thumb
-			margin-top: 1px
+			&:hover
+				.slider__thumb
+					&:before
+						background: #66cdef
+	.slider__thumb
+		margin-top: 1px
+		+transition(all .2s linear)
+		position: relative
+		width: 84px
+		height: 84px
+		border: 4px solid #fff
+		margin-left: auto
+		margin-right: auto
+		+border-radius(50%)
+		+box-shadow(0px 0px 1px 1px #c5d7e3)
+		+box
+		z-index: 101
+		background: #FFF
+		&:before
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			+transition(all .2s linear)
+			background: #023F84
+			+opacity(.6)
+			content: ""
+			+border-radius(50%)
+			z-index: 100
+		img
 			+transition(all .2s linear)
 			position: relative
-			width: 84px
-			height: 84px
-			border: 4px solid #fff
+			width: 75px
+			height: 75px
+			display: block
 			margin-left: auto
 			margin-right: auto
 			+border-radius(50%)
-			+box-shadow(0px 0px 1px 1px #c5d7e3)
 			+box
-			z-index: 101
-			background: #FFF
-			&:before
-				position: absolute
-				display: block
-				top: 0
-				left: 0
-				width: 100%
-				height: 100%
-				background: #023F84
-				+opacity(.6)
-				content: ""
-				+border-radius(50%)
-				z-index: 100
-			img
-				+transition(all .2s linear)
-				position: relative
-				width: 75px
-				height: 75px
-				display: block
-				margin-left: auto
-				margin-right: auto
-				+border-radius(50%)
-				+box
-		.slider__menu-holder
-			position: relative
-			display: inline-block
-			&:after
-				position: absolute
-				top: 50%
-				width: 200px
-				margin-top: -1px
-				height: 2px
-				left: 100%
-				background: #d5e6f2
-				content: ""
-				z-index: -1
-		.slider__text
-			+transition(all .2s linear)
+	.slider__menu-holder
+		position: relative
+		display: inline-block
+		&:after
 			position: absolute
-			top: 100%
-			padding-top: 10px
-			left: 0
-			right: 0
-			text-align: center
+			top: 50%
+			width: 200px
+			margin-top: -1px
+			height: 2px
+			left: 100%
+			background: #d5e6f2
+			content: ""
+			z-index: -1
+	.slider__text
+		+transition(all .2s linear)
+		position: absolute
+		top: 100%
+		padding-top: 10px
+		left: 0
+		right: 0
+		text-align: center
 	.slider__nav
 		li
 			position: absolute
 			top: 50%
+			margin-top: -25px
 			z-index: 101
-		.slider__prev
-			left: 0
-		.slider__next
-			right: 0
+			&:hover
+				margin-top: -32px
+	.slider__prev
+		left: 0
+	.slider__next
+		right: 0
 	.slider__content
 		position: relative
 	.slider__item
@@ -514,6 +561,165 @@ body
 			+vp31
 			font-size: 14px
 			line-height: 1.6
+
+// awards
+.awards
+	padding-top: 40px
+	padding-bottom: 50px
+	background: url("../img/zig-grey.png") repeat-x 0 100%
+	.title
+		margin-bottom: 2em
+	.awards__list
+		text-align: center
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: top
+			font-size: 14px
+			margin: 0 25px
+			&.certificate
+				width: 202px
+				height: 268px
+				background: url(../img/border.png) no-repeat
+				+box
+				line-height: 268px
+				text-align: center
+				img
+					display: inline-block
+					vertical-align: middle
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+
+.price
+	padding-top: 40px
+	padding-bottom: 75px
+	text-align: center
+	+vp31
+	font-size: 14px
+	p
+		line-height: 1.6
+	.price__title
+		+h-border
+		font-size: 18px
+
+// links
+.link
+	color: #00bcf3
+	text-decoration: none
+	border-bottom: 3px solid transparent
+	+transition(all .2s linear)
+	&:hover
+		color: $dblue
+		text-decoration: none
+		border-bottom: 3px solid $dblue
+
+
+
+.testing-alt
+	position: relative
+	background: $dblue
+	color: $white
+	text-align: center
+	padding-top: 40px
+	padding-bottom: 40px
+	font-size: 14px
+	min-height: 350px
+	p
+		+vp31
+		margin-bottom: 2em
+	&:before
+		display: block
+		position: absolute
+		top: -5px
+		left: 0
+		width: 100%
+		height: 12px
+		background: url(../img/zig-blue.png) repeat-x
+		content: ""
+	.container
+		max-width: 570px
+	.testing-alt__subtitle
+		+sub
+		margin-bottom: 1em
+	.testing-alt__title
+		font-size: 28px
+		text-transform: uppercase
+		+vp_b
+		&:after
+			position: relative
+			display: block
+			width: 270px
+			height: 6px
+			content: ""
+			background: url(../img/zig-w.png) repeat-x 
+			margin: 20px auto
+	.testing-alt__corporate-btn
+		position: absolute
+		right: 0px
+		bottom: 50%
+		margin-bottom: -125px
+		right: -180px
+		+rotate(-90)
+		width: 250px
+		padding-left: 0
+		padding-right: 0
+		+box
+		-webkit-transform-origin: 0 0
+		-moz-transform-origin: 0 0
+		-ms-transform-origin: 0 0
+		-o-transform-origin: 0 0
+		transform-origin: 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
