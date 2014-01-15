@@ -165,4 +165,52 @@
 	+vp_b
 	font-size: 12px
 	line-height: 1.6
-	text-transform: uppercase		  	
+	text-transform: uppercase
+.slider__menu2
+	display: table
+	width: 100%
+	margin-bottom: 42px
+	& > div  
+		display: table-cell
+		text-align: center
+.slider__menu-item
+	position: relative
+	&:first-child
+		.slider__menu-line
+			position: absolute
+			width: 50%
+			right: 0
+			top: 0
+	&:last-child
+		.slider__menu-line
+			position: absolute
+			width: 50%
+			left: 0
+			top: 0	  		
+.slider__menu-line
+	position: relative
+	height: 2px
+	background: $dblue
+	margin: 14px 0 26px
+.slider__menu-round
+	position: absolute
+	top: 0px
+	left: 50%
+	margin-left: -15px
+	width: 30px
+	height: 30px
+	+border-radius(50%)
+	+box
+	border: 2px solid $dblue
+	background: $white
+	z-index: 2
+	cursor: pointer
+	+transition(background .2s linear)
+.slider__menu-item.is-active
+	.slider__menu-round
+		background: $dblue
+.slider-chronology
+	.h-slim
+		text-align: center
+	.slider
+		margin: 40px 0 75px			 	   	
