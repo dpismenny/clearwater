@@ -359,7 +359,8 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .header_dark .header__tel { margin-bottom: 10px; }
 .header_dark .header__tel a { color: white; }
 
-.preview { position: relative; max-width: 858px; margin: 0 auto; text-align: center; }
+.narrow { position: relative; max-width: 858px; margin: 0 auto; text-align: center; }
+
 .preview h2 { font-size: 36px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; color: white; }
 
 .preview__text { position: relative; padding: 76px 0 28px; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; color: white; text-transform: uppercase; line-height: 1.6; }
@@ -368,6 +369,8 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .header-trigger { float: right; font-size: 0; padding-top: 4px; }
 .header-trigger span { font-size: 11px; line-height: 27px; vertical-align: middle; color: white; text-transform: uppercase; }
 .header-trigger i { display: inline-block; vertical-align: middle; margin-left: 15px; background: url('../img/icons-sb99ea55742.png') 0 -879px no-repeat; width: 34px; height: 27px; cursor: pointer; }
+
+.article { padding-bottom: 50px; }
 
 .article-list { *zoom: 1; margin-left: -8.333%; padding-top: 40px; }
 .article-list:after { content: " "; display: table; clear: both; }
@@ -380,3 +383,18 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .h-line_left:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em 0; background: #003671; }
 
 .article-list__content { font-size: 14px; color: #023671; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
+
+.watch-about { background: url(../img/zig-blue.png) 0 50% repeat-x; }
+
+.watch-about__inner { text-align: center; }
+.watch-about__inner .play-btn { display: inline-block; margin: 0 11px; }
+
+.watch-about__title { display: inline-block; vertical-align: top; text-transform: uppercase; padding-top: 25px; }
+
+.play-btn_blue { background: #023671; border: 2px solid #023671; }
+
+.invitation { padding: 32px 0 62px; }
+
+.invitation__title { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 32px; }
+
+.invitation__content { margin: 25px 0 30px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; line-height: 1.6; }
