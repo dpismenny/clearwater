@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	// sidebar
 	function navbar(){
-		var trigger = $('.sidebar-trigger');
+		var trigger = $('.js-trigger');
 
 		trigger.click(function (){
 			if (sidebar.hasClass('is-open')) {
@@ -34,10 +34,10 @@ $(document).ready(function() {
 
 
 			if($(window).scrollTop() >= top){
-				$(".sidebar-trigger").addClass('is-visible');
+				$(".js-trigger").addClass('is-visible');
 			}
 			else {
-				$(".sidebar-trigger").removeClass('is-visible');
+				$(".js-trigger").removeClass('is-visible');
 			}
 
 	}
