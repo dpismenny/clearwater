@@ -451,3 +451,19 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .inno-item__img-inner img { width: 100%; height: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 
 .inno-item__text { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1.6; text-transform: uppercase; }
+
+.slider__menu2 { display: table; width: 100%; margin-bottom: 42px; }
+.slider__menu2 > div { display: table-cell; text-align: center; }
+
+.slider__menu-item { position: relative; }
+.slider__menu-item:first-child .slider__menu-line { position: absolute; width: 50%; right: 0; top: 0; }
+.slider__menu-item:last-child .slider__menu-line { position: absolute; width: 50%; left: 0; top: 0; }
+
+.slider__menu-line { position: relative; height: 2px; background: #003671; margin: 14px 0 26px; }
+
+.slider__menu-round { position: absolute; top: 0px; left: 50%; margin-left: -15px; width: 30px; height: 30px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 2px solid #003671; background: white; z-index: 2; cursor: pointer; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; }
+
+.slider__menu-item.is-active .slider__menu-round { background: #003671; }
+
+.slider-chronology .h-slim { text-align: center; }
+.slider-chronology .slider { margin: 40px 0 75px; }
