@@ -412,7 +412,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .h-line_left:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em 0; background: #003671; }
 
-.article-list__content { font-size: 14px; color: #023671; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
+.article-list__content { font-size: 14px; color: #003671; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
 
 .watch-about { background: url(../img/zig-blue.png) 0 50% repeat-x; }
 
@@ -421,10 +421,33 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .watch-about__title { display: inline-block; vertical-align: top; text-transform: uppercase; padding-top: 25px; }
 
-.play-btn_blue { background: #023671; border: 2px solid #023671; }
+.play-btn_blue { background: #003671; border: 2px solid #003671; }
 
 .invitation { padding: 32px 0 62px; }
 
 .invitation__title { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 32px; }
 
 .invitation__content { margin: 25px 0 30px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; line-height: 1.6; }
+
+.header_about { background: white url("../img/about-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.story_mod { padding: 0px 0 45px; border-top: none; }
+
+.innovation { padding-bottom: 75px; }
+
+.inno__topper { height: 230px; background: #003671; text-align: center; padding-top: 50px; color: white; }
+
+.h-slim { font-size: 36px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
+
+.inno__sub-title { padding-top: 15px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+
+.inno__content { margin-top: -84px; }
+
+.inno-item { width: 16%; text-align: center; }
+
+.inno-item__img { display: inline-block; width: 169px; height: 169px; padding: 10px; margin-bottom: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c5d7e3; }
+
+.inno-item__img-inner { height: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid #c5d7e3; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inno-item__img-inner img { width: 100%; height: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+
+.inno-item__text { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1.6; text-transform: uppercase; }

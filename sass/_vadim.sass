@@ -1,4 +1,4 @@
-// vadim styles
+// production
 
 .header_production
 	background: $white url("../img/production-bg.jpg") no-repeat
@@ -86,7 +86,7 @@
 		background: $dblue
 .article-list__content
 	font-size: 14px
-	color: #023671
+	color: $dblue
 	+vp31
 	line-height: 1.6
 .watch-about
@@ -102,8 +102,8 @@
 	text-transform: uppercase
 	padding-top: 25px 
 .play-btn_blue
-	background: #023671
-	border: 2px solid #023671
+	background: $dblue
+	border: 2px solid $dblue
 .invitation
 	padding: 32px 0 62px
 .invitation__title	
@@ -114,3 +114,55 @@
 	text-transform: uppercase
 	+vp_b
 	line-height: 1.6
+	
+// about
+.header_about
+	background: $white url("../img/about-bg.jpg") no-repeat
+	+cover
+.story_mod
+	padding: 0px 0 45px
+	border-top: none
+.innovation
+	padding-bottom: 75px 	
+.inno__topper
+	height: 230px
+	background: $dblue
+	text-align: center
+	padding-top: 50px
+	color: $white
+.h-slim
+	font-size: 36px
+	+vp31
+.inno__sub-title
+	padding-top: 15px 
+	text-transform: uppercase
+	+vp_b
+.inno__content
+	margin-top: -84px 		
+.inno-item
+	width: 16%
+	text-align: center 
+.inno-item__img
+	display: inline-block
+	width: 169px
+	height: 169px
+	padding: 10px
+	margin-bottom: 20px 
+	+border-radius(50%)
+	+box
+	border: 1px solid #c5d7e3  
+.inno-item__img-inner
+	height: 100% 
+	+border-radius(50%)
+	border: 1px solid #c5d7e3
+	overflow: hidden
+	+box
+	img
+		width: 100%
+		height: 100%
+		+border-radius(50%)
+.inno-item__text
+	+vp_b
+	font-size: 12px
+	line-height: 1.6
+	text-transform: uppercase		  	
