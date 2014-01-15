@@ -674,9 +674,120 @@ body
 
 
 
+.composition
+	padding-top: 65px
+	padding-bottom: 90px
+	background: url("../img/zig-grey.png") repeat-x 0 100%
+	text-align: center
+	.container
+		max-width: 845px
+	.title
+		margin-bottom: 45px
 
-
-
+	.composition__content
+		position: relative
+		display: inline-block
+		margin-bottom: 80px
+		width: 100%
+	.composition__left
+		.composition__element
+			left: 0
+			text-align: left
+	.composition__right
+		.composition__element
+			right: 0
+			text-align: right
+	.composition__element
+		position: absolute
+		color: $blue
+		width: 250px
+		&.composition__element_mod
+			width: 250px
+			text-align: left
+			&.iodium
+				left: 10%
+			&.fluorum
+				right: 10%
+			.composition__symbol
+				border-bottom: 2px solid $dblue
+				&:before
+					content: none
+		&.natrium
+			top: -5px
+			width: 200px
+			.composition__symbol
+				&:before
+					left: 177px
+					bottom: -57px
+					+rotate(45)
+		&.calcium
+			top: 220px
+			text-align: left
+			width: 200px
+			.composition__symbol
+				&:before
+					left: 100%
+					+rotate(-45)
+					left: 177px
+					bottom: 55px
+		&.bicarbonate
+			top: -30px
+			.composition__symbol
+				&:before
+					right: 226px
+					bottom: -57px
+					+rotate(-45)
+		&.kalium
+			top: 110px
+		&.magnesium
+			top: 225px
+			.composition__symbol
+				&:before
+					right: 226px
+					bottom: 55px
+					+rotate(45)
+	.composition__symbol
+		position: relative
+		font-size: 48px
+		border-bottom: 1px solid #d7e3ec
+		line-height: 1
+		&:before
+			position: absolute
+			bottom: -1px
+			right: 100%
+			content: ""
+			height: 1px
+			width: 160px
+			background: #d7e3ec
+		span
+			text-transform: uppercase
+			display: inline-block
+			margin-left: 5px
+			color: $dblue
+			+vp_b
+			font-size: 10px
+	.i-bicarbon
+		display: inline-block
+		vertical-align: top
+		+s(bicarbon)
+		margin-bottom: 10px
+	.composition__description
+		margin-top: 10px
+		font-size: 14px
+		+vp31
+		color: $dblue
+	.composition__name
+		display: inline-block
+		margin-right: 20px
+		color: $blue
+	.composition__image
+		position: relative
+		z-index: 10
+		height: 350px
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
 
 
 
