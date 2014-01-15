@@ -17,11 +17,12 @@
 		margin-bottom: 10px
 		a
 			color: $white
-.preview
+.narrow
 	position: relative
 	max-width: 858px
 	margin: 0 auto
 	text-align: center
+.preview
 	h2
 		+h
 		color: $white
@@ -55,6 +56,8 @@
 		margin-left: 15px 
 		+s(nav-white)
 		cursor: pointer
+.article
+	padding-bottom: 50px 		
 .article-list
 	+clr
 	margin-left: -8.333%
@@ -85,5 +88,29 @@
 	font-size: 14px
 	color: #023671
 	+vp31
-	line-height: 1.6 					
-	 	  				
+	line-height: 1.6
+.watch-about
+	background: url(../img/zig-blue.png) 0 50% repeat-x 
+.watch-about__inner
+	text-align: center
+	.play-btn
+		display: inline-block
+		margin: 0 11px 
+.watch-about__title
+	display: inline-block
+	vertical-align: top
+	text-transform: uppercase
+	padding-top: 25px 
+.play-btn_blue
+	background: #023671
+	border: 2px solid #023671
+.invitation
+	padding: 32px 0 62px
+.invitation__title	
+	+vp31 
+	font-size: 32px
+.invitation__content
+	margin: 25px 0 30px
+	text-transform: uppercase
+	+vp_b
+	line-height: 1.6
