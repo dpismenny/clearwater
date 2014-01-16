@@ -423,11 +423,12 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .article-list__item { float: left; width: 28.66%; margin-left: 4.333%; }
 
-.article-list_4col .article-list__item { width: 16%; }
+.article-list_4col .article-list__item { width: 20%; }
 
 .h-line { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 18px; }
 .h-line:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em auto; background: #003671; }
 
+.h-line_left { text-align: left; }
 .h-line_left:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em 0; background: #003671; }
 
 .article-list__content { font-size: 14px; color: #003671; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
@@ -506,10 +507,80 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .header_deliver { background: white url("../img/deliver-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
+.deliver { padding-bottom: 60px; margin-bottom: 50px; background: url(../img/zig-grey.png) repeat-x 0 100%; }
 .deliver .h-slim { max-width: 920px; text-align: center; margin: 0 auto; margin-bottom: 40px; }
+
+.benefits-list { position: relative; }
+.benefits-list:before { content: ""; position: absolute; top: 70px; left: 8%; right: 8%; height: 2px; background: #c5d7e3; }
 
 .benefits { width: 16%; text-align: center; }
 
-.benefits__circle { display: inline-block; width: 139px; height: 139px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c9dae5; padding: 8px; }
+.benefits__circle { position: relative; display: inline-block; width: 139px; height: 139px; margin-bottom: 25px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c9dae5; padding: 8px; background: white; z-index: 2; }
 
-.benefits__circle-inner { height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid #c9dae5; }
+.benefits__circle-inner { height: 123px; line-height: 123px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid #c9dae5; text-align: center; }
+.benefits__circle-inner span { display: inline-block; vertical-align: middle; line-height: 1; padding: 0 10px; font-size: 18px; }
+
+.benefits__text { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1.6; }
+
+.narrow_wide { max-width: 920px; }
+
+.cost-wrap { *zoom: 1; margin-bottom: 65px; }
+.cost-wrap:after { content: " "; display: table; clear: both; }
+
+.cost__col { float: left; width: 46%; text-align: left; }
+.cost__col p { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 30px; }
+
+.cost__col_right { float: right; }
+
+.zbox-lblue { padding: 30px 0; background: url(../img/zigzag.png) repeat-x 0 0, url(../img/zigzag.png) repeat-x 0 100%; }
+
+.cost__title { color: #00abe4; text-transform: uppercase; text-align: justify; line-height: 1.6; margin-bottom: 10px; }
+
+.price-list { *zoom: 1; }
+.price-list:after { content: " "; display: table; clear: both; }
+
+.price-list__item { float: left; width: 50%; *zoom: 1; margin-bottom: 5px; }
+.price-list__item:after { content: " "; display: table; clear: both; }
+
+.price-list__number { float: left; width: 50%; font-size: 20px; }
+
+.price-list__value { float: right; width: 50%; font-size: 20px; color: #00abe4; }
+
+.h-line_blue { color: #00abe4; }
+.h-line_blue:after { background: #00abe4; }
+
+.grade { position: relative; padding-left: 30px; margin-bottom: 15px; font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
+.grade span { position: absolute; top: -3px; left: 0; font-size: 30px; color: #00abe4; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+
+.cost__bot { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; margin-bottom: 40px; }
+
+.order { position: relative; padding: 60px 0 50px; background: #e7f0f6; margin-bottom: 45px; }
+.order:before { content: ""; position: absolute; top: -6px; left: 0; right: 0; height: 11px; background: url(../img/zig-lblue.png) repeat-x 0 0; }
+.order:after { content: ""; position: absolute; bottom: -6px; left: 0; right: 0; height: 11px; background: url(../img/zig-lblue.png) repeat-x 0 0; }
+
+.order__btn { position: absolute; top: -18px; left: 50%; margin-left: -168px; background: white; }
+
+.order__content { *zoom: 1; margin-bottom: 65px; text-align: left; }
+.order__content:after { content: " "; display: table; clear: both; }
+.order__content .h-line { text-align: center; }
+.order__content .h-line_left { text-align: left; }
+.order__content p { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; margin-bottom: 20px; }
+
+.order__content_last { margin-bottom: 0; }
+
+.order__col { float: left; width: 46%; }
+
+.order__col_right { float: right; }
+
+.comments-wrap { padding-top: 45px; }
+
+.comments { position: relative; }
+.comments .h-slim { text-align: center; }
+
+.comments__col { max-width: 395px; }
+
+.comments__item { text-align: justify; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; margin-bottom: 75px; }
+
+.comments__author { padding-top: 20px; font-size: 12px; color: #00abe4; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
+
+.comments__add { text-align: center; margin-bottom: 60px; }
