@@ -24,6 +24,55 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: "Vida31Pro"; src: url("../fonts/Vida31Pro.eot"); src: url("../fonts/Vida31Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Vida31Pro.woff") format("woff"), url("../fonts/Vida31Pro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+.styleguide { background: #eeeeee; }
+.styleguide .hbox { position: relative; margin: 0 0 30px; padding: 40px; width: 900px; margin-left: auto; margin-right: auto; border: 1px solid #e2e2e2; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; background: white; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.styleguide .hbox.hbox_alt { background: #003671; color: white; }
+.styleguide .hbox-code { width: 900px; padding: 10px; text-align: center; margin: 10px auto 0; color: black; font-size: 12px; border: 1px solid #e2e2e2; border-bottom: none; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; background: whitesmoke; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.h, .h2, .h3, .h4, .h5, .h-sub { text-align: center; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+
+.h { font-size: 36px; }
+
+.h2 { font-size: 28px; }
+
+.h3 { font-size: 24px; }
+
+.h4 { font-size: 18px; }
+
+.h5 { font-size: 14px; }
+
+.h-sub { font-size: 12px; }
+
+.h-ltr { text-align: left; }
+
+.h-lower { text-transform: none; }
+
+.h-upper { text-transform: uppercase; }
+
+.h-slim { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
+
+.h-drop:before { display: block; margin: 20px auto; background: url('../img/icons-sda50849442.png') 0 -759px no-repeat; width: 56px; height: 29px; content: ""; }
+.h-drop:after { content: none; }
+
+.h-drop_after:after { display: block; margin: 20px auto; background: url('../img/icons-sda50849442.png') 0 -759px no-repeat; width: 56px; height: 29px; content: ""; }
+.h-drop_after:before { content: none; }
+
+.h-wave:after { display: block; margin: 20px auto; width: 270px; height: 6px; background: url(../img/zig-w.png) repeat-x; content: ""; }
+
+.h-dash:after { display: block; width: 145px; height: 2px; margin: 25px auto; content: ""; background: #003671; }
+
+.h-dash_ltr { text-align: left; }
+.h-dash_ltr:after { margin: 25px 0; }
+
+.h-dash_wide { text-align: left; }
+.h-dash_wide:after { margin: 25px auto; width: 100%; }
+
+.h-logo:before { display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px; content: ""; background: url('../img/icons-sda50849442.png') 0 -482px no-repeat; width: 58px; height: 30px; }
+
+.h-logo_grey:before { background: url('../img/icons-sda50849442.png') 0 -553px no-repeat; width: 58px; height: 30px; }
+
+.h-logo_white:before { background: url('../img/icons-sda50849442.png') 0 -624px no-repeat; width: 58px; height: 30px; }
+
 .scroll-btn { position: relative; padding: 19px 0 20px 70px; text-transform: uppercase; line-height: 1; font-size: 11px; color: #003671; text-decoration: none; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; }
 .scroll-btn:hover { color: #00abe4; cursor: pointer; }
 .scroll-btn:hover i { background: #00abe4; -webkit-box-shadow: 0 0 0 8px #00abe4; -moz-box-shadow: 0 0 0 8px #00abe4; box-shadow: 0 0 0 8px #00abe4; }
