@@ -791,7 +791,8 @@ body
 
 .header_action
 	background: url(../img/bg-gr.jpg)
-
+.header_corporative
+	background: url(../img/bg-corp.jpg)
 .preview_mod
 	&.narrow
 		margin: -45px auto 0
@@ -827,31 +828,182 @@ body
 	padding-bottom: 90px !important
 	background: url(../img/zig-grey.png) repeat-x 0 100%
 
+.clients_mod
+	.clients__items
+		ul
+			&:last-child
+				border-bottom: 1px solid #e2e2e2
+
+
+.stats
+	padding-top: 15px
+	padding-bottom: 60px
+
+
+.why
+	position: relative
+	background: $dblue
+	color: $white
+	padding: 40px 0
+	&:before
+		display: block
+		position: absolute
+		top: -5px
+		left: 0
+		width: 100%
+		height: 12px
+		background: url(../img/zig-blue.png) repeat-x
+		content: ""
+	&:after
+		display: block
+		position: absolute
+		bottom: -5px
+		left: 0
+		width: 100%
+		height: 12px
+		background: url(../img/zig-blue.png) repeat-x
+		content: ""
+.why__number
+	+vp_b
+	font-size: 48px
+	text-align: left
+	&:after
+		display: block
+		height: 2px
+		background: #FFF
+		content: ""
+		margin-top: 10px
+		margin-bottom: 20px
+.why__item
+	width: 28%
+	margin-bottom: 40px
+	vertical-align: middle !important
+	p
+		text-align: left
+		+vp31
+.why__item_mod
+	width: 36.5%
+	p
+		text-transform: uppercase
+		font-size: 12px
+		+vp_b
+		+box
+		border: 2px solid #fff
+		padding: 10%
+		line-height: 1.6
+		text-align: center
+		&:before
+			display: block
+			content: ""
+			+s(cw-w)
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
 
 
 
+.offers
+	padding: 45px 0
+.offers__content
+.offers__tabs
+	margin-top: 20px
+	margin-bottom: 35px
+	li
+		display: inline-block
+		text-transform: uppercase
+		+vp_b
+		font-size: 12px
+		padding: 0 20px
+		&.is-active, &:hover
+			a
+				color: $blue
+	a
+		color: $dblue
+		text-decoration: none
+.offers__items
+.offers__list
+	li
+		width: 28.1%
+		margin-bottom: 45px
+	.h-line_left
+		text-align: left
+		font-size: 18px
+		text-transform: none
+		&:after
+			width: 100%
+.offers__text
+	text-align: left
+	+vp31
+	font-size: 14px
+	p
+		margin-bottom: 1em
+		&.marked
+			color: $blue
+			text-transform: uppercase
+			+vp_b
+			small
+				display: block
+				text-transform: lowercase
+				+vp31
+.offers__note
+	font-size: 18px
+	+vp31
 
 
+.service-activities
+	padding: 60px 0 0
+	+vp31
+	font-size: 14px
+	p
+		margin-bottom: 2em
 
+.request
+	position: relative
+	background: $dblue
+	color: $white
+	text-align: center
+	padding: 40px 0
+	&:before
+		display: block
+		position: absolute
+		top: -5px
+		left: 0
+		width: 100%
+		height: 12px
+		background: url(../img/zig-blue.png) repeat-x
+		content: ""
+	&:after
+		display: block
+		position: absolute
+		bottom: -5px
+		left: 0
+		width: 100%
+		height: 12px
+		background: url(../img/zig-blue.png) repeat-x
+		content: ""
+.request__form
+	margin-top: 20px
+	width: 365px
+	margin-left: auto
+	margin-right: auto
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input
+	display: block
+	width: 100%
+	+box
+	margin-bottom: 10px
+	height: 38px
+	background: none
+	border: 1px solid #fff
+	text-align: center
+	padding: 10px
+	+placeholder-color(#fff)
+	text-transform: uppercase
+	color: #fff
+	+vp
+	font-size: 11px
+	&:focus
+		+placeholder-color(transparent)
 
 
 
