@@ -22,6 +22,8 @@
 	max-width: 858px
 	margin: 0 auto
 	text-align: center
+.narrow_slim
+	max-width: 585px	
 .preview
 	h2
 		+h
@@ -60,12 +62,12 @@
 	padding-bottom: 50px 		
 .article-list
 	+clr
-	margin-left: -8.333%
+	margin-left: -4.333%
 	padding-top: 40px 
 .article-list__item
 	float: left
-	width: 25%
-	margin-left: 8.333%
+	width: 28.66%
+	margin-left: 4.333%
 .article-list_4col
 	.article-list__item
 		width: 16% 	
@@ -264,4 +266,31 @@
 .contact-item
 	display: inline-block
 	+vp_b
-	margin-right: 12px 	
+	margin-right: 12px
+	
+// deliver
+.header_deliver
+	background: $white url("../img/deliver-bg.jpg") no-repeat
+	+cover
+.deliver
+	.h-slim
+		max-width: 920px
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 40px
+.benefits
+	width: 16% 		  	
+	text-align: center	 	
+.benefits__circle
+	display: inline-block
+	width: 139px
+	height: 139px
+	+border-radius(50%)
+	+box
+	border: 1px solid #c9dae5
+	padding: 8px
+.benefits__circle-inner
+	height: 100%
+	+box
+	+border-radius(50%) 
+	border: 1px solid #c9dae5	   
