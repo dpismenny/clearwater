@@ -66,6 +66,9 @@
 	float: left
 	width: 25%
 	margin-left: 8.333%
+.article-list_4col
+	.article-list__item
+		width: 16% 	
 .h-line
 	+sub
 	font-size: 18px
@@ -167,31 +170,28 @@
 	line-height: 1.6
 	text-transform: uppercase
 .slider__menu2
+	position: relative
 	display: table
 	width: 100%
 	margin-bottom: 42px
+	&:after
+		content: ""
+		position: absolute
+		top: 14px
+		height: 2px
+		background: $dblue
+		left: 2%
+		right: 2%
 	& > div  
 		display: table-cell
 		text-align: center
 .slider__menu-item
 	position: relative
-	&:first-child
-		.slider__menu-line
-			position: absolute
-			width: 50%
-			right: 0
-			top: 0
-	&:last-child
-		.slider__menu-line
-			position: absolute
-			width: 50%
-			left: 0
-			top: 0	  		
-.slider__menu-line
-	position: relative
-	height: 2px
-	background: $dblue
-	margin: 14px 0 26px
+	span
+		display: inline-block
+		padding-top: 40px
+.slider__menu-item.is-hidden
+	visibility: hidden
 .slider__menu-round
 	position: absolute
 	top: 0px
@@ -213,4 +213,44 @@
 	.h-slim
 		text-align: center
 	.slider
-		margin: 40px 0 75px			 	   	
+		margin: 40px 0 75px
+	.slider__item
+		h2
+			margin-bottom: 1em 
+			&:after
+				content: none	
+.contacts
+	margin-bottom: 70px
+	a
+		+vp31
+		text-decoration: none
+		color: $dblue
+.map
+	position: relative
+	height: 392px
+	margin-bottom: 30px 					 	   	
+.map__title
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 384px 
+	margin: -90px 0 0 -192px
+	background: #FFF
+	+box
+	padding: 36px 46px 
+	text-align: center
+.h-line_small
+	font-size: 12px
+.map__text
+	font-size: 14px
+	+vp31
+.marker
+	position: absolute
+	bottom: -20px
+	left: 50%
+	margin-left: -19px
+	+s(mark) 
+.contact-item
+	display: inline-block
+	+vp_b
+	margin-right: 12px 	
