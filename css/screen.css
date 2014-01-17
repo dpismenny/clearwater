@@ -686,3 +686,11 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .comments__author { padding-top: 20px; font-size: 12px; color: #00abe4; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
 
 .comments__add { text-align: center; margin-bottom: 60px; }
+
+.header_equipment { background: white url("../img/equipment-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.equipment-menu { font-size: 0; text-align: center; }
+.equipment-menu li { display: inline-block; margin: 0 20px; font-size: 12px; text-transform: uppercase; color: white; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
+.equipment-menu li span { cursor: pointer; border-bottom: 2px solid white; padding-bottom: 8px; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
+.equipment-menu li:hover { color: #00abe4; }
+.equipment-menu li:hover span { padding-bottom: 6px; border-bottom: 4px solid #00abe4; }
