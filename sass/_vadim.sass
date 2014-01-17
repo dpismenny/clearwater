@@ -464,6 +464,8 @@
 	+cover
 .equipment
 	position: relative
+	margin-bottom: 70px
+	padding-bottom: 30px 
 	&:after
 		content: ""
 		position: absolute
@@ -471,7 +473,11 @@
 		left: 0
 		right: 0
 		height: 11px
-		background: url(../img/zig-lblue.png) repeat-x 0 100%  
+		background: url(../img/zig-lblue.png) repeat-x 0 100%
+.equipment_last
+	margin-bottom: 0 
+	&:after
+		content: none
 .equipment-menu
 	font-size: 0
 	text-align: center
@@ -499,6 +505,7 @@
 	margin-bottom: 50px 
 .product
 	+clr
+	margin-bottom: 30px
 .product__img
 	float: left
 	width: 27.6% 
@@ -520,7 +527,7 @@
 	+vp31
 	font-size: 14px
 	margin-bottom: 40px
-.product__functions
+.functions
 	font-size: 0
 	margin-bottom: 30px
 	li
@@ -531,10 +538,33 @@
 	+clr
 .product__col	
 	float: left
-	width: 50%
+	width: 55% 
 	li
 		+clr
 		margin-bottom: 15px
+		strong
+			+vp_b
+	li.product__col-price
+		.product__col-left
+			width: 25% 
+		.product__col-right
+			width: 75%
+	li.product__col-text
+		.product__col-left
+			float: none
+			width: auto
+			span
+				+vp31
+				display: inline-block
+				margin-left: 5px
+				color: $dblue
+				text-transform: none
+		.product__col-right
+			float: none
+			width: auto
+.product__col_slim
+	width: 40%
+	margin-right: 5% 
 .product__col-left
 	float: left
 	width: 50%
@@ -544,5 +574,14 @@
 .product__col-right
 	float: right
 	width: 50%
-	+vp31 		
+	+vp31
+	line-height: 1.6
+.repair
+	p
+		margin-bottom: 30px
+		+vp31
+		line-height: 1.6
+		font-size: 14px 
+	.h4
+		margin-bottom: 30px  			
 	 				 

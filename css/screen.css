@@ -715,8 +715,11 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .header_equipment { background: white url("../img/equipment-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
-.equipment { position: relative; }
+.equipment { position: relative; margin-bottom: 70px; padding-bottom: 30px; }
 .equipment:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 11px; background: url(../img/zig-lblue.png) repeat-x 0 100%; }
+
+.equipment_last { margin-bottom: 0; }
+.equipment_last:after { content: none; }
 
 .equipment-menu { font-size: 0; text-align: center; }
 .equipment-menu li { display: inline-block; margin: 0 20px; font-size: 12px; text-transform: uppercase; color: white; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
@@ -726,7 +729,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .equipment__sub-title { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 50px; }
 
-.product { *zoom: 1; }
+.product { *zoom: 1; margin-bottom: 30px; }
 .product:after { content: " "; display: table; clear: both; }
 
 .product__img { float: left; width: 27.6%; }
@@ -738,16 +741,27 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .product__descr { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 14px; margin-bottom: 40px; }
 
-.product__functions { font-size: 0; margin-bottom: 30px; }
-.product__functions li { display: inline-block; vertical-align: top; margin-right: 5px; }
+.functions { font-size: 0; margin-bottom: 30px; }
+.functions li { display: inline-block; vertical-align: top; margin-right: 5px; }
 
 .product__info { *zoom: 1; }
 .product__info:after { content: " "; display: table; clear: both; }
 
-.product__col { float: left; width: 50%; }
+.product__col { float: left; width: 55%; }
 .product__col li { *zoom: 1; margin-bottom: 15px; }
 .product__col li:after { content: " "; display: table; clear: both; }
+.product__col li strong { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.product__col li.product__col-price .product__col-left { width: 25%; }
+.product__col li.product__col-price .product__col-right { width: 75%; }
+.product__col li.product__col-text .product__col-left { float: none; width: auto; }
+.product__col li.product__col-text .product__col-left span { font-family: "Vida31Pro"; font-weight: normal; font-style: normal; display: inline-block; margin-left: 5px; color: #003671; text-transform: none; }
+.product__col li.product__col-text .product__col-right { float: none; width: auto; }
+
+.product__col_slim { width: 40%; margin-right: 5%; }
 
 .product__col-left { float: left; width: 50%; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; color: #00abe4; text-transform: uppercase; }
 
-.product__col-right { float: right; width: 50%; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
+.product__col-right { float: right; width: 50%; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
+
+.repair p { margin-bottom: 30px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; }
+.repair .h4 { margin-bottom: 30px; }
