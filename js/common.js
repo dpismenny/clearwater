@@ -67,6 +67,27 @@ $(document).ready(function() {
 	// $('.landing .header__bg').plaxify();
 	// $.plax.enable();
 
+	function visibility(){
+		var window_top = $(window).scrollTop();
+		var window_height = $(window).height();
+		var start_visibility = window_top + window_height;
+		
+		$(".visibility").each(function(){
+			
+			var block_position = $(this).offset().top;
+			
+			if(start_visibility > block_position){
+				$(this).addClass('is-visible');
+			}
+		});
+	}
+	visibility();
+
+// window scroll
+	$(window).scroll(function(){
+		visibility();
+	});
+
 });
 
 
@@ -83,7 +104,6 @@ $(window).resize(function() {
 	})();
 
 });
-
 
 
 $(window).load(function() {

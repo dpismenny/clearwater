@@ -765,3 +765,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .repair p { margin-bottom: 30px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; }
 .repair .h4 { margin-bottom: 30px; }
+
+.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+
+.visibility.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
