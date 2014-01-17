@@ -458,9 +458,20 @@
 	margin-bottom: 60px
 	
 //	equipmen
+
 .header_equipment
 	background: $white url("../img/equipment-bg.jpg") no-repeat
-	+cover		 					 		
+	+cover
+.equipment
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 11px
+		background: url(../img/zig-lblue.png) repeat-x 0 100%  
 .equipment-menu
 	font-size: 0
 	text-align: center
@@ -480,4 +491,58 @@
 			color: $blue
 			span
 				padding-bottom: 6px
-				border-bottom: 4px solid $blue 
+				border-bottom: 4px solid $blue
+.equipment__sub-title
+	font-size: 14px
+	+vp31
+	line-height: 1.6
+	margin-bottom: 50px 
+.product
+	+clr
+.product__img
+	float: left
+	width: 27.6% 
+	img
+		display: inline-block
+		max-width: 100%
+.product__content
+	float: right
+	width: 72.4%
+	padding: 30px
+	+box
+	text-align: left
+.product__title
+	color: $blue
+	font-size: 18px
+	margin-bottom: 15px
+	text-transform: uppercase
+.product__descr
+	+vp31
+	font-size: 14px
+	margin-bottom: 40px
+.product__functions
+	font-size: 0
+	margin-bottom: 30px
+	li
+		display: inline-block
+		vertical-align: top
+		margin-right: 5px
+.product__info
+	+clr
+.product__col	
+	float: left
+	width: 50%
+	li
+		+clr
+		margin-bottom: 15px
+.product__col-left
+	float: left
+	width: 50%
+	+vp_b
+	color: $blue
+	text-transform: uppercase
+.product__col-right
+	float: right
+	width: 50%
+	+vp31 		
+	 				 
