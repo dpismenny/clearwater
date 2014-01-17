@@ -2,21 +2,22 @@
 .unit
 	position: relative
 	height: 560px
+	line-height: 560px
 	text-align: center
 	color: $dblue
 	background-color: $white
 	background-position: top center
 	background-attachment: fixed
 	+cover
-	&:before
-		position: absolute
-		top: -8px
-		left: 0
-		width: 100%
-		height: 16px
-		content: ""
-		background: url(../img/bg-zig.png) repeat-x 0 50%
-
+	&.zig
+		margin-top: 0
+		margin-bottom: 0
+		padding-top: 0
+		padding-bottom: 0
+		&:before
+			top: -6px
+		&:after
+			content: none
 	// #First / ABOUT
 	&.about
 		border-top: 2px solid #fff
@@ -24,7 +25,7 @@
 		&:before
 			content: none
 	// #Second / PRODUCT
-	&.product
+	&.products
 		background-image: url(../img/slide-2.jpg)
 		background-color: $dblue
 		color: $white
@@ -49,9 +50,6 @@
 	&.quality
 		background-image: url(../img/slide-5.jpg)
 
-	.container
-		line-height: 560px
-
 	.unit__number
 		position: absolute
 		top: -27px
@@ -71,23 +69,30 @@
 		position: relative
 		display: inline-block
 		vertical-align: middle
-		margin: 0 auto
-		min-width: 585px
-		width: 585px
 		line-height: 1.4
 		top: 0
 	.unit__title
-		+h
 		margin-bottom: 0.5em
-	.unit__sketch
-		+sub
-		&:after
-			display: block
-			width: 145px
-			height: 2px
-			content: ""
-			margin: 2em auto
-			background: $dblue
 	p
 		+vp31
 		font-size: 14px
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -247,27 +247,16 @@ body
 	color: $white
 	text-align: center
 	.leading__title
-		font-size: 36px
 		margin-bottom: .5em
-		+vp31
-	.leading__sketch
+	p
 		+sub
 
 // clients
 .clients
 	padding-top: 55px
+	text-align: center
 	.clients__heading
-		+sub
-		text-align: center
 		margin-bottom: 35px
-		&:before
-			position: relative
-			display: block
-			margin-left: auto
-			margin-right: auto
-			margin-bottom: 20px
-			+s(cw-sm)
-			content: ""
 	.clients__items
 		ul
 			+clr
@@ -295,17 +284,14 @@ body
 	background-attachment: fixed
 	+cover
 	color: $white
+	+sub
 	.production__content
 		padding-top: 165px
 		text-align: center
-		width: 585px
-		margin-left: auto
-		margin-right: auto
 	.production__title
-		+h
+		// +h
 		margin-bottom: 0.5em
-	.production__sketch
-		+sub
+	p
 		margin-bottom: 30px
 
 // testing
@@ -320,32 +306,17 @@ body
 		font-size: 11px
 		width: 370px
 		padding-top: 65px
+		text-align: left
 		p
 			margin-bottom: 1em
-	.testing__title
-		+h
-		font-size: 24px
 	.testing__lead
 		margin: 25px 0
-		&:before, &:after
-			position: relative
-			display: block
-			width: 100%
-			height: 6px
-			background: url(../img/zigzag.png) repeat-x
-			content: ""
-		&:before
-			margin-bottom: 15px
-		&:after
-			margin-top: 15px
+		padding: 5px 0
+		+sub
 		h3
-			+h
-			font-size: 28px
 			margin-bottom: 0.3em
 		p
-			+vp_b
-			font-size: 12px
-			text-transform: uppercase
+			margin-bottom: 0
 	.testing__corporate
 		position: absolute
 		top: 0
@@ -367,9 +338,6 @@ body
 			font-size: 14px
 			margin-bottom: 1em
 	.testing__corporate-title
-		+vp_b
-		font-size: 24px
-		text-transform: uppercase
 		margin-bottom: 1em
 
 // show
@@ -544,19 +512,6 @@ body
 		text-align: center
 		padding: 0 215px
 		+box
-		h2
-			+vp_b
-			font-size: 18px
-			text-transform: uppercase
-			line-height: 1
-			&:after
-				position: relative
-				display: block
-				width: 145px
-				height: 2px
-				margin: 25px auto
-				content: ""
-				background: $dblue
 		p
 			+vp31
 			font-size: 14px
@@ -629,32 +584,10 @@ body
 	p
 		+vp31
 		margin-bottom: 2em
-	&:before
-		display: block
-		position: absolute
-		top: -5px
-		left: 0
-		width: 100%
-		height: 12px
-		background: url(../img/zig-blue.png) repeat-x
-		content: ""
-	.container
-		max-width: 570px
-	.testing-alt__subtitle
-		+sub
+	&:after
+		content: none
+	.h-sub
 		margin-bottom: 1em
-	.testing-alt__title
-		font-size: 28px
-		text-transform: uppercase
-		+vp_b
-		&:after
-			position: relative
-			display: block
-			width: 270px
-			height: 6px
-			content: ""
-			background: url(../img/zig-w.png) repeat-x 
-			margin: 20px auto
 	.testing-alt__corporate-btn
 		position: absolute
 		right: 0px
@@ -793,29 +726,6 @@ body
 	background: url(../img/bg-gr.jpg)
 .header_corporative
 	background: url(../img/bg-corp.jpg)
-.preview_mod
-	&.narrow
-		margin: -45px auto 0
-	h2
-		margin-bottom: 1em
-	h3
-		+vp_b
-		text-transform: uppercase
-		font-size: 18px
-		margin-bottom: 0.5em
-	.preview__text
-		padding: 30px 0
-		background: url(../img/zig-w.png) repeat-x, url(../img/zig-w.png) repeat-x 0 100%
-		&:before
-			content: none
-		p
-			+vp31
-			font-size: 14px
-			text-transform: none
-
-
-
-
 
 
 .article-list__item
@@ -825,8 +735,8 @@ body
 			display: block
 			max-width: 100%
 .article_mod
-	padding-bottom: 90px !important
-	background: url(../img/zig-grey.png) repeat-x 0 100%
+	&:before
+		content: none
 
 .clients_mod
 	.clients__items
@@ -842,38 +752,12 @@ body
 
 .why
 	position: relative
-	background: $dblue
-	color: $white
 	padding: 40px 0
-	&:before
-		display: block
-		position: absolute
-		top: -5px
-		left: 0
-		width: 100%
-		height: 12px
-		background: url(../img/zig-blue.png) repeat-x
-		content: ""
-	&:after
-		display: block
-		position: absolute
-		bottom: -5px
-		left: 0
-		width: 100%
-		height: 12px
-		background: url(../img/zig-blue.png) repeat-x
-		content: ""
 .why__number
-	+vp_b
 	font-size: 48px
-	text-align: left
 	&:after
-		display: block
-		height: 2px
 		background: #FFF
-		content: ""
-		margin-top: 10px
-		margin-bottom: 20px
+		margin: 15px 0
 .why__item
 	width: 28%
 	margin-bottom: 40px

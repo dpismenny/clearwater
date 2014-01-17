@@ -25,23 +25,11 @@
 .narrow_slim
 	max-width: 585px	
 .preview
-	h2
-		+h
-		color: $white
-.preview__text
-	position: relative
-	padding: 76px 0 28px
-	+vp_b 
 	color: $white
-	text-transform: uppercase
-	line-height: 1.6  
-	&:before
-		content: ""
-		position: absolute
-		top: 17px
-		left: 50%
-		margin-left: -28px
-		+s(drop)
+.preview__text
+	+sub
+	line-height: 1.6
+	margin-bottom: 20px
 .header-trigger
 	float: right
 	font-size: 0
@@ -59,7 +47,7 @@
 		+s(nav-white)
 		cursor: pointer
 .article
-	padding-bottom: 50px 		
+	padding-bottom: 80px
 .article-list
 	+clr
 	margin-left: -4.333%
@@ -113,8 +101,7 @@
 .invitation
 	padding: 32px 0 62px
 .invitation__title	
-	+vp31 
-	font-size: 32px
+	text-transform: none
 .invitation__content
 	margin: 25px 0 30px
 	text-transform: uppercase
@@ -136,13 +123,11 @@
 	text-align: center
 	padding-top: 50px
 	color: $white
-.h-slim
-	font-size: 36px
-	+vp31
-.inno__sub-title
-	padding-top: 15px 
-	text-transform: uppercase
-	+vp_b
+	.h
+		margin-bottom: 15px
+	p
+		text-transform: uppercase
+		+sub
 .inno__content
 	margin-top: -84px 		
 .inno-item
@@ -224,15 +209,14 @@
 	.slider__menu-round
 		background: $dblue
 .slider-chronology
-	.h-slim
+	.h
+		text-transform: none
 		text-align: center
 	.slider
 		margin: 40px 0 75px
 	.slider__item
 		h2
-			margin-bottom: 1em 
-			&:after
-				content: none	
+			margin-bottom: 1em
 .contacts
 	margin-bottom: 70px
 	a
@@ -242,22 +226,21 @@
 .map
 	position: relative
 	height: 392px
-	margin-bottom: 30px 					 	   	
-.map__title
+	margin-bottom: 30px
+.map__content
 	position: absolute
 	top: 50%
 	left: 50%
-	width: 384px 
+	width: 384px
 	margin: -90px 0 0 -192px
 	background: #FFF
 	+box
-	padding: 36px 46px 
+	padding: 36px 46px
 	text-align: center
-.h-line_small
-	font-size: 12px
-.map__text
 	font-size: 14px
 	+vp31
+.h-line_small
+	font-size: 12px
 .marker
 	position: absolute
 	bottom: -20px
@@ -389,24 +372,7 @@
 .order
 	position: relative
 	padding: 60px 0 50px
-	background: #e7f0f6
 	margin-bottom: 45px
-	&:before
-		content: ""
-		position: absolute
-		top: -6px
-		left: 0
-		right: 0
-		height: 11px
-		background: url(../img/zig-lblue.png) repeat-x 0 0 
-	&:after
-		content: ""
-		position: absolute
-		bottom: -6px
-		left: 0
-		right: 0
-		height: 11px
-		background: url(../img/zig-lblue.png) repeat-x 0 0	  
 .order__btn
 	position: absolute
 	top: -18px
@@ -417,10 +383,10 @@
 	+clr
 	margin-bottom: 65px
 	text-align: left
-	.h-line
+	.h5
 		text-align: center
-	.h-line_left
-		text-align: left	
+		&.h-ltr
+			text-align: left
 	p
 		+vp31
 		line-height: 1.6
