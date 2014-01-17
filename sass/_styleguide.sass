@@ -91,20 +91,22 @@
 
 
 // headings size
-.h, .h2, .h3, .h4, .h5, .h-sub
-	text-align: center
+.h, .h2, .h3, .h4, .h5, .h6, .h-sub
+	// text-align: center
 	text-transform: uppercase
 	+vp_b
 
 .h
 	font-size: 36px
 .h2
-	font-size: 28px
+	font-size: 32px
 .h3
-	font-size: 24px
+	font-size: 28px
 .h4
-	font-size: 18px
+	font-size: 24px
 .h5
+	font-size: 18px
+.h6
 	font-size: 14px
 .h-sub
 	font-size: 12px
@@ -118,6 +120,11 @@
 	text-transform: uppercase
 .h-slim
 	+vp31
+.h-blue
+	color: $blue
+	&.h-dash
+		&:after
+			background: $blue
 
 // headings with drops
 .h-drop
