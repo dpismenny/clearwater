@@ -25,9 +25,35 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: "Vida31Pro"; src: url("../fonts/Vida31Pro.eot"); src: url("../fonts/Vida31Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Vida31Pro.woff") format("woff"), url("../fonts/Vida31Pro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 .styleguide { background: #eeeeee; }
-.styleguide .hbox { position: relative; margin: 0 0 30px; padding: 40px; width: 900px; margin-left: auto; margin-right: auto; border: 1px solid #e2e2e2; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; background: white; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.styleguide .hbox { position: relative; margin: 0 0 30px; padding: 40px; width: 1000px; margin-left: auto; margin-right: auto; border: 1px solid #e2e2e2; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; background: white; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .styleguide .hbox.hbox_alt { background: #003671; color: white; }
-.styleguide .hbox-code { width: 900px; padding: 10px; text-align: center; margin: 10px auto 0; color: black; font-size: 12px; border: 1px solid #e2e2e2; border-bottom: none; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; background: whitesmoke; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.styleguide .hbox-code { width: 1000px; padding: 10px; text-align: center; margin: 10px auto 0; color: black; font-size: 12px; border: 1px solid #e2e2e2; border-bottom: none; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; background: whitesmoke; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.z-box { position: relative; padding-top: 20px; padding-bottom: 20px; margin-top: 12px; margin-bottom: 12px; }
+.z-box:before, .z-box:after { position: absolute; left: 0; width: 100%; height: 6px; content: ""; background-repeat: repeat-x; }
+.z-box:before { top: -5px; }
+.z-box:after { bottom: -6px; }
+
+.z-box_lblue { margin-top: 6px; margin-bottom: 6px; }
+.z-box_lblue:before, .z-box_lblue:after { background-image: url(../img/zigzag.png); }
+
+.z-box_blue { background-color: #003671; color: white; margin-top: 6px; margin-bottom: 6px; }
+.z-box_blue:before, .z-box_blue:after { height: 12px; background-image: url(../img/zig-blue.png); }
+
+.z-box_white:before { top: -12px; }
+.z-box_white:after { bottom: -12px; }
+.z-box_white:before, .z-box_white:after { height: 12px; background-image: url(../img/bg-zig.png); }
+
+.z-box_white-sm:before, .z-box_white-sm:after { background-image: url(../img/zig-w.png); }
+
+.z-box_grey:before { top: -12px; }
+.z-box_grey:after { bottom: -12px; }
+.z-box_grey:before, .z-box_grey:after { height: 12px; background-image: url(../img/zig-grey.png); }
+
+.z-box_fill-grey { background-color: #e7f0f6; }
+.z-box_fill-grey:before { top: -6px; }
+.z-box_fill-grey:after { bottom: -6px; }
+.z-box_fill-grey:before, .z-box_fill-grey:after { height: 12px; background-image: url(../img/zig-lblue.png); }
 
 .h, .h2, .h3, .h4, .h5, .h-sub { text-align: center; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
 
