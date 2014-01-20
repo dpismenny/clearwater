@@ -739,6 +739,24 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .repair p { margin-bottom: 30px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; }
 .repair .h4 { margin-bottom: 30px; }
 
-.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.header_404 { background: white url("../img/header-bg-404.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.footer-push { min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -130px; }
+
+.push { height: 130px; clear: both; }
+
+.footer_404 { height: 130px; }
+
+.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; -webkit-transition-delay: 0.5s; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; transition-delay: 0.5s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
 .visibility.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+
+.js-visibility2 { -webkit-transition-delay: 1s; -moz-transition-delay: 1s; -o-transition-delay: 1s; transition-delay: 1s; }
+
+.js-visibility3 { -webkit-transition-delay: 1.5s; -moz-transition-delay: 1.5s; -o-transition-delay: 1.5s; transition-delay: 1.5s; }
+
+.js-visibility4 { -webkit-transition-delay: 2s; -moz-transition-delay: 2s; -o-transition-delay: 2s; transition-delay: 2s; }
+
+.js-visibility5 { -webkit-transition-delay: 2.5s; -moz-transition-delay: 2.5s; -o-transition-delay: 2.5s; transition-delay: 2.5s; }
+
+.js-visibility6, .js-visibility7, .js-visibility8 { -webkit-transition-delay: 1s; -moz-transition-delay: 1s; -o-transition-delay: 1s; transition-delay: 1s; }
