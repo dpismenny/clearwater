@@ -553,7 +553,15 @@
 		
 .header_404
 	background: $white url("../img/header-bg-404.jpg") no-repeat
-	+cover		
+	+cover
+.header__404
+	+clr
+	.header-trigger
+		color: $blue
+		i
+			+s(nav-m)	
+		span
+			color: $dblue				
 .footer-push
 	min-height: 100%
 	height: auto!important
@@ -566,7 +574,40 @@
 	height: 130px 
 
 
-
+.error
+	position: relative
+	+clr
+	padding-top: 130px 
+.error__img
+	position: absolute
+	top: 0
+	left: -100px
+	z-index: 1
+.error__inner
+	position: relative 
+	float: right
+	font-size: 0
+	margin-right: 70px 
+	text-transform: uppercase
+	+vp_b
+	z-index: 2	
+.error__text
+	display: inline-block
+	vertical-align: middle
+	font-size: 28px
+	color: $blue 
+.error__title
+	display: inline-block
+	margin: 0 17px 
+	vertical-align: middle
+	font-size: 14px
+	p
+		&:first-child
+			font-size: 155px
+			line-height: 1
+	a
+		text-decoration: none
+		color: $blue		
 
 // js-visibility
 
