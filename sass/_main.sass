@@ -888,13 +888,86 @@ body
 	font-size: 11px
 	&:focus
 		+placeholder-color(transparent)
+	&.input-dark
+		border: 1px solid #c5d7e3
+		color: #a8bcca
+		+placeholder-color(#a8bcca)
+		&:focus
+			+placeholder-color(transparent)
 
 
+.textarea
+	display: block
+	width: 100%
+	+box
+	border: 1px solid #c5d7e3
+	color: #a8bcca
+	padding: 10px
+	height: 70px
+	resize: none
+	+placeholder-color(#a8bcca)
+	text-align: center
+	margin-bottom: 10px
+	text-transform: uppercase
+	+vp
+	font-size: 11px
+	&:focus
+		+placeholder-color(transparent)
+
+.form-row
+	text-align: center
+
+.checkbox
+	padding-left: 28px
+	display: inline-block
+	margin-bottom: 10px
+	position: relative
+	height: 17px
+	line-height: 17px
+	text-transform: uppercase
+	+vp
+	font-size: 11px
+	color: #a8bcca
+	input
+		opacity: 0
+		width: 18px
+		height: 17px
+	i
+		width: 18px
+		height: 17px
+	input, i
+		position: absolute
+		top: 0
+		left: 0
+		+s(uncheck)
+	input:checked + i:after
+		content: ""
+		position: absolute
+		top: -3px
+		left: 0
+		+s(check)
 
 
-
-
-
+.popup
+	position: fixed
+	// top: 200px
+	left: 50%
+	margin-left: -183px
+	background: #fff
+	padding: 20px 25px
+	+box
+	width: 367px
+	z-index: 1010
+	opacity: 0
+	top: -200px
+	+transition(all .2s linear)
+	&.is-open
+		top: 200px
+		+opacity(1)
+.popup__title
+	color: $blue
+	text-align: center
+	margin-bottom: 15px
 
 
 

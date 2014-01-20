@@ -52,11 +52,11 @@
 								<li>рабочие дни <span>08:00 - 21:00</span></li>
 								<li>суббота <span>09:00 - 17:00</span></li>
 							</ul>
-							<button type="button" class="btn btn-block btn-sm btn-dark">Заказать звонок</button>
+							<button type="button" class="btn btn-block btn-sm btn-dark js-popup-callback">Заказать звонок</button>
 						</address>
 						<div class="header__account">
 							<a href="#" class="account-btn">Мой кабинет</a>
-							<div class="online-order">
+							<div class="online-order js-popup-online">
 								<h3>Заказать онлайн</h3>
 								<p>круглосуточно</p>
 							</div>
@@ -187,6 +187,7 @@
 							Самый большой и современный завод в Европе. Полностью автоматизированная линия. Компания полного цикла – работаем без посредников.
 						</h3>
 						<p>«Чистая Вода» - единственная компания, которая приглашает всех желающих на экскурсии по заводу. Мы гордимся своим производством и с радостью проведем экскурсию для вас!</p>
+						<button class="btn btn-white">Узнать больше про экскурсию</button>
 					</div>
 				</div>
 			</section>
@@ -323,7 +324,7 @@
 						<p>У вас возникли вопросы по качеству продукта или сервиса?</p>
 						<p>Позвоните нам:</p>
 						<p class="footer__contacts-tel"><a href="tel:+380443913030">044 391 30 30</a></p>
-						<a href="#" class="footer__feedback btn">Написать запрос отделу контроля качества</a>
+						<a href="#" class="footer__feedback btn js-popup-control">Написать запрос отделу контроля качества</a>
 					</div>
 					<!-- /.footer__contacts -->
 					<div class="footer__quality-control">
@@ -434,6 +435,39 @@
 
 	</div>
 	<!-- /.out -->
+
+	<!-- BEGIN popup -->
+	<div class="popup popup_callback">
+		<div class="popup__title h-sub">Обратный звонок</div>
+		<input type="tel" class="input input-dark" placeholder="Ваш номер">
+		<button type="submit" class="btn btn-block btn-fill">Отправить</button>
+	</div>
+	<!-- END popup -->
+
+	<!-- BEGIN popup -->
+	<div class="popup popup_online">
+		<div class="popup__title h-sub">Заказать онлайн</div>
+		<input type="text" class="input input-dark" placeholder="Имя">
+		<input type="tel" class="input input-dark" placeholder="Телефон *">
+		<input type="text" class="input input-dark" placeholder="Количество бутлей">
+		<textarea class="textarea" placeholder="Комментарий"></textarea>
+		<div class="form-row">
+			<label class="checkbox"><input type="checkbox"><i></i>Я новый клиент</label>
+		</div>
+		<button type="submit" class="btn btn-block btn-fill">Отправить</button>
+	</div>
+	<!-- END popup -->
+
+	<!-- BEGIN popup -->
+	<div class="popup popup_control">
+		<div class="popup__title h-sub">Контроль качества</div>
+		<input type="text" class="input input-dark" placeholder="Имя">
+		<input type="email" class="input input-dark" placeholder="E-mail">
+		<input type="tel" class="input input-dark" placeholder="Телефон">
+		<textarea class="textarea" placeholder="Сообщение *"></textarea>
+		<button type="submit" class="btn btn-block btn-fill">Отправить</button>
+	</div>
+	<!-- END popup -->
 
 	<div class="overlay"></div>
 	<!-- /.overlay -->
