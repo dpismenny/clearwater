@@ -263,6 +263,7 @@ body
 			border-top: 1px solid #e2e2e2
 		li
 			float: left
+			overflow: hidden
 			width: 16.6%
 			height: 110px
 			line-height: 110px
@@ -968,6 +969,59 @@ body
 	color: $blue
 	text-align: center
 	margin-bottom: 15px
+.unit-wrap
+	position: relative
+.unit-pager
+	position: fixed
+	top: 165px
+	right: -45px
+	z-index: 1010
+	+transition(all .3s ease-in)
+	opacity: 0
+	&.is-visible
+		opacity: 1
+		right: 45px
+	li
+		position: relative
+		display: block
+		width: 30px
+		height: 30px
+		line-height: 26px
+		+box
+		+vp_b
+		font-size: 10px
+		background: rgba(#fff, 1)
+		+border-radius(50%)
+		border: 2px solid rgba($dblue, 1)
+		text-align: center
+		color: $dblue
+		margin-bottom: 40px
+		&:before
+			height: 40px
+			width: 1px
+			background: $dblue
+			position: absolute
+			bottom: 100%
+			left: 50%
+			margin-left: -1px
+			margin-bottom: 2px
+			+box-shadow(1px 0px 0px 0px rgba(#fff, .6))
+			content: ""
+		&:first-child
+			&:before
+				content: none
+		&:last-child
+			margin-bottom: 0
+		&.is-active
+			color: #fff
+			border: 2px solid rgba(#fff, 1)
+			background: $dblue
+			a
+				color: #fff
+	a
+		display: block
+		text-decoration: none
+		color: $dblue	
 
 
 

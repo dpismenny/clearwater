@@ -8,7 +8,6 @@
 	background-color: $white
 	background-position: top center
 	background-attachment: fixed
-	+cover
 	&.zig
 		margin-top: 0
 		margin-bottom: 0
@@ -21,24 +20,28 @@
 	// #First / ABOUT
 	&.about
 		border-top: 2px solid #fff
-		background-image: url(../img/slide-1.jpg)
+		background: url(../img/slide-1.jpg)
+		+cover
 		&:before
 			content: none
 	// #Second / PRODUCT
 	&.products
-		background-image: url(../img/slide-2.jpg)
-		background-color: $dblue
+		background: url(../img/slide-2.jpg)
+		+cover
+		//background-color: $dblue
 		color: $white
 		.unit__sketch
 			&:after
 				background: $white
 	// #Third / SERVICE
 	&.service
-		background-image: url(../img/slide-3.jpg)
+		background: url(../img/slide-3.jpg)
+		+cover
 	// #Fourth / DELIVERY
 	&.delivery
-		background-image: url(../img/slide-4.jpg)
-		background-color: $dblue
+		background: url(../img/slide-4.jpg)
+		+cover
+		//background-color: $dblue
 		color: $white
 		.unit__sketch
 			&:after
@@ -48,8 +51,8 @@
 			width: 715px
 	// #Fifth / QUALITY
 	&.quality
-		background-image: url(../img/slide-5.jpg)
-
+		background: url(../img/slide-5.jpg)
+		+cover
 	.unit__number
 		position: absolute
 		top: -27px

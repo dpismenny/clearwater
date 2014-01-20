@@ -6,12 +6,12 @@
 	bottom: 0
 	+opacity(0)
 	width: 300px
-	padding: 95px 40px 30px
+	padding: 130px 40px 30px
 	background: $white
 	text-align: right
 	+transition(all .4s ceaser($easeInOutBack))
 	+box
-	z-index: 1001
+	z-index: 1011
 	&.is-open
 		right: 0
 		+opacity(1)
@@ -33,6 +33,7 @@
 	.sidebar__social
 		float: right
 
+
 .sidebar-trigger
 	position: fixed
 	top: 0px
@@ -45,7 +46,7 @@
 	font-size: 11px
 	text-decoration: none
 	+hidetext
-	z-index: 1002
+	z-index: 1012
 	&:hover
 		text-decoration: none
 		cursor: pointer
@@ -57,4 +58,4 @@
 		+s(nav-m)
 	&.is-visible
 		+opacity(1)
-		top: 35px
+		top: 70px		
