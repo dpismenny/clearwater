@@ -67,6 +67,9 @@ $(document).ready(function() {
 	// $('.landing .header__bg').plaxify();
 	// $.plax.enable();
 
+
+	// visibility 
+
 	function visibility(){
 		var window_top = $(window).scrollTop();
 		var window_height = $(window).height();
@@ -77,11 +80,23 @@ $(document).ready(function() {
 			var block_position = $(this).offset().top;
 			
 			if(start_visibility > block_position){
-				$(this).addClass('is-visible');
+				if( $(".visibility").hasClass('js-visibility1') ){
+					$(this).addClass('is-visible');
+				}
+				if( $(".visibility").hasClass('js-visibility2') ){
+					setTimeout( function() { $(this).addClass('is-visible'); }, 2000);
+				}
+				if( $(".visibility").hasClass('js-visibility3') ){
+					setTimeout( function() { $(this).addClass('is-visible'); }, 3000);
+				}
+				if( $(".visibility").hasClass('js-visibility4') ){
+					setTimeout( function() { $(this).addClass('is-visible'); }, 4000);
+				}
 			}
 		});
 	}
 	visibility();
+	
 
 // window scroll
 	$(window).scroll(function(){
