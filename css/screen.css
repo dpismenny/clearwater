@@ -385,6 +385,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .landing .header__bottle { position: absolute; bottom: 0; left: 74%; margin-left: -182px; width: 364px; z-index: 100; }
 .landing .header__bottle img { display: block; }
 .landing .header__strip { position: absolute; bottom: 0; left: 0; background: white; width: 100%; height: 95px; line-height: 95px; }
+.landing .header__strip .container { position: relative; }
 .landing .header__grid { position: relative; z-index: 101; margin-bottom: 90px; }
 .landing .header__social { float: right; }
 
