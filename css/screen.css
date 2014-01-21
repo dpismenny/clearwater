@@ -323,9 +323,9 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .composition .composition__image { position: relative; z-index: 10; height: 350px; }
 .composition .composition__image img { display: block; margin-left: auto; margin-right: auto; }
 
-.header_action { background: url(../img/bg-gr.jpg); }
+.header_action { background: url(../img/bg-gr.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
-.header_corporative { background: url(../img/bg-corp.jpg); }
+.header_corporative { background: url(../img/bg-corp.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .article-list__item figure { margin-bottom: 25px; }
 .article-list__item figure img { display: block; max-width: 100%; }
