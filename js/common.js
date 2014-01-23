@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+	// function onYouTubeIframeAPIReady() {
+	//   var player;
+	//   player = new YT.Player('player', {
+	//     videoId: 'M7lc1UVf-VE',
+	//     playerVars: { 'autoplay': 1, 'controls': 0 },
+	//     events: {
+	//       'onReady': onPlayerReady,
+	//       'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+	//       'onStateChange': onPlayerStateChange,
+	//       'onError': onPlayerError
+	//     }
+	//   });
+	// }
+
+
 	var sidebar = $('.sidebar'),
 			overlay = $('.overlay');
 
@@ -8,11 +23,13 @@ $(document).ready(function() {
 
 	// overlay
 	overlay.click(function (){
-		$(this).removeClass('is-open');
-		$('.popup_control').removeClass('is-open');
-		$('.popup_callback').removeClass('is-open');
-		$('.popup_online').removeClass('is-open');
-		sidebar.removeClass('is-open');
+			$(this).removeClass('is-open');
+			$(this).removeClass('is-video-open');
+			$('.popup_control').removeClass('is-open');
+			$('.popup_callback').removeClass('is-open');
+			$('.popup_online').removeClass('is-open');
+			$('.v-player').removeClass('is-open');
+			sidebar.removeClass('is-open');
 	});
 
 	$('.js-popup-control').click(function(){
@@ -41,6 +58,17 @@ $(document).ready(function() {
 		} else {
 			$('.popup_online').addClass('is-open');
 			$('.overlay').addClass('is-open');
+		}
+		return false;
+	});
+
+	$('.js-play').click(function(){
+		if ($('.v-player').hasClass('is-open')) {
+			$('.v-player').removeClass('is-open');
+		}
+		else {
+			$('.v-player').addClass('is-open');
+			$('.overlay').addClass('is-video-open');
 		}
 		return false;
 	});

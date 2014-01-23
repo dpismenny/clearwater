@@ -324,7 +324,7 @@
 				<div class="production__content narrow narrow_slim">
 					<h2 class="production__title h">Наше производство</h2>
 					<p class="production__sketch">Самый большой и самый современный завод в Европе. Полностью автоматизированная линия. У нас нет посредников. Работают лучшие специалисты</p>
-					<div class="play-btn"><span></span></div>
+					<div class="play-btn js-play"><span></span></div>
 				</div>
 			</section>
 			<!-- /.production -->
@@ -487,7 +487,58 @@
 	<div class="overlay"></div>
 	<!-- /.overlay -->
 
+
 	<div class="loader"></div>
+
+	<!-- BEGIN v-player -->
+		<div id="player" class="v-player">
+
+			<script>
+			  // 2. This code loads the IFrame Player API code asynchronously.
+			  var tag = document.createElement('script');
+
+			  tag.src = "https://www.youtube.com/iframe_api";
+			  var firstScriptTag = document.getElementsByTagName('script')[0];
+			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			  // 3. This function creates an <iframe> (and YouTube player)
+			  //    after the API code downloads.
+			  var player;
+			  function onYouTubeIframeAPIReady() {
+			    player = new YT.Player('player', {
+			      height: '100%',
+			      width: '100%',
+			      videoId: 'PCbVpHfAB_4',
+			      playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'fs': 1 },
+			      events: {
+			        'onReady': onPlayerReady,
+			        'onStateChange': onPlayerStateChange,
+			      }
+			    });
+			  }
+
+			  // 4. The API will call this function when the video player is ready.
+			  function onPlayerReady(event) {
+			    event.target.playVideo();
+			  }
+
+			  // 5. The API calls this function when the player's state changes.
+			  //    The function indicates that when playing a video (state=1),
+			  //    the player should play for six seconds and then stop.
+			  var done = false;
+			  function onPlayerStateChange(event) {
+			    if (event.data == YT.PlayerState.PLAYING && !done) {
+			      setTimeout(stopVideo, 6000);
+			      done = true;
+			    }
+			  }
+			  function stopVideo() {
+			    player.stopVideo();
+			  }
+			</script>
+		</div>
+	<!-- END v-player -->
+
 
 </body>
 </html>
