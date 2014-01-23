@@ -26,6 +26,8 @@
 	max-width: 585px	
 .preview
 	color: $white
+	&.preview_mod
+		margin-top: -40px
 .preview__text
 	+sub
 	line-height: 1.6
@@ -214,6 +216,10 @@
 		text-align: center
 	.slider
 		margin: 40px 0 75px
+	.slider__content
+		overflow: hidden
+		&.visibility
+			+transition(opacity 1s linear)
 	.slider__item
 		h2
 			margin-bottom: 1em
@@ -454,14 +460,16 @@
 		text-transform: uppercase
 		color: $white
 		+transition(all 200ms linear)
-		span
-			cursor: pointer
+		a
+			color: $white
 			border-bottom: 2px solid #fff
 			padding-bottom: 8px
+			text-decoration: none
 			+transition(all 200ms linear)
 		&:hover
 			color: $blue
-			span
+			a
+				color: $blue
 				padding-bottom: 6px
 				border-bottom: 4px solid $blue
 .equipment__sub-title

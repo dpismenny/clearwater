@@ -157,6 +157,8 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .cw-logo { position: relative; display: block; margin-left: auto; margin-right: auto; margin-bottom: 30px; background: url('../img/icons-s7af904e6e2.png') 0 -553px no-repeat; width: 58px; height: 30px; content: ""; }
 
+.main { padding-top: 20px; }
+
 .loader { background: white url("../img/loader.gif") no-repeat center center; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
 
 .prev, .next { width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #003671; font: 0/0 a; text-shadow: none; color: transparent; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
@@ -249,7 +251,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .justify:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .justify .justify__child { text-align: center; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; }
 
-.chevron { position: absolute; top: -27px; left: 50%; margin-left: -27px; width: 54px; height: 54px; background-color: #003671; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; content: ""; }
+.chevron { position: absolute; top: -27px; left: 50%; margin-left: -27px; width: 54px; height: 54px; background-color: #003671; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; content: ""; cursor: pointer; }
 .chevron:before { position: absolute; background: url('../img/icons-s7af904e6e2.png') 0 -1162px no-repeat; width: 25px; height: 13px; top: 50%; margin-top: -6.5px; left: 50%; margin-left: -12.5px; content: ""; }
 
 .slider .slider__menu { overflow: hidden; height: 195px; line-height: 195px; margin-bottom: 45px; text-align: center; }
@@ -419,6 +421,10 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .unit-pager li.is-active a { color: white; }
 .unit-pager a { display: block; text-decoration: none; color: #003671; }
 
+.tab { overflow: hidden; }
+
+.tab__link { text-decoration: none; }
+
 .landing .header { margin-bottom: 0; min-height: 545px; background: white url("../img/header-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; overflow: hidden; }
 .landing .header__bottle { position: absolute; bottom: -86px; left: 74%; margin-left: -290px; width: 596px; z-index: 100; }
 .landing .header__bottle img { display: block; height: 100%; width: auto; }
@@ -428,7 +434,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .landing .header__grid { position: relative; z-index: 105; margin-bottom: 90px; }
 .landing .header__social { position: relative; float: right; z-index: 101; }
 
-.header { position: relative; height: 482px; margin-bottom: 55px; }
+.header { position: relative; height: 482px; margin-bottom: 35px; }
 .header > .container { position: relative; padding-top: 35px; }
 .header .header__inner { padding-top: 35px; }
 .header .chevron { bottom: -27px; top: auto; }
@@ -559,6 +565,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .narrow_slim { max-width: 585px; }
 
 .preview { color: white; }
+.preview.preview_mod { margin-top: -40px; }
 
 .preview__text { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 20px; }
 
@@ -635,6 +642,8 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .slider-chronology .h { text-transform: none; text-align: center; }
 .slider-chronology .slider { margin: 40px 0 75px; }
+.slider-chronology .slider__content { overflow: hidden; }
+.slider-chronology .slider__content.visibility { -webkit-transition: opacity 1s linear; -moz-transition: opacity 1s linear; -o-transition: opacity 1s linear; transition: opacity 1s linear; }
 .slider-chronology .slider__item h2 { margin-bottom: 1em; }
 
 .contacts { margin-bottom: 70px; }
@@ -738,9 +747,9 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .equipment-menu { font-size: 0; text-align: center; }
 .equipment-menu li { display: inline-block; margin: 0 20px; font-size: 12px; text-transform: uppercase; color: white; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
-.equipment-menu li span { cursor: pointer; border-bottom: 2px solid white; padding-bottom: 8px; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
+.equipment-menu li a { color: white; border-bottom: 2px solid white; padding-bottom: 8px; text-decoration: none; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
 .equipment-menu li:hover { color: #00abe4; }
-.equipment-menu li:hover span { padding-bottom: 6px; border-bottom: 4px solid #00abe4; }
+.equipment-menu li:hover a { color: #00abe4; padding-bottom: 6px; border-bottom: 4px solid #00abe4; }
 
 .equipment__sub-title { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 50px; }
 

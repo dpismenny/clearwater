@@ -19,7 +19,7 @@
 
 	<div class="out">
 		<header class="header header_dark header_corporative visibility" role="banner">
-			<i class="chevron"></i>
+			<i class="chevron js-scroll"></i>
 			<div class="container">
 				<div class="header__grid layout">
 					<div class="l-left">
@@ -159,45 +159,149 @@
 				<div class="container narrow narrow_wide">
 					<div class="offers__content">
 						<div class="h h-slim h-lower">Предлагаем специальные пакетные предложения для офисов</div>
-						<ul class="offers__tabs">
-							<li class="is-active"><a href="#">Кулер</a></li>
-							<li><a href="#">Диспенсер</a></li>
-							<li><a href="#">Помпа</a></li>
-							<li><a href="#">Без оборудования</a></li>
-						</ul>
-						<div class="offers__items">
-							<ul class="offers__list justify">
-								<li class="justify__child visibility js-circles__info1">
-									<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 1</div>
-									<div class="offers__text">
-										<p>3 бутыли + кулер + стекер</p>
-										<p class="marked">222 грн в месяц
-										<small>плюс залоги за тару, вносятся единоразово</small></p>
-										<p>При предоплате на 3 месяца</p>
-										<p class="marked">191 грн в месяц</p>
-									</div>
-								</li>
-								<li class="justify__child visibility js-circles__item2">
-									<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
-									<div class="offers__text">
-										<p>4 бутыли + кулер + подставка + 1 бесплатная санобработка в год</p>
-										<p class="marked">258 грн в месяц
-										<small>плюс залоги за тару, вносятся единоразово</small></p>
-										<p>При предоплате на 3 месяца</p>
-										<p class="marked">227 грн в месяц</p>
-									</div>
-								</li>
-								<li class="justify__child visibility js-circles__info2">
-									<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
-									<div class="offers__text">
-										<p>6 бутылей в месяц + кулер + подставка + 1 бесплатная санобработка в год</p>
-										<p class="marked">324 грн в месяц
-										<small>плюс залоги за тару, вносятся единоразово</small></p>
-										<p>При предоплате на 3 месяца</p>
-										<p class="marked">293 грн в месяц</p>
-									</div>
-								</li>
+						<div class="js-tab-group">
+							<ul class="offers__tabs tab js-tab">
+								<li class="tab__item is-active"><a href="js-tab1">Кулер</a></li>
+								<li class="tab__item"><a href="js-tab2" class="tab__link">Диспенсер</a></li>
+								<li class="tab__item"><a href="js-tab3" class="tab__link">Помпа</a></li>
+								<li class="tab__item"><a href="js-tab4" class="tab__link">Без оборудования</a></li>
 							</ul>
+							<div class="offers__items tab-cont js-tab-cont js-tab1">
+								<ul class="offers__list justify">
+									<li class="justify__child visibility js-circles__info1">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 1</div>
+										<div class="offers__text">
+											<p>3 бутыли + кулер + стекер</p>
+											<p class="marked">222 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">191 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__item2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
+										<div class="offers__text">
+											<p>4 бутыли + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">258 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">227 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__info2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
+										<div class="offers__text">
+											<p>6 бутылей в месяц + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">324 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">293 грн в месяц</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="offers__items tab-cont js-tab-cont js-tab2">
+								<ul class="offers__list justify">
+									<li class="justify__child visibility js-circles__info1">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
+										<div class="offers__text">
+											<p>3 бутыли + кулер + стекер</p>
+											<p class="marked">222 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">191 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__item2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
+										<div class="offers__text">
+											<p>4 бутыли + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">258 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">227 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__info2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
+										<div class="offers__text">
+											<p>6 бутылей в месяц + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">324 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">293 грн в месяц</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="offers__items tab-cont js-tab-cont js-tab3">
+								<ul class="offers__list justify">
+									<li class="justify__child visibility js-circles__info1">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
+										<div class="offers__text">
+											<p>3 бутыли + кулер + стекер</p>
+											<p class="marked">222 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">191 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__item2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
+										<div class="offers__text">
+											<p>4 бутыли + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">258 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">227 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__info2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
+										<div class="offers__text">
+											<p>6 бутылей в месяц + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">324 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">293 грн в месяц</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="offers__items tab-cont js-tab-cont js-tab4">
+								<ul class="offers__list justify">
+									<li class="justify__child visibility js-circles__info1">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 4</div>
+										<div class="offers__text">
+											<p>3 бутыли + кулер + стекер</p>
+											<p class="marked">222 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">191 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__item2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 2</div>
+										<div class="offers__text">
+											<p>4 бутыли + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">258 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">227 грн в месяц</p>
+										</div>
+									</li>
+									<li class="justify__child visibility js-circles__info2">
+										<div class="h5 h-dash h-dash_ltr h-lower">Пакет Офис - 3</div>
+										<div class="offers__text">
+											<p>6 бутылей в месяц + кулер + подставка + 1 бесплатная санобработка в год</p>
+											<p class="marked">324 грн в месяц
+											<small>плюс залоги за тару, вносятся единоразово</small></p>
+											<p>При предоплате на 3 месяца</p>
+											<p class="marked">293 грн в месяц</p>
+										</div>
+									</li>
+								</ul>
+							</div>
 							<div class="offers__note visibility js-circles__item3">Если вы планируете заказывать больше 6 бутылей в месяц, обратитесь в наш колл-центр по телефону 391-30-30, чтобы получить индивидуальное ценовое предложение. Мы постоянно оптимизируем свои бизнес-процессы, чтобы гарантировать вам лучшую цену на воду самого высокого качества</div>
 						</div>
 					</div>

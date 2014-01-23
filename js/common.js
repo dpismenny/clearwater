@@ -77,19 +77,32 @@ $(document).ready(function() {
 	if($(".main").length > 0){
 		scroll_top();
 	}
-	
+
 	$(".unit-pager a").click(function (){
 		var page = $(this).attr("href");
 
 		$(".unit-pager__item").removeClass('is-active');
 		$(this).parent().addClass('is-active');
-	
 		$('html, body').animate({
-	 		scrollTop: $(page).offset().top - 35
+			scrollTop: $(page).offset().top - 35
 		}, 500);
-	
 		return false;
-	
+	});
+
+	$(".equipment-menu a").click(function (){
+		var page = $(this).attr("href");
+		$('html, body').animate({
+			scrollTop: $(page).offset().top - 10
+		}, 500);
+		return false;
+	});
+
+	$("#excurs").click(function (){
+		var page = $(this).attr("href");
+		$('html, body').animate({
+			scrollTop: $(page).offset().top
+		}, 500);
+		return false;
 	});
 
 	// scroll pager main page
@@ -109,21 +122,20 @@ $(document).ready(function() {
 	// pager on main page
 
 	function scroll_unit() {
-	 	var top = ($('.unit-wrap').offset().top - 35);
-	 	var bottom = ($('.quality').offset().top - 35);
-		
-	 	 	if($(window).scrollTop() > top){
-	 	 	 	$(".unit-pager").addClass('is-visible');
-	 	 	}
-	 	 	if($(window).scrollTop() > bottom){
-	 	 		$(".unit-pager").removeClass('is-visible');
-	 	 	}
-	 	 	if($(window).scrollTop() < top){
-	 	 	 	$(".unit-pager").removeClass('is-visible');
-	 	 	}
+		var top = ($('.unit-wrap').offset().top - 35);
+		var bottom = ($('.quality').offset().top - 35);
 
+		if($(window).scrollTop() > top){
+				$(".unit-pager").addClass('is-visible');
+		}
+		if($(window).scrollTop() > bottom){
+			$(".unit-pager").removeClass('is-visible');
+		}
+		if($(window).scrollTop() < top){
+			$(".unit-pager").removeClass('is-visible');
+		}
 	}
-	
+
 	$(window).scroll(function(){
 	  	if($(".main").length > 0){
 	  	 scroll_top();
@@ -132,11 +144,8 @@ $(document).ready(function() {
 	  	 	scroll_unit();
 	  	 	pager_scroll();
 	  	}
-	  	// if($(".unit-pager").length > 0){
-	  	//  	scroll_unit();
-	  	// }
 	});
-	
+
 
 
 	// .header height
@@ -178,6 +187,26 @@ $(document).ready(function() {
 	}
 	visibility();
 
+
+  function tab() {
+       $(".js-tab").each(function(){
+         var tab_link = $(this).find("a");
+         var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+         tab_cont.hide();
+         $(this).parents(".js-tab-group").find(".js-tab1").show();
+             tab_link.bind("click", function() {
+             var index = $(this).attr("href");
+             tab_link.removeClass("is-active");
+             tab_link.parent().removeClass("is-active");
+             $(this).addClass("is-active");
+             $(this).parent().addClass("is-active");
+             tab_cont.hide();
+             $(this).parents(".js-tab-group").find("."+index).show();
+                    return false;
+                });
+            });
+    }
+  tab();
 
 	// window scroll
 	

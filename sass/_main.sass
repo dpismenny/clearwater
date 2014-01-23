@@ -64,6 +64,8 @@ body
 	+s(cw)
 	content: ""
 
+.main
+	padding-top: 20px
 
 // preloader
 .loader
@@ -387,6 +389,7 @@ body
 	background-color: $dblue
 	+border-radius(50%)
 	content: ""
+	cursor: pointer
 	&:before
 		position: absolute
 		+s(chevron)
@@ -1035,7 +1038,23 @@ body
 
 
 
-
+.tab
+	overflow: hidden
+.tab__item
+	// float: left
+	// margin: 0 5px 0
+.tab__link
+	// display: block
+	// padding: 10px 20px
+	// background: #ccc
+	// color: #000
+	// text-decoration: none
+	&.is-active
+		// background: #aaa
+.tab-cont
+	// margin: 5px 0
+	// padding: 20px
+	// border: 1px solid #000
 
 
 
