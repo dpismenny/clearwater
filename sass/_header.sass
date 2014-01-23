@@ -2,18 +2,23 @@
 .landing
 	.header
 		margin-bottom: 0
-		min-height: 655px
+		min-height: 545px
 		background: $white url("../img/header-bg.jpg") no-repeat
 		+cover
+		overflow: hidden
 	.header__bottle
 		position: absolute
-		bottom: 0
+		bottom: -86px
 		left: 74%
-		margin-left: -182px
-		width: 364px
+		margin-left: -290px
+		width: 596px
 		z-index: 100
 		img
 			display: block
+			height: 100%
+			width: auto
+		+r(step4)
+			margin-left: -500px
 	.header__strip
 		position: absolute
 		bottom: 0
@@ -26,10 +31,12 @@
 			position: relative
 	.header__grid
 		position: relative
-		z-index: 101
+		z-index: 105
 		margin-bottom: 90px
 	.header__social
+		position: relative
 		float: right
+		z-index: 101
 
 .header
 	position: relative
