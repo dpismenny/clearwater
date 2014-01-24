@@ -297,5 +297,6 @@ $(window).load(function() {
 	$('.out').removeClass('is-loading');
 	$('.loader').hide().remove();
 	$('.trash').hide().remove();
+	$('.header__bottle').addClass('is-visible');
 });
 
