@@ -454,7 +454,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .header .logo a { display: block; height: 100%; }
 .header .header__slogan { float: left; width: 500px; margin-left: 50px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; text-transform: uppercase; margin-bottom: 1.5em; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
 .header .header__slogan h2 { text-transform: none; }
-.header .header__menu { overflow: hidden; }
+.header .header__menu { float: left; }
 .header .header__contacts { position: relative; float: right; z-index: 101; margin-left: 35px; width: 175px; font-style: normal; font-weight: normal; font-size: 11px; }
 .header .header__tel { display: block; text-align: center; font-size: 26px; line-height: 1; }
 .header .header__tel a { color: #003671; text-decoration: none; }
@@ -829,7 +829,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .error__title p:first-child { font-size: 155px; line-height: 1; }
 .error__title a { text-decoration: none; color: #00abe4; }
 
-.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; -webkit-transition-delay: 0.2s; -moz-transition-delay: 0.2s; -o-transition-delay: 0.2s; transition-delay: 0.2s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; -webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; transition-delay: 0.1s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
 .visibility.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
