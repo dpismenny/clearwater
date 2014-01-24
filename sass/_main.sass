@@ -106,17 +106,19 @@ body
 
 // overlay
 .overlay
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
+	position: absolute
+	
 	background: #1b1b1b
 	+opacity(0)
 	z-index: -1
 	&.is-open
 		+opacity(0.4)
 		z-index: 1000
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0    
 	&.is-video-open
 		+opacity(0)
 		z-index: 1030
