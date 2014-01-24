@@ -125,22 +125,27 @@ body
 
 // language
 .language
-	a
+	li
 		display: inline-block
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+		&.is-active
+			a
+				color: $blue
+				border-bottom: 2px solid $blue
+	a
 		color: $dblue
 		text-decoration: none
 		text-transform: uppercase
-		margin-left: 20px
 		height: 20px
 		line-height: 1
 		+box
 		+transition(all .2s ease-in-out)
-		&:first-child
-			margin-left: 0
 		&:hover
 			color: $blue
 			border-bottom: 5px solid $blue
-		&:active, &.is-active
+		&:active
 			color: $blue
 			border-bottom: 2px solid $blue
 
