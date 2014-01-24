@@ -171,7 +171,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #1b1b1b; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: -1; }
 .overlay.is-open { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; z-index: 1000; }
-.overlay.is-video-open { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: 1030; cursor: pointer; }
+.overlay.is-video-open { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: 1030; cursor: pointer; bottom: 10%; }
 
 .language a { display: inline-block; color: #003671; text-decoration: none; text-transform: uppercase; margin-left: 20px; height: 20px; line-height: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 .language a:first-child { margin-left: 0; }
