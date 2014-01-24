@@ -434,7 +434,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .landing.landing_alt .header__bottle { position: absolute; bottom: 0; left: 74%; margin-left: -290px; width: 596px; z-index: 100; }
 .landing.landing_alt .header__bottle img { display: block; margin-left: auto; margin-right: auto; height: 100%; width: auto; }
 @media only screen and (min-width: 1280px) { .landing.landing_alt .header__bottle { margin-left: -500px; } }
-.landing .header { margin-bottom: 0; min-height: 545px; background: white url("../img/header-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; overflow: hidden; margin-bottom: 0; }
+.landing .header { margin-bottom: 0; min-height: 545px; background: white url("../img/header-bg.png") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; overflow: hidden; margin-bottom: 0; }
 .landing .header__bottle { position: absolute; bottom: -86px; left: 74%; margin-left: -290px; width: 596px; z-index: 100; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: all 2s linear; -moz-transition: all 2s linear; -o-transition: all 2s linear; transition: all 2s linear; }
 .landing .header__bottle.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .landing .header__bottle img { display: block; height: 100%; width: auto; }
