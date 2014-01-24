@@ -829,7 +829,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .error__title p:first-child { font-size: 155px; line-height: 1; }
 .error__title a { text-decoration: none; color: #00abe4; }
 
-.visibility { -webkit-transition: all 1s linear; -moz-transition: all 1s linear; -o-transition: all 1s linear; transition: all 1s linear; -webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; transition-delay: 0.1s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.visibility { -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; -webkit-transition-delay: 0.05s; -moz-transition-delay: 0.05s; -o-transition-delay: 0.05s; transition-delay: 0.05s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
 .visibility.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
