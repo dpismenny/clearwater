@@ -7,6 +7,10 @@
 		display: inline-block
 		width: 25%
 		text-align: center
+		+transform(scale(.7))
+		+transition(all 500ms ceaser($easeInOutBack))
+		&.is-visible
+			+transform(scale(1))
 	.circles__figure
 		display: inline-block
 		width: 225px
@@ -27,6 +31,7 @@
 		display: inline-block
 		vertical-align: middle
 		line-height: 1
+		
 		h3
 			font-size: 30px
 			font-weight: normal
