@@ -671,8 +671,11 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .deliver { padding-bottom: 60px; margin-bottom: 50px; background: url(../img/zig-grey.png) repeat-x 0 100%; }
 .deliver .h-slim { max-width: 920px; text-align: center; margin: 0 auto; margin-bottom: 40px; }
 
+.benefits-wrap { position: relative; }
+
 .benefits-list { position: relative; }
-.benefits-list:before { content: ""; position: absolute; top: 70px; left: 8%; right: 8%; height: 2px; background: #c5d7e3; }
+
+.benefits-line { position: absolute; top: 70px; left: 8%; right: 8%; height: 2px; background: #c5d7e3; -webkit-transition-delay: 1.3s; -moz-transition-delay: 1.3s; -o-transition-delay: 1.3s; transition-delay: 1.3s; }
 
 .benefits { width: 16%; text-align: center; }
 

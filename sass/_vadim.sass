@@ -271,16 +271,27 @@
 		text-align: center
 		margin: 0 auto
 		margin-bottom: 40px
+.benefits-wrap
+	position: relative		
 .benefits-list
 	position: relative
-	&:before
-		content: ""
-		position: absolute
-		top: 70px
-		left: 8%
-		right: 8%
-		height: 2px
-		background: #c5d7e3  				
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	top: 70px
+	// 	left: 8%
+	// 	right: 8%
+	// 	height: 2px
+	// 	background: #c5d7e3
+	// 	+transition-delay(1.3s)
+.benefits-line
+	position: absolute
+	top: 70px
+	left: 8%
+	right: 8%
+	height: 2px
+	background: #c5d7e3
+	+transition-delay(1.3s)		  				
 .benefits
 	width: 16% 		  	
 	text-align: center	 	
