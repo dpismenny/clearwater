@@ -2,7 +2,21 @@
 
 $(document).ready(function() {
 
+$( '#years' ).on( 'cycle-update-view', function( event, opts ) {
+    // your event handler code here
+    //alert('a');
+    console.log(opts.currSlide);
+    $('.slider__menu-item').removeClass('is-active')
+    $('.slider__menu-item:not(.is-hidden)').eq(opts.currSlide).addClass('is-active');
 
+    // argument opts is the slideshow's option hash
+});
+//$()
+$('.slider__menu2 .slider__menu-item').click(function(event) {
+	
+	gotome = $('.slider__menu-item:not(.is-hidden)').index( this )
+	$( '#years' ).cycle('goto', gotome);
+});
 
 
 
