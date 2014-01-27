@@ -548,15 +548,15 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .unit.zig { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
 .unit.zig:before { top: -6px; }
 .unit.zig:after { content: none; }
-.unit.about { border-top: 2px solid white; background: url(../img/slide-1.jpg); background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.unit.about { border-top: 2px solid white; background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .unit.about:before { content: none; }
-.unit.products { background: url(../img/slide-2.jpg); background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
+.unit.products { background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
 .unit.products .unit__sketch:after { background: white; }
-.unit.service { background: url(../img/slide-3.jpg); background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.unit.delivery { background: url(../img/slide-4.jpg); background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
+.unit.service { background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.unit.delivery { background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; }
 .unit.delivery .unit__sketch:after { background: white; }
 .unit.delivery .unit__content { min-width: 715px; width: 715px; }
-.unit.quality { background: url(../img/slide-5.jpg); background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.unit.quality { background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .unit .unit__number { position: absolute; top: -27px; left: 50%; margin-left: -27px; content: ""; display: block; width: 54px; height: 54px; line-height: 54px; color: #003671; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; font-size: 13px; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
 .unit .unit__content { position: relative; display: inline-block; vertical-align: middle; line-height: 1.4; top: 0; }
 .unit .unit__content .btn { margin-top: 10px; }
