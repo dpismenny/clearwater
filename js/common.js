@@ -157,6 +157,14 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 		return false;
 	});
 
+	$("#costid").click(function (){
+		var page = $(this).attr("href");
+		$('html, body').animate({
+			scrollTop: $(page).offset().top - 70
+		}, 500);
+		return false;
+	});
+
 	// scroll pager main page
 
 	function pager_scroll(){
