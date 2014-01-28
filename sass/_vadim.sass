@@ -636,7 +636,11 @@
 	+transition-delay(.05s)
 	+opacity(0)
 	+iphone
-		+transition(all 0s linear)
+		+transition(none)
+		+transition-delay(0s)
+		+opacity(1)
+	+ipad
+		+transition(none)
 		+transition-delay(0s)
 		+opacity(1)
 .visibility.is-visible

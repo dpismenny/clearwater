@@ -84,17 +84,22 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 		return false;
 	});
 	// opening video
+	function is_touch_device() {
+	  return 'ontouchstart' in window // works on most browsers 
+	      || 'onmsgesturechange' in window; // works on ie10
+	};
 	$('.js-play').click(function(){
 		$('.v-player').addClass('is-open');
 		$('.overlay').addClass('is-video-open');
-		playVideo();
+		if(!is_touch_device()){playVideo();}
 		return false;
 	});
 	// closing video
 	$('body').on('click', '.is-video-open', function(event) {
 		$('.v-player').removeClass('is-open');
 		$('.overlay').removeClass('is-video-open');
-		stopVideo();
+		//stopVideo();
+		if(!is_touch_device()){stopVideo();}
 	});
 
 	// sidebar
