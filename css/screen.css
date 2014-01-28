@@ -18,11 +18,11 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: "Vida33Pro"; src: url("../fonts/Vida33Pro.eot"); src: url("../fonts/Vida33Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Vida33Pro.woff") format("woff"), url("../fonts/Vida33Pro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Vida33Pro"; src: url("../fonts/vida33pro-webfont.eot"); src: url("../fonts/vida33pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vida33pro-webfont.woff") format("woff"), url("../fonts/vida33pro-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: "Vida33Pro-Bold"; src: url("../fonts/Vida33Pro-Bold.eot"); src: url("../fonts/Vida33Pro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Vida33Pro-Bold.woff") format("woff"), url("../fonts/Vida33Pro-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: "Vida31Pro"; src: url("../fonts/Vida31Pro.eot"); src: url("../fonts/Vida31Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Vida31Pro.woff") format("woff"), url("../fonts/Vida31Pro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Vida31Pro"; src: url("../fonts/vida31pro-webfont.eot"); src: url("../fonts/vida31pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vida31pro-webfont.woff") format("woff"), url("../fonts/vida31pro-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 .styleguide { background: #eeeeee; }
 .styleguide .hbox { position: relative; margin: 0 0 30px; padding: 40px; width: 1000px; margin-left: auto; margin-right: auto; border: 1px solid #e2e2e2; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; background: white; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
