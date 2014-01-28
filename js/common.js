@@ -238,6 +238,11 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 			scrollTop: $('.main').offset().top
 		}, 500);
 	});
+	$('.js-scroll-testing').click(function (){
+		$('html, body').animate({
+			scrollTop: $('.testing').offset().top
+		}, 500);
+	});
 
 	// Plax
 	// $('.landing .header__bg').plaxify();
