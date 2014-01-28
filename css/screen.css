@@ -596,9 +596,12 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .preview__text { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; line-height: 1.6; line-height: 1.8; margin-bottom: 20px; }
 
-.header-trigger { float: right; font-size: 0; padding-top: 4px; border: 3px solid white; position: absolute; top: 40px; left: 200px; padding: 4px 20px 4px 30px; cursor: pointer; }
+.header-trigger { float: right; font-size: 0; padding-top: 4px; border: 3px solid white; position: absolute; top: 40px; left: 200px; padding: 4px 20px 4px 30px; cursor: pointer; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.header-trigger:hover { color: #0e335d; background: white; }
+.header-trigger:hover span { color: #0e335d; }
+.header-trigger:hover i { left: 50px; opacity: 0; }
 .header-trigger span { font-size: 11px; line-height: 27px; vertical-align: middle; color: white; text-transform: uppercase; }
-.header-trigger i { display: inline-block; vertical-align: middle; margin-left: 15px; background: url('../img/icons-s36c41124bf.png') 0 -1072px no-repeat; width: 34px; height: 27px; cursor: pointer; -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); margin-left: 6px; }
+.header-trigger i { display: inline-block; vertical-align: middle; margin-left: 15px; background: url('../img/icons-s36c41124bf.png') 0 -1072px no-repeat; width: 34px; height: 27px; cursor: pointer; -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); margin-left: 6px; position: relative; left: 0; opacity: 1; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .article { padding-bottom: 80px; }
 

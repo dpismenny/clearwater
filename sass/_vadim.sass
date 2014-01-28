@@ -43,12 +43,23 @@
 	left: 200px 
 	padding: 4px 20px 4px 30px 
 	cursor: pointer
+	+transition(all .2s ease-in-out)
+	&:hover
+		color: #0E335D
+		background: #fff  
+		span
+			color: #0E335D
+		i
+			left: 50px 
+			opacity: 0 
+
 	span
 		font-size: 11px
 		line-height: 27px
 		vertical-align: middle
 		color: $white
 		text-transform: uppercase
+		
 	i
 		display: inline-block
 		vertical-align: middle
@@ -57,6 +68,10 @@
 		cursor: pointer
 		+transform(scale(0.5))
 		margin-left: 6px 
+		position: relative
+		left: 0 
+		opacity: 1 
+		+transition(all .2s ease-in-out)
 .article
 	padding-bottom: 80px
 .article-list
