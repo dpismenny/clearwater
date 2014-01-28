@@ -92,7 +92,7 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 	// opening video
 	function is_touch_device() {
 	  return 'ontouchstart' in window // works on most browsers 
-	      || 'onmsgesturechange' in window; // works on ie10
+	      //|| 'onmsgesturechange' in window; // works on ie10
 	}
 	function isFunction(possibleFunction) {
 	  return (typeof(possibleFunction) == typeof(Function));

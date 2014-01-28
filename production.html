@@ -211,41 +211,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<div class="trash">
 		<!-- 	<img src="http://placekitten.com/100/3000" alt="img">
 			<img src="http://placekitten.com/200/3000" alt="img"> -->
@@ -267,17 +232,17 @@
 
 	<div class="loader"></div>
 
-	<!-- BEGIN v-player -->
-		<div id="player" class="v-player">
 
+<div class="popup-video">
+	<div class="popup-video__el">
+		<!-- BEGIN v-player -->
+		<div id="player" class="v-player">
 			<script>
 			// 2. This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
-
 			tag.src = "https://www.youtube.com/iframe_api";
 			var firstScriptTag = document.getElementsByTagName('script')[0];
 			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 			  // 3. This function creates an <iframe> (and YouTube player)
 			  //    after the API code downloads.
 			  var player;
@@ -289,7 +254,6 @@
 			      playerVars: { 'autoplay': 0, 'controls': 1, 'showinfo': 0, 'fs': 1 }
 			    });
 			  }
-
 			  function stopVideo() {
 			    player.pauseVideo();
 			  }
@@ -298,7 +262,10 @@
 			  }
 			</script>
 		</div>
-	<!-- END v-player -->
+		<!-- END v-player -->
+	</div>
+	<button class="popup-video__close"><i></i></button>
+</div>
 
 </body>
 </html>
