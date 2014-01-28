@@ -71,7 +71,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .h6 { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 14px; }
 
-.h-sub { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 12px; }
+.h-sub { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1.8; }
 
 .h-ltr { text-align: left; }
 
@@ -122,7 +122,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .play-btn:hover span, .play-btn:active span { border-width: 17px 0 17px 22px; border-color: transparent transparent transparent #003671; }
 .play-btn span { display: inline-block; vertical-align: middle; line-height: 1; margin-top: -11px; margin-left: 7px; width: 0px; height: 0px; border-style: solid; border-width: 21px 0 21px 28px; border-color: transparent transparent transparent white; }
 
-.btn { display: inline-block; padding: 11px 80px; font-size: 11px; line-height: 12px; color: #00abe4; border: 2px solid #00abe4; font-weight: normal; font-style: normal; white-space: normal; text-transform: uppercase; text-align: center; text-decoration: none; background-image: none; background-color: transparent; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Vida33Pro"; font-weight: normal; font-style: normal; }
+.btn { display: inline-block; padding: 11px 80px; font-size: 11px; line-height: 12px; color: #00abe4; border: 2px solid #00abe4; font-weight: normal; font-style: normal; white-space: normal; text-transform: uppercase; text-align: center; text-decoration: none; background-image: none; background-color: transparent; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Vida33Pro"; font-weight: normal; font-style: normal; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .btn:hover, .btn:active { color: white; background-color: #00abe4; }
 .btn.btn_mod { border-left: transparent; border-right: transparent; color: #003671; }
 .btn.btn_mod:hover, .btn.btn_mod:active { color: white; background-color: #00abe4; }
@@ -480,7 +480,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .header .header__account { float: right; }
 .header .header__account .account-btn { margin-bottom: 10px; }
 
-.online-order { background: #00abe4; color: white; text-align: center; width: 165px; font-size: 11px; padding: 10px 0; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
+.online-order { background: #00abe4; color: white; text-align: center; width: 165px; font-size: 11px; padding: 10px 0; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .online-order > h3 { font-family: "Vida33Pro"; font-weight: normal; font-style: normal; text-transform: uppercase; }
 .online-order > h3:after { display: block; margin: 5px auto; background: url('../img/icons-s36c41124bf.png') 0 -1388px no-repeat; width: 60px; height: 1px; content: ""; }
 .online-order:hover { cursor: pointer; background: #003671; }
@@ -536,6 +536,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .sidebar .sidebar__menu ul { float: none; width: auto; }
 .sidebar .sidebar__menu li { font-size: 13px; height: 35px; line-height: 35px; }
 .sidebar .sidebar__menu li.sidebar__menu-corp { margin-top: -3px; border-top: 3px solid #00abe4; border-bottom: 3px solid #00abe4; height: 40px; line-height: 35px; }
+.sidebar .sidebar__menu li.sidebar__menu-corp:hover { border-color: #003671; }
 .sidebar .sidebar__buttons { margin-bottom: 25px; }
 .sidebar .sidebar__buttons .btn { margin-bottom: 15px; }
 .sidebar .sidebar__social { float: right; }
@@ -593,11 +594,11 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .preview { color: white; }
 .preview.preview_mod { margin-top: -40px; }
 
-.preview__text { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 20px; }
+.preview__text { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; line-height: 1.6; line-height: 1.8; margin-bottom: 20px; }
 
-.header-trigger { float: right; font-size: 0; padding-top: 4px; }
+.header-trigger { float: right; font-size: 0; padding-top: 4px; border: 3px solid white; position: absolute; top: 40px; left: 200px; padding: 4px 20px 4px 30px; cursor: pointer; }
 .header-trigger span { font-size: 11px; line-height: 27px; vertical-align: middle; color: white; text-transform: uppercase; }
-.header-trigger i { display: inline-block; vertical-align: middle; margin-left: 15px; background: url('../img/icons-s36c41124bf.png') 0 -1072px no-repeat; width: 34px; height: 27px; cursor: pointer; }
+.header-trigger i { display: inline-block; vertical-align: middle; margin-left: 15px; background: url('../img/icons-s36c41124bf.png') 0 -1072px no-repeat; width: 34px; height: 27px; cursor: pointer; -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); margin-left: 6px; }
 
 .article { padding-bottom: 80px; }
 
