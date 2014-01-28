@@ -504,22 +504,22 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .footer .footer__quality-control ul li.iso a { background: url('../img/icons-s36c41124bf.png') 0 -311px no-repeat; width: 54px; height: 45px; }
 .footer .footer__quality-control ul li.we a { background: url('../img/icons-s36c41124bf.png') 0 -202px no-repeat; width: 68px; height: 37px; }
 .footer .footer__quality-control ul li.uabw a { background: url('../img/icons-s36c41124bf.png') 0 -249px no-repeat; width: 48px; height: 52px; }
-.footer .footer__copyright { position: relative; float: left; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; width: 415px; padding-left: 70px; margin-right: 50px; line-height: 1.2; word-spacing: 0.2em; letter-spacing: 0.02em; }
+.footer .footer__copyright { position: relative; float: left; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; width: 415px; padding-left: 70px; margin-right: 5px; line-height: 1.2; word-spacing: 0.2em; letter-spacing: 0.02em; }
 .footer .footer__copyright:before { position: absolute; top: 0; left: 0; background: url('../img/icons-s36c41124bf.png') 0 -366px no-repeat; width: 47px; height: 37px; content: ""; }
 .footer .footer__copyright a { text-decoration: none; color: #00abe4; }
 .footer .footer__copyright a:hover { text-decoration: underline; }
 .footer .footer__copyright p:first-child { margin-bottom: 2em; }
 .footer .footer__other { position: relative; float: right; }
 .footer .footer__menu { float: left; margin-bottom: 25px; }
-@media only screen and (max-width: 1300px) { .footer .footer__menu { display: none; } }
-.footer .footer__menu li { display: inline-block; text-transform: uppercase; font-size: 11px; margin-left: 35px; }
+@media only screen and (max-width: 1210px) { .footer .footer__menu { display: none; } }
+.footer .footer__menu li { display: inline-block; text-transform: uppercase; font-size: 11px; margin-left: 25px; }
 .footer .footer__menu li:first-child { margin-left: 0; }
 .footer .footer__menu li:hover { border-bottom: 3px solid white; }
 .footer .footer__menu a { line-height: 1.5; color: white; text-decoration: none; }
 .footer .footer__menu a:hover { text-decoration: none; }
 .footer .footer__social { float: right; margin-left: 35px; margin-bottom: 25px; }
 .footer .footer__like { float: left; }
-@media only screen and (max-width: 1300px) { .footer .footer__like { position: absolute; top: 0; } }
+@media only screen and (max-width: 1210px) { .footer .footer__like { position: absolute; top: 0; } }
 .footer .footer__like li { display: inline-block; }
 .footer .footer__like li img { display: block; }
 
@@ -547,14 +547,14 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .circles .circles__item { position: relative; display: inline-block; width: 25%; text-align: center; -webkit-transform: scale(0.7); -moz-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); }
 .circles .circles__item.is-visible { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
 .circles .circles__figure { display: inline-block; width: 225px; height: 225px; line-height: 225px; margin: 15px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; -moz-box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; box-shadow: 0 0 0 15px white, 0 0 0 16px #bed2df; border: 1px solid #bed2df; }
-@media only screen and (max-width: 1300px) { .circles .circles__figure { width: 170px; height: 170px; line-height: 170px; -webkit-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; -moz-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; margin: 12px; } }
+@media only screen and (max-width: 1210px) { .circles .circles__figure { width: 170px; height: 170px; line-height: 170px; -webkit-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; -moz-box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; box-shadow: 0 0 0 12px white, 0 0 0 13px #bed2df; margin: 12px; } }
 .circles .circles__info { display: inline-block; vertical-align: middle; line-height: 1; }
 .circles .circles__info h3 { font-size: 30px; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
-@media only screen and (max-width: 1300px) { .circles .circles__info h3 { font-size: 23px; } }
+@media only screen and (max-width: 1210px) { .circles .circles__info h3 { font-size: 23px; } }
 .circles .circles__info h3 span { font-size: 26px; display: block; }
-@media only screen and (max-width: 1300px) { .circles .circles__info h3 span { font-size: 20px; } }
+@media only screen and (max-width: 1210px) { .circles .circles__info h3 span { font-size: 20px; } }
 .circles .circles__info p { font-size: 14px; line-height: 1.5; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
-@media only screen and (max-width: 1300px) { .circles .circles__info p { font-size: 11px; } }
+@media only screen and (max-width: 1210px) { .circles .circles__info p { font-size: 11px; } }
 
 .unit { position: relative; height: 560px; line-height: 560px; text-align: center; color: #003671; background-color: white; }
 .unit.zig { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
