@@ -124,6 +124,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .btn { display: inline-block; padding: 11px 80px; font-size: 11px; line-height: 12px; color: #00abe4; border: 2px solid #00abe4; font-weight: normal; font-style: normal; white-space: normal; text-transform: uppercase; text-align: center; text-decoration: none; background-image: none; background-color: transparent; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Vida33Pro"; font-weight: normal; font-style: normal; }
 .btn:hover, .btn:active { color: white; background-color: #00abe4; }
+.btn.btn_mod { border-left: transparent; border-right: transparent; color: #003671; }
+.btn.btn_mod:hover, .btn.btn_mod:active { color: white; background-color: #00abe4; }
 
 .btn-sm { padding-top: 7px; padding-bottom: 7px; }
 
@@ -533,7 +535,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .sidebar .sidebar__menu { margin-bottom: 20px; }
 .sidebar .sidebar__menu ul { float: none; width: auto; }
 .sidebar .sidebar__menu li { font-size: 13px; height: 35px; line-height: 35px; }
-.sidebar .sidebar__menu li:last-child { border: none; }
+.sidebar .sidebar__menu li.sidebar__menu-corp { margin-top: -3px; border-top: 3px solid #00abe4; border-bottom: 3px solid #00abe4; height: 40px; line-height: 35px; }
 .sidebar .sidebar__buttons { margin-bottom: 25px; }
 .sidebar .sidebar__buttons .btn { margin-bottom: 15px; }
 .sidebar .sidebar__social { float: right; }
