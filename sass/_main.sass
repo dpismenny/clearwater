@@ -46,7 +46,7 @@ body
 =sub
 	font-size: 12px
 	text-transform: uppercase
-	+vp_b
+	+pfbeausanspro
 
 .title_cw
 	+vp_b
@@ -451,7 +451,7 @@ body
 			width: 20%
 			padding: 1px
 			+box
-			+vp_b
+			+pfbeausanspro
 			font-size: 10px
 			text-transform: uppercase
 			cursor: pointer
@@ -745,7 +745,7 @@ body
 			display: inline-block
 			margin-left: 5px
 			color: $dblue
-			+vp_b
+			+pfbeausanspro
 			font-size: 10px
 	.i-bicarbon
 		display: inline-block
@@ -820,7 +820,7 @@ body
 	p
 		text-transform: uppercase
 		font-size: 12px
-		+vp_b
+		+pfbeausanspro
 		+box
 		border: 2px solid #fff
 		padding: 10%
@@ -845,7 +845,7 @@ body
 	li
 		display: inline-block
 		text-transform: uppercase
-		+vp_b
+		+pfbeausanspro
 		font-size: 12px
 		padding: 0 20px
 		&.is-active, &:hover
@@ -874,7 +874,7 @@ body
 		&.marked
 			color: $blue
 			text-transform: uppercase
-			+vp_b
+			+pfbeausanspro
 			small
 				display: block
 				text-transform: lowercase
@@ -1037,7 +1037,7 @@ body
 		height: 30px
 		line-height: 26px
 		+box
-		+vp_b
+		+pfbeausanspro
 		font-size: 10px
 		background: rgba(#fff, 1)
 		+border-radius(50%)
@@ -1094,27 +1094,57 @@ body
 
 
 
-
-.v-player
+.popup-video
 	position: fixed
-	top: 0
-	top: 0px 
-	left: 0
-	height: 100%
-	width: 100%
-	+transition(all .3s ease-in-out)
-	+transform(scale(0))
-	// +rotate(-360)
-	opacity: 0 
-	z-index: -1
-	display: none 
-	// position: static
+	top: 50%
+	left: 50%
+	right: 50%
+	bottom: 50% 
+	background: #000 
+	opacity: 0
+	visibility: hidden
+	+tr(all .2s linear)
+	z-index: 9999
 	&.is-open
+		visibility: visible
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
 		opacity: 1 
-		z-index: 1100
-		+transform(scale(1))
-		// +rotate(0)
-		display: block
+
+.popup-video__close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background: #083273 
+	border: 1px solid #fff
+	font-size: 0
+	z-index: 100
+	i
+		display: inline-block
+		+s(close)
+		vertical-align: middle 
+
+
+.popup-video__el
+	position: absolute
+	top: 60px
+	left: 120px
+	right: 120px
+	bottom: 60px
+	z-index: 10 
+
+.player
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
 
 .js-play-foripad
 	display: none

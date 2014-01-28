@@ -101,16 +101,14 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 	if(!t){
 		$('.js-play').click(function(event){
 			event.preventDefault();
-			$('.v-player').addClass('is-open');
-			$('.overlay').addClass('is-video-open');
+			$('.popup-video').addClass('is-open');
 			playVideo();
 			return false;
 			
 		});
 		// closing video
-		$('body').on('click', '.is-video-open', function(event) {
-			$('.v-player').removeClass('is-open');
-			$('.overlay').removeClass('is-video-open');
+		$('.popup-video__close').on('click', function(event) {
+			$('.popup-video').removeClass('is-open');
 			stopVideo();
 		});
 	}

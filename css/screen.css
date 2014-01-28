@@ -24,6 +24,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: "Vida31Pro"; src: url("../fonts/vida31pro-webfont.eot"); src: url("../fonts/vida31pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vida31pro-webfont.woff") format("woff"), url("../fonts/vida31pro-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: "pfbeausanspro"; src: url("../fonts/pfbeausanspro-bold.eot"); src: url("../fonts/pfbeausanspro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/pfbeausanspro-bold.woff") format("woff"), url("../fonts/pfbeausanspro-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .styleguide { background: #eeeeee; }
 .styleguide .hbox { position: relative; margin: 0 0 30px; padding: 40px; width: 1000px; margin-left: auto; margin-right: auto; border: 1px solid #e2e2e2; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; background: white; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .styleguide .hbox.hbox_alt { background: #003671; color: white; }
@@ -67,9 +69,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .h5 { font-size: 18px; }
 
-.h6 { font-size: 14px; }
+.h6 { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 14px; }
 
-.h-sub { font-size: 12px; }
+.h-sub { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 12px; }
 
 .h-ltr { text-align: left; }
 
@@ -218,12 +220,12 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .out.is-loading { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
 .story { padding: 30px 0 45px; border-top: 2px solid #003671; text-align: center; }
-.story .story__note { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.story .story__note { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .story .story__note p { margin-bottom: 0.5em; }
 
 .leading { padding: 50px 0 70px; background: #003671; color: white; text-align: center; }
 .leading .leading__title { margin-bottom: 0.5em; }
-.leading p { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.leading p { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 
 .clients { padding-top: 55px; text-align: center; }
 .clients .clients__heading { margin-bottom: 35px; }
@@ -233,7 +235,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .clients .clients__items li:first-child { border-left: none; }
 .clients .clients__items img { display: inline-block; vertical-align: middle; max-width: 100%; }
 
-.production { height: 640px; background: #003671 url(../img/video.jpg) no-repeat; background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.production { height: 640px; background: #003671 url(../img/video.jpg) no-repeat; background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .production .production__content { padding-top: 165px; text-align: center; }
 .production .production__title { margin-bottom: 0.5em; }
 .production p { margin-bottom: 30px; }
@@ -243,7 +245,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .testing .testing-bg img { display: block; }
 .testing .testing__main { position: relative; text-transform: uppercase; font-size: 11px; width: 370px; padding-top: 65px; text-align: left; z-index: 1; }
 .testing .testing__main p { margin-bottom: 1em; }
-.testing .testing__lead { margin: 25px 0; padding: 5px 0; font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.testing .testing__lead { margin: 25px 0; padding: 5px 0; font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .testing .testing__lead h3 { margin-bottom: 0.3em; }
 .testing .testing__lead p { margin-bottom: 0; }
 .testing .testing__corporate { position: absolute; top: 0; right: 0; bottom: 0; width: 370px; background-color: #003671; padding: 0 45px; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -261,7 +263,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .chevron:before { position: absolute; background: url('../img/icons-s36c41124bf.png') 0 -1197px no-repeat; width: 25px; height: 13px; top: 50%; margin-top: -6.5px; left: 50%; margin-left: -12.5px; content: ""; }
 
 .slider .slider__menu { overflow: hidden; height: 195px; line-height: 195px; margin-bottom: 45px; text-align: center; }
-.slider .slider__menu li { position: relative; display: inline-block; vertical-align: middle; text-align: center; line-height: 1; width: 20%; padding: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 10px; text-transform: uppercase; cursor: pointer; }
+.slider .slider__menu li { position: relative; display: inline-block; vertical-align: middle; text-align: center; line-height: 1; width: 20%; padding: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 10px; text-transform: uppercase; cursor: pointer; }
 .slider .slider__menu li:last-child .slider__menu-holder:after { right: 100%; left: auto; }
 .slider .slider__menu li.is-active .slider__thumb { margin-top: -1px; width: 169px; height: 169px; border: 10px solid white; }
 .slider .slider__menu li.is-active .slider__thumb img { width: 146px; height: 146px; border: 2px solid #c5d7e3; }
@@ -291,7 +293,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .price { padding-top: 40px; padding-bottom: 75px; text-align: center; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 14px; }
 .price p { line-height: 1.6; }
-.price .price__title { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 18px; }
+.price .price__title { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 18px; }
 .price .price__title:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em auto; background: #003671; }
 
 .link { color: #00bcf3; text-decoration: none; border-bottom: 3px solid transparent; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
@@ -326,7 +328,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .composition .composition__element.magnesium .composition__symbol:before { right: 226px; bottom: 55px; -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 .composition .composition__symbol { position: relative; font-size: 48px; border-bottom: 1px solid #d7e3ec; line-height: 1; }
 .composition .composition__symbol:before { position: absolute; bottom: -1px; right: 100%; content: ""; height: 1px; width: 160px; background: #d7e3ec; }
-.composition .composition__symbol span { text-transform: uppercase; display: inline-block; margin-left: 5px; color: #003671; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 10px; }
+.composition .composition__symbol span { text-transform: uppercase; display: inline-block; margin-left: 5px; color: #003671; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 10px; }
 .composition .i-bicarbon { display: inline-block; vertical-align: top; background: url('../img/icons-s36c41124bf.png') 0 -413px no-repeat; width: 61px; height: 59px; margin-bottom: 10px; }
 .composition .composition__description { margin-top: 10px; font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; color: #003671; }
 .composition .composition__name { display: inline-block; margin-right: 20px; color: #00abe4; }
@@ -355,13 +357,13 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .why__item p { text-align: left; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
 
 .why__item_mod { width: 36.5%; }
-.why__item_mod p { text-transform: uppercase; font-size: 12px; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 2px solid white; padding: 10%; line-height: 1.6; text-align: center; }
+.why__item_mod p { text-transform: uppercase; font-size: 12px; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 2px solid white; padding: 10%; line-height: 1.6; text-align: center; }
 .why__item_mod p:before { display: block; content: ""; background: url('../img/icons-s36c41124bf.png') 0 -624px no-repeat; width: 58px; height: 30px; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
 
 .offers { padding: 45px 0; }
 
 .offers__tabs { margin-top: 20px; margin-bottom: 35px; }
-.offers__tabs li { display: inline-block; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; padding: 0 20px; }
+.offers__tabs li { display: inline-block; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 12px; padding: 0 20px; }
 .offers__tabs li.is-active a, .offers__tabs li:hover a { color: #00abe4; }
 .offers__tabs a { color: #003671; text-decoration: none; }
 
@@ -371,7 +373,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .offers__text { text-align: left; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; font-size: 14px; }
 .offers__text p { margin-bottom: 1em; }
-.offers__text p.marked { color: #00abe4; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.offers__text p.marked { color: #00abe4; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .offers__text p.marked small { display: block; text-transform: lowercase; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
 
 .offers__note { font-size: 18px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
@@ -419,7 +421,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .unit-pager { position: fixed; top: 165px; right: -45px; z-index: 1010; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in; opacity: 0; }
 .unit-pager.is-visible { opacity: 1; right: 45px; }
-.unit-pager li { position: relative; display: block; width: 30px; height: 30px; line-height: 26px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 10px; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 2px solid #003671; text-align: center; color: #003671; margin-bottom: 40px; }
+.unit-pager li { position: relative; display: block; width: 30px; height: 30px; line-height: 26px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 10px; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 2px solid #003671; text-align: center; color: #003671; margin-bottom: 40px; }
 .unit-pager li:before { height: 40px; width: 1px; background: #003671; position: absolute; bottom: 100%; left: 50%; margin-left: -1px; margin-bottom: 2px; -webkit-box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.6); -moz-box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.6); box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.6); content: ""; }
 .unit-pager li:first-child:before { content: none; }
 .unit-pager li:last-child { margin-bottom: 0; }
@@ -429,8 +431,15 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .tab { overflow: hidden; }
 
-.v-player { position: fixed; top: 0; top: 0px; left: 0; height: 100%; width: 100%; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); opacity: 0; z-index: -1; display: none; }
-.v-player.is-open { opacity: 1; z-index: 1100; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); display: block; }
+.popup-video { position: fixed; top: 50%; left: 50%; right: 50%; bottom: 50%; background: black; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 9999; }
+.popup-video.is-open { visibility: visible; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; }
+
+.popup-video__close { position: absolute; top: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #083273; border: 1px solid white; font-size: 0; z-index: 100; }
+.popup-video__close i { display: inline-block; background: url('../img/icons-s36c41124bf.png') 0 -1162px no-repeat; width: 25px; height: 25px; vertical-align: middle; }
+
+.popup-video__el { position: absolute; top: 60px; left: 120px; right: 120px; bottom: 60px; z-index: 10; }
+
+.player { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 .js-play-foripad { display: none; }
 
@@ -458,7 +467,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .header .header__main { float: left; margin-right: 60px; }
 .header .logo { font: 0/0 a; text-shadow: none; color: transparent; display: block; background: url('../img/icons-s36c41124bf.png') 0 0 no-repeat; width: 116px; height: 91px; margin-bottom: 35px; }
 .header .logo a { display: block; height: 100%; }
-.header .header__slogan { float: left; width: 500px; margin-left: 50px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; text-transform: uppercase; margin-bottom: 1.5em; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.header .header__slogan { float: left; width: 500px; margin-left: 50px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; text-transform: uppercase; margin-bottom: 1.5em; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .header .header__slogan h2 { text-transform: none; }
 .header .header__menu { float: left; }
 .header .header__contacts { position: relative; float: right; z-index: 101; margin-left: 35px; width: 175px; font-style: normal; font-weight: normal; font-size: 11px; }
@@ -479,7 +488,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .footer .footer__info { background: white; }
 .footer .footer__info .container { position: relative; *zoom: 1; }
 .footer .footer__info .container:after { content: " "; display: table; clear: both; }
-.footer .footer__info p { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
+.footer .footer__info p { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; margin-bottom: 0.5em; }
 .footer .footer__main { background: #003671; color: white; }
 .footer .footer__contacts { float: left; margin-right: 105px; }
 @media only screen and (min-width: 1280px) { .footer .footer__contacts { width: 435px; } }
@@ -560,7 +569,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .unit.delivery .unit__sketch:after { background: white; }
 .unit.delivery .unit__content { min-width: 715px; width: 715px; }
 .unit.quality { background-position: top center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.unit .unit__number { position: absolute; top: -27px; left: 50%; margin-left: -27px; content: ""; display: block; width: 54px; height: 54px; line-height: 54px; color: #003671; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; font-size: 13px; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.unit .unit__number { position: absolute; top: -27px; left: 50%; margin-left: -27px; content: ""; display: block; width: 54px; height: 54px; line-height: 54px; color: #003671; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; font-size: 13px; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .unit .unit__content { position: relative; display: inline-block; vertical-align: middle; line-height: 1.4; top: 0; }
 .unit .unit__content .btn { margin-top: 10px; }
 .unit .unit__title { margin-bottom: 0.5em; }
@@ -582,7 +591,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .preview { color: white; }
 .preview.preview_mod { margin-top: -40px; }
 
-.preview__text { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 20px; }
+.preview__text { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; line-height: 1.6; margin-bottom: 20px; }
 
 .header-trigger { float: right; font-size: 0; padding-top: 4px; }
 .header-trigger span { font-size: 11px; line-height: 27px; vertical-align: middle; color: white; text-transform: uppercase; }
@@ -597,7 +606,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .article-list_4col .article-list__item { width: 20%; }
 
-.h-line { font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 18px; }
+.h-line { font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 18px; }
 .h-line:after { display: block; width: 145px; height: 2px; content: ""; margin: 2em auto; background: #003671; }
 
 .h-line_left { text-align: left; }
@@ -618,7 +627,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .invitation__title { text-transform: none; }
 
-.invitation__content { margin: 25px 0 30px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; line-height: 1.6; }
+.invitation__content { margin: 25px 0 30px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; line-height: 1.6; }
 
 .header_about { background: white url("../img/about-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
@@ -628,7 +637,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .inno__topper { height: 230px; background: #003671; text-align: center; padding-top: 50px; color: white; }
 .inno__topper .h { margin-bottom: 15px; }
-.inno__topper p { text-transform: uppercase; font-size: 12px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.inno__topper p { text-transform: uppercase; font-size: 12px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 
 .inno__content { margin-top: -84px; }
 
@@ -640,7 +649,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .inno-item__img-inner:after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; background: #023f84; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 .inno-item__img-inner img { width: 100%; height: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 
-.inno-item__text { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1.6; text-transform: uppercase; }
+.inno-item__text { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1.6; text-transform: uppercase; }
 
 .slider__menu2 { position: relative; display: table; width: 100%; margin-bottom: 42px; }
 .slider__menu2:after { content: ""; position: absolute; top: 14px; height: 2px; background: #003671; left: 2%; right: 2%; }
@@ -672,7 +681,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .marker { position: absolute; bottom: -20px; left: 50%; margin-left: -19px; background: url('../img/icons-s36c41124bf.png') 0 -664px no-repeat; width: 38px; height: 44px; }
 
-.contact-item { display: inline-block; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; margin-right: 12px; }
+.contact-item { display: inline-block; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; margin-right: 12px; }
 
 .header_deliver { background: white url("../img/deliver-bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
@@ -722,7 +731,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .h-line_blue:after { background: #00abe4; }
 
 .grade { position: relative; padding-left: 30px; margin-bottom: 15px; font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; }
-.grade span { position: absolute; top: -3px; left: 0; font-size: 30px; color: #00abe4; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.grade span { position: absolute; top: -3px; left: 0; font-size: 30px; color: #00abe4; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 
 .cost__bot { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; margin-bottom: 40px; }
 
@@ -751,7 +760,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .comments__item { text-align: justify; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; font-size: 14px; margin-bottom: 75px; }
 
-.comments__author { padding-top: 20px; font-size: 12px; color: #00abe4; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
+.comments__author { padding-top: 20px; font-size: 12px; color: #00abe4; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; text-transform: uppercase; }
 
 .comments__add { text-align: center; margin-bottom: 60px; }
 
@@ -792,7 +801,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .product__col { float: left; width: 55%; }
 .product__col li { *zoom: 1; margin-bottom: 15px; }
 .product__col li:after { content: " "; display: table; clear: both; }
-.product__col li strong { font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; }
+.product__col li strong { font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; }
 .product__col li.product__col-price .product__col-left { width: 25%; }
 .product__col li.product__col-price .product__col-right { width: 75%; }
 .product__col li.product__col-text .product__col-left { float: none; width: auto; }
@@ -801,7 +810,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .product__col_slim { width: 40%; margin-right: 5%; }
 
-.product__col-left { float: left; width: 50%; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; color: #00abe4; text-transform: uppercase; }
+.product__col-left { float: left; width: 50%; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; color: #00abe4; text-transform: uppercase; }
 
 .product__col-right { float: right; width: 50%; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; line-height: 1.6; }
 
@@ -827,7 +836,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .error__img { position: absolute; top: 0; left: -100px; z-index: 1; }
 
-.error__inner { position: relative; float: right; font-size: 0; margin-right: 70px; text-transform: uppercase; font-family: "Vida33Pro-Bold"; font-weight: normal; font-style: normal; z-index: 2; }
+.error__inner { position: relative; float: right; font-size: 0; margin-right: 70px; text-transform: uppercase; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; z-index: 2; }
 
 .error__text { display: inline-block; vertical-align: middle; font-size: 28px; color: #00abe4; }
 
