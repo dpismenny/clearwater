@@ -172,6 +172,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .overlay { position: absolute; background: #1b1b1b; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: -1; }
 .overlay span { display: none; }
 .overlay.is-open { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; z-index: 1000; position: fixed; top: 0; right: 0; bottom: 0; left: 0; }
+.overlay.is-open-popup { z-index: 1020; }
 .overlay.is-video-open { position: fixed; right: 40px; top: 40px; width: 50px; height: 50px; background: #003671; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; z-index: 1200; cursor: pointer; }
 .overlay.is-video-open span { background: url('../img/icons-s36c41124bf.png') 0 -1162px no-repeat; width: 25px; height: 25px; display: block; position: absolute; top: 50%; margin-top: -13px; left: 50%; margin-left: -13px; content: ""; font: 0/0 a; text-shadow: none; color: transparent; }
 
@@ -409,7 +410,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .checkbox input, .checkbox i { position: absolute; top: 0; left: 0; background: url('../img/icons-s36c41124bf.png') 0 -1361px no-repeat; width: 18px; height: 17px; }
 .checkbox input:checked + i:after { content: ""; position: absolute; top: -3px; left: 0; background: url('../img/icons-s36c41124bf.png') 0 -798px no-repeat; width: 18px; height: 20px; }
 
-.popup { position: fixed; left: 50%; margin-left: -183px; background: white; padding: 20px 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 367px; z-index: 1010; opacity: 0; top: -1000px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.popup { position: fixed; left: 50%; margin-left: -183px; background: white; padding: 20px 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 367px; z-index: 1022; opacity: 0; top: -1000px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .popup.is-open { top: 100px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
 .popup__title { color: #00abe4; text-align: center; margin-bottom: 15px; }
