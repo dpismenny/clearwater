@@ -1105,16 +1105,19 @@ body
 	+transition(all .3s ease-in-out)
 	+transform(scale(0))
 	// +rotate(-360)
-	+opacity(0)
+	opacity: 0 
 	z-index: -1
+	display: none 
 	// position: static
 	&.is-open
-		+opacity(1)
+		opacity: 1 
 		z-index: 1100
 		+transform(scale(1))
 		// +rotate(0)
+		display: block
 
-
+.js-play-foripad
+	display: none
 
 
 

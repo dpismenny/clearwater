@@ -94,9 +94,13 @@ $('.slider__menu2 .slider__menu-item').click(function(event) {
 	  return 'ontouchstart' in window // works on most browsers 
 	      || 'onmsgesturechange' in window; // works on ie10
 	}
+	function isFunction(possibleFunction) {
+	  return (typeof(possibleFunction) == typeof(Function));
+	}
 	t = is_touch_device();
 	if(!t){
-		$('.js-play').click(function(){
+		$('.js-play').click(function(event){
+			event.preventDefault();
 			$('.v-player').addClass('is-open');
 			$('.overlay').addClass('is-video-open');
 			playVideo();
@@ -306,17 +310,9 @@ $(window).resize(function() {
 
 
 
+	//$('js-play-fordesktop').replacewith($(''))
 
 
-$('iframe').each(function(){
-          var url = $(this).attr("src");
-          var char = "?";
-          if(url.indexOf("?") != -1){
-                  var char = "&";
-           }
-         
-          $(this).attr("src",url+char+"wmode=transparent");
-    });
 
 
 });
