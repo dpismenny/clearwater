@@ -854,13 +854,14 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .error__title a { text-decoration: none; color: #00abe4; }
 
 .visibility { -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; -webkit-transition-delay: 0.05s; -moz-transition-delay: 0.05s; -o-transition-delay: 0.05s; transition-delay: 0.05s; opacity: 0; }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: auto; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: auto; } }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: auto; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: 1; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: 1; } }
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) { .visibility { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-transition-delay: 0; -moz-transition-delay: 0; -o-transition-delay: 0; transition-delay: 0; opacity: 1; } }
 
 .visibility.is-visible { opacity: 1; }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) { .visibility.is-visible { opacity: auto; } }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) { .visibility.is-visible { opacity: auto; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { .visibility.is-visible { opacity: 1; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) { .visibility.is-visible { opacity: 1; } }
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) { .visibility.is-visible { opacity: 1; } }
 
 .js-visibility2 { -webkit-transition-delay: 0.5s; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; transition-delay: 0.5s; }
 

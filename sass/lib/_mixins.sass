@@ -16,6 +16,7 @@ $breaklarge: 1365px
 
 $step3: 1210px
 $step4: 1280px
+$iphone: 320px
 
 =r($media)
 	@if $media == step3
@@ -33,6 +34,10 @@ $step4: 1280px
 	@else if $media == wide
 		// wider than $width
 		@media only screen and (min-width: $breaklarge)
+			@content
+	@else if $media == iphone
+		// wider than $width
+		@media only screen and (max-width: $iphone)
 			@content
 
 =fs($sizeValue: 16)

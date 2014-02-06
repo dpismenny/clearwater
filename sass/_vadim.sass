@@ -664,21 +664,23 @@
 	+iphone
 		+transition(none)
 		+transition-delay(0)
-		opacity: auto 
+		opacity: 1
 	+ipad
 		+transition(none)
 		+transition-delay(0)
-		opacity: auto 
+		opacity: 1
 	+ipad-retina
 		+transition(none)
 		+transition-delay(0)
-		opacity: auto 
+		opacity: 1
 .visibility.is-visible
-	opacity: 1 
+	opacity: 1
+	+iphone
+		opacity: 1
 	+ipad
-		opacity: auto 
+		opacity: 1
 	+ipad-retina
-		opacity: auto 
+		opacity: 1
 .js-visibility2
 	+transition-delay(.5s)
 .js-visibility3
