@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+$('input, textarea').placeholder();
 
 
 $( '#years' ).on( 'cycle-update-view', function( event, opts ) {

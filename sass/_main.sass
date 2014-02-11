@@ -64,6 +64,13 @@ body
 	+s(cw)
 	content: ""
 
+.browseupdate
+	margin: 0.2em 0
+	background: #ccc
+	color: #000
+	padding: 0.2em 0
+	text-align: center
+
 .main
 	padding-top: 20px
 
@@ -926,10 +933,13 @@ body
 .input
 	display: block
 	width: 100%
+	zoom: 1
+	position: relative
+	z-index: 1000
 	+box
 	margin-bottom: 10px
 	height: 38px
-	background: none
+	background: #fff
 	border: 1px solid #fff
 	text-align: center
 	padding: 10px
@@ -969,6 +979,13 @@ body
 .form-row
 	text-align: center
 
+.lteie8
+	.checkbox
+		input
+			+opacity(1)
+			background: #fff
+		i
+			display: none
 .checkbox
 	padding-left: 28px
 	display: inline-block
@@ -1000,6 +1017,7 @@ body
 		+s(check)
 
 
+
 .popup
 	position: fixed
 	// top: 200px
@@ -1009,11 +1027,13 @@ body
 	padding: 20px 25px
 	+box
 	width: 367px
-	z-index: 1022
+	// z-index: -1
 	opacity: 0
 	top: -1000px
 	+transition(all .2s linear)
 	&.is-open
+		position: fixed
+		z-index: 1030
 		top: 100px
 		+opacity(1)
 .popup__title
