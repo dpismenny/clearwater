@@ -270,6 +270,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .slider .slider__menu li { position: relative; display: inline-block; vertical-align: middle; text-align: center; line-height: 1; width: 20%; padding: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 10px; text-transform: uppercase; cursor: pointer; }
 .slider .slider__menu li:last-child .slider__menu-holder:after { right: 100%; left: auto; }
 .slider .slider__menu li.is-active .slider__thumb { margin-top: -1px; width: 169px; height: 169px; border: 10px solid white; }
+.slider .slider__menu li.is-active .slider__thumb:before { display: none !important; }
 .slider .slider__menu li.is-active .slider__thumb img { width: 146px; height: 146px; border: 2px solid #c5d7e3; }
 .slider .slider__menu li.is-active .slider__text { position: absolute; left: 0; right: 0; text-align: center; bottom: -200px; opacity: 0; }
 .slider .slider__menu li:hover .slider__thumb:before { background: #66cdef; }
