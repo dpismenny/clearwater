@@ -13,6 +13,7 @@
 $breaksmall: 1170px
 
 $breaklarge: 1365px
+$xsmall: 1080px
 
 $step3: 1210px
 $step4: 1280px
@@ -34,6 +35,10 @@ $iphone: 320px
 	@else if $media == wide
 		// wider than $width
 		@media only screen and (min-width: $breaklarge)
+			@content
+	@else if $media == xsmall
+		// wider than $width
+		@media only screen and (max-width: $xsmall)
 			@content
 	@else if $media == iphone
 		// wider than $width

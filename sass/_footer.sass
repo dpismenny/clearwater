@@ -17,7 +17,7 @@
 		color: $white
 	.footer__contacts
 		float: left
-		margin-right: 105px
+		margin-right: 80px
 		+r(step4)
 			width: 435px
 		.footer__contacts-tel
@@ -39,15 +39,18 @@
 					+s(phone)
 					content: ""
 	.footer__feedback
-		display: inline-block
-		vertical-align: middle
-		padding-left: 39px
-		padding-right: 39px
-		+r(step4)
-			position: absolute
-			top: 50%
-			margin-top: -19px
-			left: 560px
+		position: absolute
+		top: 50%
+		margin-top: -19px
+		left: 50%
+		margin-left: -120px
+		+r(pda)
+			position: static
+			margin: 0
+			display: inline-block
+			vertical-align: middle
+			padding-left: 39px
+			padding-right: 39px
 	.footer__quality-control
 		float: right
 		ul
