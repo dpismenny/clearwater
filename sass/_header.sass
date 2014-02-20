@@ -176,6 +176,55 @@
 
 
 
+//sorry
+.is-hiddensorry
+	.sorry,.sorry__overlay
+		display: none
+.sorry__overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(#000, .7)    
+	z-index: 1000 
+.sorry
+	position: fixed
+	top: 0 
+	left: 0
+	right: 0
+	background: #fff   
+	z-index: 1001
+	padding: 20px 0  
+	color: #07386F
+	font-size: 14px  
+	.sorry__close
+		position: absolute
+		top: 20px 
+		right: 20px 
+		+s(close1)
+		cursor: pointer
+	.sorry__in
+		margin: 1000px 
+		max-width: 1280px 
+		margin: 0 auto 
+		p
+			line-height: 1.7
+			float: left
+			width: 48%
+			margin-right: 2%  
+			a
+				color: #1CACE2
+				text-decoration: none 
+
+	.sorry__title
+		text-align: center
+		text-transform: uppercase
+		font-weight: normal
+		color: #07386F
+		font-size: 18px  
+		margin-bottom: 25px 
+
 
 
 

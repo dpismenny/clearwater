@@ -4,6 +4,9 @@ $(document).ready(function() {
 
 $('input, textarea').placeholder();
 
+$('.sorry__overlay, .sorry__close').click(function(event) {
+	$('body').addClass('is-hiddensorry');
+});
 
 $( '#years' ).on( 'cycle-update-view', function( event, opts ) {
     // your event handler code here
