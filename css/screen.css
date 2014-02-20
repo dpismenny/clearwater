@@ -501,9 +501,9 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .sorry__overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1000; }
 
-.sorry { position: fixed; top: 0; left: 0; right: 0; background: white; z-index: 1001; padding: 20px 0; color: #07386f; font-size: 14px; }
+.sorry { position: fixed; top: 0; left: 0; right: 0; background: white; z-index: 1001; padding: 20px 20px 35px 20px; color: #07386f; font-size: 14px; }
 .sorry .sorry__close { position: absolute; top: 20px; right: 20px; background: url('../img/icons-sf3bbafde8b.png') 0 -982px no-repeat; width: 21px; height: 21px; cursor: pointer; }
-.sorry .sorry__in { margin: 1000px; max-width: 1280px; margin: 0 auto; }
+.sorry .sorry__in { width: 100%; min-width: 800px; max-width: 1280px; margin: 0 auto; }
 .sorry .sorry__in p { line-height: 1.7; float: left; width: 48%; margin-right: 2%; }
 .sorry .sorry__in p a { color: #1cace2; text-decoration: none; }
 .sorry .sorry__title { text-align: center; text-transform: uppercase; font-weight: normal; color: #07386f; font-size: 18px; margin-bottom: 25px; }
