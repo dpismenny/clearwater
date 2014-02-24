@@ -42,22 +42,31 @@
 		position: absolute
 		bottom: -70px
 		left: 74%
-		margin-left: -290px
+		margin-left: -230px
 		width: 596px
 		z-index: 100
-		+opacity(0)
+		opacity: 0
 		+transition(opacity 2s linear)
 		&.is-visible
-			+opacity(1)
+			opacity: 1
+			// background: transparent
+			// -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
+			// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
+			// zoom: 1
 		img
 			display: block
 			height: 100%
 			width: auto
 			&.header__bottle-gif
 				height: 672px
-		+r(step4)
-			margin-left: -490px
-			margin-left: -470px 
+				background: transparent
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
+				zoom: 1
+		
+		+r(wide)
+			// margin-left: -490px
+			margin-left: -400px
 	.header__strip
 		position: absolute
 		bottom: 0

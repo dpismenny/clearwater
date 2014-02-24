@@ -398,7 +398,7 @@ body
 // show
 .show
 	padding-bottom: 140px
-	background: url("../img/zig-grey.png") repeat-x 0 100%
+	background: #fff url("../img/zig-grey.png") repeat-x 0 100%
 
 // justify
 .justify
@@ -594,17 +594,24 @@ body
 			&.certificate
 				width: 202px
 				height: 268px
-				background: url(../img/border.png) no-repeat
+				background: #fff url(../img/border.png) no-repeat
 				+box
 				line-height: 268px
 				text-align: center
 				img
 					display: inline-block
 					vertical-align: middle
+					-ms-filter:  none
+					filter: none
+
 			img
 				display: block
 				margin-left: auto
 				margin-right: auto
+				background: transparent
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
+				zoom: 1
 
 .price
 	padding-top: 40px
