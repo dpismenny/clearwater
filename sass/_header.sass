@@ -40,13 +40,18 @@
 			font-size: 34px 
 	.header__bottle
 		position: absolute
-		bottom: -70px
-		left: 74%
-		margin-left: -230px
-		width: 596px
+		bottom: -80px
+		// left: 74%
+		// margin-left: -230px
+		// width: 596px
+		right: 40px
 		z-index: 100
 		opacity: 0
 		+transition(opacity 2s linear)
+		+r(pda)
+			right: -3%
+		+r(xsmall)
+			right: -11%
 		&.is-visible
 			opacity: 1
 			// background: transparent
@@ -58,15 +63,15 @@
 			height: 100%
 			width: auto
 			&.header__bottle-gif
-				height: 672px
+				height: 780px
 				background: transparent
 				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
+				//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
 				zoom: 1
 		
-		+r(wide)
-			// margin-left: -490px
-			margin-left: -400px
+		// +r(wide)
+		// 	// margin-left: -490px
+		// 	margin-left: -400px
 	.header__strip
 		position: absolute
 		bottom: 0
