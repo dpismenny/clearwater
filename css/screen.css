@@ -466,7 +466,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 @media only screen and (max-width: 1080px) { .landing .header__bottle { right: -11%; } }
 .landing .header__bottle.is-visible { opacity: 1; }
 .landing .header__bottle img { display: block; height: 100%; width: auto; }
-.landing .header__bottle img.header__bottle-gif { height: 780px; background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; zoom: 1; }
+.landing .header__bottle img.header__bottle-gif { height: 690px; background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; zoom: 1; }
 .landing .header__strip { position: absolute; bottom: 0; left: 0; background: white; width: 100%; height: 95px; line-height: 95px; }
 .landing .header__strip .container { position: relative; }
 .landing .header__grid { position: relative; z-index: 105; margin-bottom: 90px; }
