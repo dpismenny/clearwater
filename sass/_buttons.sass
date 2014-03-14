@@ -151,21 +151,18 @@
 		color: $white
 		background-color: $dblue
 .btn-download
-	color: $dblue
-	border-color: transparent
-	background-color: none
-	&:hover,
-	&:active
-		color: $dblue
-		border-color: $dblue
-		background-color: transparent
 	i
 		display: inline-block
 		vertical-align: middle
 		position: relative
 		top: -2px
-		+s(pdf)
 		margin-right: 15px
+		+s(pdf)
+	&:hover,
+	&:active
+		i
+			+s(pdf_h)
+
 .btn-fill
 	color: $white
 	border-color: $blue
