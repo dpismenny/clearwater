@@ -2,6 +2,15 @@
 
 $(document).ready(function() {
 
+$('.fancybox').fancybox({
+  padding: 0,
+  helpers: {
+    overlay: {
+      locked: false
+    }
+  }
+});
+
 $('input, textarea').placeholder();
 
 $('.sorry__overlay, .sorry__close').click(function(event) {
