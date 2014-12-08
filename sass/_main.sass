@@ -731,13 +731,18 @@ body
 					bottom: 55px
 		&.bicarbonate
 			top: -30px
+			top: 25px 
 			.composition__symbol
 				&:before
 					right: 226px
 					bottom: -57px
 					+rotate(-45)
-		&.kalium
+		&.kalium,&.middle
 			top: 110px
+		&.middle
+			.composition__symbol:before
+				right: auto 
+				left: 100% 
 		&.magnesium
 			top: 225px
 			.composition__symbol
@@ -765,6 +770,15 @@ body
 			color: $dblue
 			+pfbeausanspro
 			font-size: 10px
+		small
+			font-size: 14px
+			+vp31
+			color: $dblue
+			color: #00abe4 
+			display: block
+			text-align: left
+			width: 215px 
+			padding-bottom: 6px 
 	.i-bicarbon
 		display: inline-block
 		vertical-align: top
