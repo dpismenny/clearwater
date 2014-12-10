@@ -672,7 +672,7 @@ body
 		transform-origin: 0 0
 
 
-
+$var: 20
 .composition
 	padding-top: 65px
 	padding-bottom: 90px
@@ -689,17 +689,19 @@ body
 		margin-bottom: 80px
 		width: 100%
 	.composition__left
+		z-index: 10 
 		.composition__element
 			left: 0
 			text-align: left
 	.composition__right
+		z-index: 10 
 		.composition__element
 			right: 0
 			text-align: right
 	.composition__element
 		position: absolute
 		color: $blue
-		width: 250px
+		width: 210px
 		&.composition__element_mod
 			width: 250px
 			text-align: left
@@ -716,9 +718,11 @@ body
 			width: 200px
 			.composition__symbol
 				&:before
-					left: 177px
-					bottom: -57px
-					+rotate(45)
+					// left: 177px
+					// bottom: -57px
+					left: 100% 
+					+rotate(45 - $var)
+					+transform-origin(0,0)
 		&.calcium
 			top: 220px
 			text-align: left
@@ -726,17 +730,24 @@ body
 			.composition__symbol
 				&:before
 					left: 100%
-					+rotate(-45)
-					left: 177px
-					bottom: 55px
+					+rotate(-45 + $var)
+					+transform-origin(0,0)
+					left: 100%
+					bottom: -1px 
+					// left: 177px
+					// bottom: 55px
 		&.bicarbonate
 			top: -30px
 			top: 25px 
 			.composition__symbol
 				&:before
-					right: 226px
-					bottom: -57px
-					+rotate(-45)
+					// right: 226px
+					// bottom: -57px
+					right: 100%
+					bottom: -1px 
+					// background: red 
+					+transform-origin(100%,0)
+					+rotate(-45 + $var) 
 		&.kalium,&.middle
 			top: 110px
 		&.middle
@@ -747,9 +758,12 @@ body
 			top: 225px
 			.composition__symbol
 				&:before
-					right: 226px
-					bottom: 55px
-					+rotate(45)
+					// right: 226px
+					// bottom: 55px
+					right: 100%
+					bottom: -1px 
+					+rotate(45 - $var)
+					+transform-origin(100%,0)
 	.composition__symbol
 		position: relative
 		font-size: 48px
@@ -776,8 +790,8 @@ body
 			color: $dblue
 			color: #00abe4 
 			display: block
-			text-align: left
-			width: 215px 
+			// text-align: left
+			// width: 215px 
 			padding-bottom: 6px 
 	.i-bicarbon
 		display: inline-block

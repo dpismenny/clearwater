@@ -318,28 +318,30 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .composition .container { max-width: 845px; }
 .composition .title { margin-bottom: 45px; }
 .composition .composition__content { position: relative; display: inline-block; margin-bottom: 80px; width: 100%; }
+.composition .composition__left { z-index: 10; }
 .composition .composition__left .composition__element { left: 0; text-align: left; }
+.composition .composition__right { z-index: 10; }
 .composition .composition__right .composition__element { right: 0; text-align: right; }
-.composition .composition__element { position: absolute; color: #00abe4; width: 250px; }
+.composition .composition__element { position: absolute; color: #00abe4; width: 210px; }
 .composition .composition__element.composition__element_mod { width: 250px; text-align: left; }
 .composition .composition__element.composition__element_mod.iodium { left: 10%; }
 .composition .composition__element.composition__element_mod.fluorum { right: 10%; }
 .composition .composition__element.composition__element_mod .composition__symbol { border-bottom: 2px solid #003671; }
 .composition .composition__element.composition__element_mod .composition__symbol:before { content: none; }
 .composition .composition__element.natrium { top: -5px; width: 200px; }
-.composition .composition__element.natrium .composition__symbol:before { left: 177px; bottom: -57px; -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.composition .composition__element.natrium .composition__symbol:before { left: 100%; -moz-transform: rotate(25deg); -o-transform: rotate(25deg); -webkit-transform: rotate(25deg); -ms-transform: rotate(25deg); transform: rotate(25deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; transform-origin: 0 0; }
 .composition .composition__element.calcium { top: 220px; text-align: left; width: 200px; }
-.composition .composition__element.calcium .composition__symbol:before { left: 100%; -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; left: 177px; bottom: 55px; }
+.composition .composition__element.calcium .composition__symbol:before { left: 100%; -moz-transform: rotate(-25deg); -o-transform: rotate(-25deg); -webkit-transform: rotate(-25deg); -ms-transform: rotate(-25deg); transform: rotate(-25deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; transform-origin: 0 0; left: 100%; bottom: -1px; }
 .composition .composition__element.bicarbonate { top: -30px; top: 25px; }
-.composition .composition__element.bicarbonate .composition__symbol:before { right: 226px; bottom: -57px; -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.composition .composition__element.bicarbonate .composition__symbol:before { right: 100%; bottom: -1px; -webkit-transform-origin: 100% 0; -moz-transform-origin: 100% 0; -ms-transform-origin: 100% 0; -o-transform-origin: 100% 0; transform-origin: 100% 0; -moz-transform: rotate(-25deg); -o-transform: rotate(-25deg); -webkit-transform: rotate(-25deg); -ms-transform: rotate(-25deg); transform: rotate(-25deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 .composition .composition__element.kalium, .composition .composition__element.middle { top: 110px; }
 .composition .composition__element.middle .composition__symbol:before { right: auto; left: 100%; }
 .composition .composition__element.magnesium { top: 225px; }
-.composition .composition__element.magnesium .composition__symbol:before { right: 226px; bottom: 55px; -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.composition .composition__element.magnesium .composition__symbol:before { right: 100%; bottom: -1px; -moz-transform: rotate(25deg); -o-transform: rotate(25deg); -webkit-transform: rotate(25deg); -ms-transform: rotate(25deg); transform: rotate(25deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-transform-origin: 100% 0; -moz-transform-origin: 100% 0; -ms-transform-origin: 100% 0; -o-transform-origin: 100% 0; transform-origin: 100% 0; }
 .composition .composition__symbol { position: relative; font-size: 48px; border-bottom: 1px solid #d7e3ec; line-height: 1; }
 .composition .composition__symbol:before { position: absolute; bottom: -1px; right: 100%; content: ""; height: 1px; width: 160px; background: #d7e3ec; }
 .composition .composition__symbol span { text-transform: uppercase; display: inline-block; margin-left: 5px; color: #003671; font-family: "pfbeausanspro"; font-weight: normal; font-style: normal; font-size: 10px; }
-.composition .composition__symbol small { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; color: #003671; color: #00abe4; display: block; text-align: left; width: 215px; padding-bottom: 6px; }
+.composition .composition__symbol small { font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; color: #003671; color: #00abe4; display: block; padding-bottom: 6px; }
 .composition .i-bicarbon { display: inline-block; vertical-align: top; background: url('../img/icons-sca4ad1b730.png') 0 -413px no-repeat; width: 61px; height: 59px; margin-bottom: 10px; }
 .composition .composition__description { margin-top: 10px; font-size: 14px; font-family: "Vida31Pro"; font-weight: normal; font-style: normal; color: #003671; }
 .composition .composition__name { display: inline-block; margin-right: 20px; color: #00abe4; }
