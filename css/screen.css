@@ -643,10 +643,10 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .article { padding-bottom: 80px; }
 
-.article-list { *zoom: 1; margin-left: -4.333%; padding-top: 40px; }
+.article-list { *zoom: 1; margin-left: -4.333%; font-size: 0; }
 .article-list:after { content: " "; display: table; clear: both; }
 
-.article-list__item { float: left; width: 28.66%; margin-left: 4.333%; }
+.article-list__item { margin-top: 40px; display: inline-block; vertical-align: top; width: 28.66%; margin-left: 4.333%; }
 
 .article-list_4col .article-list__item { width: 20%; }
 

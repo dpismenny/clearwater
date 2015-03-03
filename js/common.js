@@ -2,16 +2,16 @@
 
 $(document).ready(function() {
 
-$('.fancybox').fancybox({
-  padding: 0,
-  helpers: {
-    overlay: {
-      locked: false
-    }
-  }
-});
+// $('.fancybox').fancybox({
+//   padding: 0,
+//   helpers: {
+//     overlay: {
+//       locked: false
+//     }
+//   }
+// });
 
-$('input, textarea').placeholder();
+// $('input, textarea').placeholder();
 
 $('.sorry__overlay, .sorry__close').click(function(event) {
 	$('body').addClass('is-hiddensorry');
